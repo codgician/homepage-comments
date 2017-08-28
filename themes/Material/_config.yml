@@ -254,7 +254,7 @@ comment:
     changyan_conf:
     changyan_thread_key_type: path
     livere_data_uid:
-    gitment_repo: https://github.com/codgician/codgician.github.io.git   # git repo of the hexo
+    gitment_repo: codgician.github.io   # git repo of the hexo
     gitment_owner: codgician  # git repo's owner
     gitment_client_id: f91be9f9d92518c62fbe # github app client id 
     gitment_client_secret: 169dea340cd2443f0286affa5f4d8f00c60375e6  # github app client secret 
