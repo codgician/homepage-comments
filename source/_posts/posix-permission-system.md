@@ -1,6 +1,6 @@
 ---
 title: 浅谈POSIX系统的权限管理设计
-date: 2017-09-01 23:00:10
+date: 2017-09-04 23:00:10
 tags: 
 - Code
 - Codgic
@@ -20,7 +20,7 @@ category: Codgic
 
 每一个题目也有对应的三种权限：**读、写、提交**。每种比赛也有三种对应权限：**读、写、参与**。这难道不就像是 POSIX 中的**读、写、执行**吗？
 
-那么就完全可以效仿 POSIX ，用三位八进制（自动忽略 SUID 、SGID 和 SBIT）来存储权限，再另外存储所有者(owner)以及所有组(group)来实现权限管理。什么？你说有的 *nix 系统里面还有 ACL？那真是非常抱歉，我懒。（逃
+那么就完全可以效仿 POSIX ，用三位八进制（自动忽略 *SUID* 、*SGID* 和 *SBIT*）来存储权限，再另外存储所有者(owner)以及所有组(group)来实现权限管理。什么？你说有的 *nix 系统里面还有 ACL？那真是非常抱歉，我懒。（逃
 
 
 
@@ -103,7 +103,6 @@ Unix 对继承权限的想法并不感冒。所以，与其它系统不同的是
 # 参(chao)考(xi)文献
 
 - [Unix File and Directory Permissions and Modes - by Wayne Pollock, Tampa Florida USA](https://wpollock.com/AUnix1/FilePermissions.htm)
-
 - [Bitwise operators for permissions](https://codereview.stackexchange.com/questions/79020/bitwise-operators-for-permissions)
 
 
