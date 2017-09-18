@@ -5,9 +5,9 @@ thumbnail: /img/daily_pic.png
 ---
 Hi there!
 
-I am Jimmy, who currently is a student and dream to be forever a student. With an obsession in coding, I wish to stay young and keep exploring till the last minute of my life.
+I am Jimmy, an ordinary student who wish to be forever a student. With an obsession in coding, staying young and exploring while alive has always been my ultimate dream.
 
-I started this blog in hope of storing some memorable moments and interesting findings. Different articles might be presented in different languages (which might look chaotic) because this blog is for both Chinese and English readers. 
+I started this blog in hope of sharing some memorable moments and interesting findings. Different articles might be presented in different languages (which might look chaotic) because this blog is for both Chinese and English readers. 
 
 Anyway, thanks for visiting and have fun here!
 
@@ -15,9 +15,9 @@ Anyway, thanks for visiting and have fun here!
 
 大家吼！
 
-我是Jimmy，目前是一名学生并梦想永远做一名学生。怀揣着对代码的热忱，我愿年轻一时，探索一世。
+我是 Jimmy，是一位梦想做永远的学生的学生。怀揣着对代码的热忱，我愿年轻一时，探索一世。
 
-带着保留下一些值得回忆的记忆和一些有趣发现的想法，我创建了这个博客。不同的文章可能会由不同的语言呈现（可能看起来会有些混乱），因为这个博客是同时为中文和英文读者搭建的。
+带着分享一些富有意义的记忆和一些有趣发现的初衷，我创建了这个博客。不同的文章可能会由不同的语言呈现（可能看起来会有些混乱），因为这个博客是同时为中文和英文读者搭建的。
 
 不论如何，感谢你的来访并希望你喜欢它。
 
