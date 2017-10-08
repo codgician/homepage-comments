@@ -837,7 +837,7 @@ hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
-hexo-cli@^1.0.2, hexo-cli@^1.0.3:
+hexo-cli@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/hexo-cli/-/hexo-cli-1.0.3.tgz#64aa13eda34a0261dc339171e07ad131ef610ac7"
   dependencies:
