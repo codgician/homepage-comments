@@ -3,7 +3,6 @@ title: Happy birthday!
 date: 2017-05-26 13:19:35
 tags: 
   - Life
-  - English
 category: Life
 thumbnail: /2017/05/26/happy-eighteenth-birthday/cover.jpg
 ---

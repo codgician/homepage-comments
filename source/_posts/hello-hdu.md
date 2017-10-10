@@ -1,7 +1,10 @@
 ---
 title: Hello HDU!
 date: 2017-09-15 21:10:08
-tags: HDU
+tags: 
+- Life
+- HDU
+category: Life
 thumbnail: /2017/09/15/hello-hdu/cover.jpg
 ---
 

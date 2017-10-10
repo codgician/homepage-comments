@@ -1,9 +1,8 @@
 ---
-
 title: 一不小心进了某邻居的网络
 date: 2017-04-09 15:53:10
 tags: 
-- Hack
+- Pwn
 - Router
 thumbnail: /2017/04/09/accidentally-hacked-neighbors-router/cover.png
 

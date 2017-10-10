@@ -1,13 +1,10 @@
 ---
-
 title: 高考导数 - 对端点效应的优化
 date: 2017-04-08 20:25:20
 tags: 
- - 数学
- - 原创
- - 中文
-category: Senior 3
-
+ - Maths
+ - Derivative
+category: Notes
 ---
 
 **挖坑待填……**

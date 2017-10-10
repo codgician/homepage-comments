@@ -1,8 +1,9 @@
 ---
-
 title: Hello World!
 date: 2017-02-11 13:15:08
-tags: hello-world
+tags:
+- Hello
+category: Hello!
 
 ---
 Hello World!

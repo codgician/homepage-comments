@@ -2,10 +2,9 @@
 title: 浅谈POSIX系统的权限管理设计
 date: 2017-09-04 23:00:10
 tags: 
-- Code
 - Codgic
-- POSIX
-category: Codgic
+- Unix
+category: Notes
 ---
 
 # 前言

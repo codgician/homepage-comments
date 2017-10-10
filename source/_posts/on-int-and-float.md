@@ -2,8 +2,9 @@
 title: 乱谈整型与浮点
 date: 2017-08-18 22:43:10
 tags: 
-- C/C++
-category: OI
+- Computational Thinking
+- ACM-ICPC
+category: Notes
 ---
 
 # 前言
@@ -196,7 +197,7 @@ NaN 是什么？可以吃吗？
 
 ### 精度 (Precision) 与 间隙 (Gap)
 
-首先摘抄一段来自 [Wikipedia](https://en.wikipedia.org/wiki/IEEE_754-1985#Single_precision) 的原文：
+首先摘抄一段来自 [Wikipedia](https://en.wikipedia.org/wiki/IEEE_754-1985#Range_and_precision) 的原文：
 
 >**Precision** is defined as the minimum difference between two successive mantissa representations; thus it is a function only in the mantissa; while the **gap** is defined as the difference between two successive numbers.
 
@@ -206,7 +207,7 @@ NaN 是什么？可以吃吗？
 
 对于**精度**，我们已经可以很容易地回答这个问题了。对于单精度浮点数，尾码有23位。$2^{23} = 8388608$，因此**单精度浮点数最长（不完整地）可存储小数点后 7 位，但只能完整地存储小数点后 6 位**。
 
-而对于**间隙**，我们不妨摘录一个来自 Wikipedia 的表格，其中最小值和最大值分别代表当实际指数一定时该浮点数可表示的最小十进制数和最大十进制数。
+而对于**间隙**，我们不妨摘录一个来自 [Wikipedia](https://en.wikipedia.org/wiki/IEEE_754-1985#Single_precision) 的表格，其中最小值和最大值分别代表当实际指数一定时该浮点数可表示的最小十进制数和最大十进制数。
 
 | 实际指数 | 阶码   | 最小值          | 最大值              | 间隙           |
 | ---- | ---- | ------------ | ---------------- | ------------ |

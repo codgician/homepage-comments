@@ -2,11 +2,9 @@
 title: 高考导数 - 洛必达法则
 date: 2017-04-08 20:26:59
 tags: 
- - 数学
- - 原创
- - 中文
-category: Senior 3
-
+ - Maths
+ - Derivative
+category: Notes
 ---
 
 # 简介

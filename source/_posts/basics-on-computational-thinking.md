@@ -2,7 +2,8 @@
 title: 计算导论 - 计算系统基本思维
 date: 2017-08-19 23:03:10
 tags: 
-- Computing
+- Computational Thinking
+- ACM-ICPC
 category: Notes
 ---
 
