@@ -124,7 +124,7 @@ qrcode:
 #         theme value:
 #         theme-name  # /vendors/prettify/themes/[theme-name].css
 prettify:
-    enable: false
+    enable: true
     theme: "vibrant-ink" # default value: "vibrant-ink"   # theme-name without '.css'
 
 #     Hanabi

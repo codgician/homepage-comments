@@ -61,6 +61,8 @@ int 是带有符号的，因此其所占据的第 0 ~ 31 位中第 31 位是用�
 
 在 C 语言中，浮点数的存储均遵循 IEEE 754 标准。我们不妨结合标准内容来对 float 做一番介绍。
 
+**注：并不是在任何情况下浮点数的存储都遵循 IEEE 754 标准！这里仅介绍 IEEE 754标准。**
+
 
 
 ## 整体结构
@@ -249,10 +251,10 @@ NaN 是什么？可以吃吗？
 
 # 参考文献
 
-排序顺序嘛……我才不会告诉你是乱序呢。
+排序顺序嘛…… 我才不会告诉你是乱序呢。
 
 - 可爱的Void（yzh）orz
-- 维基百科- [补码](https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E8%A3%9C%E6%95%B8)
+- 维基百科 - [补码](https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E8%A3%9C%E6%95%B8)
 - 维基百科 - [IEEE 754](https://zh.wikipedia.org/wiki/IEEE_754)
 - Wikipedia - [IEEE 754-1985](https://en.wikipedia.org/wiki/IEEE_754-1985)
 - adream307 - [float的内存结构](http://blog.csdn.net/adream307/article/details/7246993)
