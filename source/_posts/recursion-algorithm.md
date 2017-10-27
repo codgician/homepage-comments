@@ -10,7 +10,7 @@ category: Notes
 
 # 前言
 
- 若干天前在知乎上看到 [@王勐](https://www.zhihu.com/people/anchor89) 对于 [什么是动态规划？动态规划的意义是什么？](https://www.zhihu.com/question/23995189/answer/35429905) 的回答，其中提到了：
+ 若干天前在知乎上看到 **[王勐](https://www.zhihu.com/people/anchor89)** 对于 [什么是动态规划？动态规划的意义是什么？](https://www.zhihu.com/question/23995189/answer/35429905) 的回答，其中提到了：
 
 > 计算机的本质是一个状态机，内存里存储的所有数据构成了当前的状态，CPU只能利用当前的状态计算出下一个状态...
 

@@ -8,9 +8,9 @@ category: Entertainment
 
 # 前言
 
-最近边写[codgic-api](https://github.com/codgician/codgic-api)边啃大学教材好累啊…… 于是打算找点有意思的东西玩玩。
+最近边写 [codgic-api](https://github.com/codgician/codgic-api) 边啃大学教材好累啊…… 于是打算找点有意思的东西玩玩。
 
-刚才在知乎上看到 **@刘巍然-学酥** 对于[身份证的末位校验码算法最后一步模11是基于什么考虑](https://www.zhihu.com/question/20205184)问题的回答后感觉颇有趣味，于是打算再深入理解理解身份证编号的那些事……
+刚才在知乎上看到 **[刘巍然-学酥](https://www.zhihu.com/people/liu-wei-ran-8-34)** 对于[身份证的末位校验码算法最后一步模11是基于什么考虑](https://www.zhihu.com/question/20205184)问题的回答后感觉颇有趣味，于是打算再深入理解理解身份证编号的那些事……
 
 友情提示：此处身份证指的是中华人民共和国公民身份证，其它证件不在本文讨论范围之内。
 
