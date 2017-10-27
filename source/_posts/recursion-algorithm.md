@@ -280,7 +280,7 @@ $$
 f(n) = f(n - 1) + 2f(n - 2)
 $$
 
-# 搜索？
+# 路线个数
 
 **[HDUOJ - 2563: 统计问题](http://acm.hdu.edu.cn/showproblem.php?pid=2563)**
 
@@ -366,6 +366,10 @@ $$
 
 # 小结
 
+- 递推仅适用于**每个阶段状态唯一**的题目。
+- 写递推方程式时需要做到**不遗漏且不重复**。
+- 在考虑递推问题时，我们的终极目的是**逐步将大问题分解成小问题**，所以当我们在考虑 $n$ 的情况时只需考虑前若干个情况，而不是又从头重复考虑。
+
 
 
 # 参考文献
@@ -376,4 +380,4 @@ $$
 
 [王勐](https://www.zhihu.com/people/anchor89) - [什么是动态规划？动态规划的意义是什么？](https://www.zhihu.com/question/23995189/answer/35429905)
 
-[= 2Enstein_Jun](http://blog.csdn.net/luomingjun12315) - [平面分割，空间分割问题（递推关系）](http://blog.csdn.net/luomingjun12315/article/details/41989977)
+[2Enstein_Jun](http://blog.csdn.net/luomingjun12315) - [平面分割，空间分割问题（递推关系）](http://blog.csdn.net/luomingjun12315/article/details/41989977)
