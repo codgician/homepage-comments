@@ -29,6 +29,14 @@ category: Notes
 
 
 
+## cin 和 scanf 混用导致谜之出错
+
+比如 HDUOJ: [1864](http://acm.hdu.edu.cn/showproblem.php?pid=1864)
+
+呜呜呜呜呜我调了三个小时啊喂，到处找数据测试都没问题…… 我辣么可爱，我什么要这样欺负我呜呜呜……
+
+
+
 ## 运算过程中一不小心溢出
 
 比如 HDUOJ: [1001](http://acm.hdu.edu.cn/showproblem.php?pid=1001)
