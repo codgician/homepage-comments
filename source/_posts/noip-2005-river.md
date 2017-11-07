@@ -9,7 +9,7 @@ category: Notes
 
 # 题面
 
-注：数据范围中的 109 实际上是 $10^9$ :trollface:
+注：数据范围中的 109 实际上是 $10^9$。 :confounded:
 
 [HDUOJ - 4842: 过河](http://acm.hdu.edu.cn/showproblem.php?pid=4842)
 
@@ -27,7 +27,7 @@ category: Notes
 
 
 
-# 首先，这显然考动态规划...
+# 首先，这显然考动态规划
 
 我们可以很容易写出状态转移方程：
 $$
@@ -36,7 +36,7 @@ $$
 简单地写出伪代码：
 
 ```cpp
-for (int i = 1; i <= M; i++)
+for (int i = 1; i <= bridgeLength; i++)
   for (int j = minHop; j <= maxHop && j <= i; j++)
     dp[i] = min(dp[i], dp[i - j] + isStone[i]);
 ```
