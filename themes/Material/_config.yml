@@ -206,23 +206,23 @@ sidebar:
         divider: true
     pages:
         Timeline:
-            link: "/timeline"
+            link: "/timeline/"
             icon: timeline
             divider: false
         Tags:
-            link: "/tags"
+            link: "/tags/"
             icon: label
             divider: false
         Gallery:
-            link: "/gallery"
+            link: "/gallery/"
             icon: insert_photo
             divider: false
         About:
-            link: "/about"
+            link: "/about/"
             icon: person_pin
             divider: false
         Links:
-            link: "/links"
+            link: "/links/"
             icon: link
             divider: true
     article_num:
