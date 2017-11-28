@@ -37,7 +37,7 @@ category: Notes
 
 $e^x$在导数题中的出镜率不可谓不低，而其最显著的特点便是：
 
-![“百般求导浑不怕，要留原形在人间”](exponential_function.jpg)
+![“百般求导浑不怕，要留原形在人间”](thoughts-on-senior-3-derivative-problems-2/exponential_function.jpg)
 
 就像上图那样，倘若对于含$e^x$的函数直接求导，其导函数也会带有$e^x$。在较为简单的函数中（比如形如$f(x) = e^{ax + b} + cx + d$），直接求导仍能比较方便地找到导函数的零点以讨论单调区间。然而对于稍微复杂的函数，$e^x$的存在便直接增大了我们寻找导函数零点的难度。
 

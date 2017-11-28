@@ -22,7 +22,7 @@ thumbnail: /2017/04/09/accidentally-hacked-neighbors-router/cover.png
 
 其登录界面长这样：
 
-![“光猫登录网页”](f412_web_login.png)
+![“光猫登录网页”](accidentally-hacked-neighbors-router/f412_web_login.png)
 
 于是直到2016年2月的某一天，我爸因为某种原因受够了联通的辣鸡宽带，一挥手入了电信百兆光纤。从那时起我才知道光猫这种东西。而电信送的光猫就是个坑货，默认代替路由器拨号（相当于就是强制开启路由功能），而且还特么限制用户连接数。由于本人强迫症发作，不希望光猫和路由器分占两段IP，于是当及上网搜索如何使光猫以桥接方式运行。
 
@@ -34,7 +34,7 @@ thumbnail: /2017/04/09/accidentally-hacked-neighbors-router/cover.png
 
 然后竟然就登录进去了……
 
-![“telnet登录”](f412_telnet_login.png)
+![“telnet登录”](accidentally-hacked-neighbors-router/f412_telnet_login.png)
 
 好吧，既然登都登进来了不看看数据库怎么能行呢？
 
@@ -42,7 +42,7 @@ thumbnail: /2017/04/09/accidentally-hacked-neighbors-router/cover.png
 sendcmd 1 DB all
 ```
 
-![“列举所有数据表”](f412_telnet_db_all.png)
+![“列举所有数据表”](accidentally-hacked-neighbors-router/f412_telnet_db_all.png)
 
 经过一番瞎摸之后，发现用户账户登录信息存储于UserInfo表中：
 
@@ -50,7 +50,7 @@ sendcmd 1 DB all
 sendcmd 1 DB p UserInfo
 ```
 
-![“获取登录信息”](f412_telnet_db_userinfo.png)
+![“获取登录信息”](accidentally-hacked-neighbors-router/f412_telnet_db_userinfo.png)
 
 在获取了登录信息后感觉意犹未尽，打算再翻翻跟WAN相关的数据库，于是无意中翻到了宽带拨号的账户和密码：
 
@@ -58,23 +58,23 @@ sendcmd 1 DB p UserInfo
 sendcmd 1 DB p WANCPPP
 ```
 
-![“获取拨号信息”](f412_telnet_db_wancppp.png)
+![“获取拨号信息”](accidentally-hacked-neighbors-router/f412_telnet_db_wancppp.png)
 
 啊哈！这下我连该户人家的宽带账号都知道了，不知道在我这栋楼里能不能拨起……
 
 在获取了足够的信息后，打算再到光猫的网页管理里面去玩玩。试了试刚刚获取的超级管理员账户，意料之中地登进去了。
 
-![“管理网页主页”](f412_web_homepage.png)
+![“管理网页主页”](accidentally-hacked-neighbors-router/f412_web_homepage.png)
 
 顺便打算去DHCP设置里看看在线用户有哪些……
 
-![“DHCP设置”](f412_web_dhcp.png)
+![“DHCP设置”](accidentally-hacked-neighbors-router/f412_web_dhcp.png)
 
 发现是一个路由器一样的东西，这下总算是摸清楚该户人家的网路架构了：
 
 光猫完成PPPoe拨号任务并与副路由器处于 192.168.1.x IP段。同时，副路由器中设置动态或静态IP并与剩余的联网设备处于，等等我看下……
 
-![“ipconfig”](ipconfig.png)
+![“ipconfig”](accidentally-hacked-neighbors-router/ipconfig.png)
 
 对，副路由器与剩下的联网设备处于 192.168.0.x IP段，这也就是两级网络的配置方式。于是我打算再到副路由器的管理页面里去看看（192.168.0.1）。
 
@@ -82,13 +82,13 @@ sendcmd 1 DB p WANCPPP
 
 试了试admin等一堆常用密码后发现密码错误，正打算放弃的时候试了试WiFi连接密码，竟然进去了……
 
-![“副路由器管理网页主页”](tl-wr882n_web_homepage.png)
+![“副路由器管理网页主页”](accidentally-hacked-neighbors-router/tl-wr882n_web_homepage.png)
 
 说真的，这个运气也是没谁了吧……
 
 好吧，让我们到DHCP设置页面去看看该户人家有哪些设备联网？
 
-![“副路由器管理网页主页”](tl-wr882n_web_dhcp.png)
+![“副路由器管理网页主页”](accidentally-hacked-neighbors-router/tl-wr882n_web_dhcp.png)
 
 woc... 好运终于到头了。这TM就很尴尬了，只有我一个人在孤零零地蹭网……只好改天再找机会做点更有趣的事了……
 
