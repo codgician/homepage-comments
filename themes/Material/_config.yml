@@ -131,8 +131,8 @@ prettify:
 #         hanabi © egoist, Released under the MIT License
 #         https://github.com/egoist/hanabi
 #     
-#     line_number: [true/false] # Show line number for code block
-#     includeDefaultColors: [true/false] # Use default hanabi colors
+    line_number: false # Show line number for code block
+    includeDefaultColors: true # Use default hanabi colors
 #     customColors:     # This value accept a string or am array to setting for hanabi colors.
 #                       # If `includeDefaultColors` is true, this will append colors to the color pool
 #                       # If `includeDefaultColors` is false, this will instead default color pool
