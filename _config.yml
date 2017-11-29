@@ -74,7 +74,7 @@ feed:
   hub:
   content:
 markdown_it_plus:
-  highlight: true
+  highlight: false
   html: true
   xhtmlOut: true
   breaks: true
@@ -82,7 +82,7 @@ markdown_it_plus:
   linkify: true
   typographer:
   quotes: “”‘’
-  pre_class: highlight
+  pre_class:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
