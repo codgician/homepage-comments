@@ -139,7 +139,7 @@ t123yh 指出，没有 composer 包管理， 完全没有遵循 OOP、代码风�
 
 Zootopia 和 Moana 两部电影撑起了我高三的精神支柱。Judy Hopps 为梦想而不顾自身劣势与外部歧视而不懈奋斗的身影深深地打动了我。从她眼里，我看到了曾经的自己，但是曾经的自己却没有她的那份乐观与拼搏。这令我深深地为自己感到羞愧。或许这也是 Zootopia 如此受到欢迎的原因吧，everyone has a little Judy inside. 至今， Try Everything 仍在我的个人歌单的顶端。我总是忘不了那几句曾让我在深夜里哭得像个傻子的歌词：
 
-```
+```text
 I messed up tonight
 I lost another fight
 Lost to myself but I'll just start again
