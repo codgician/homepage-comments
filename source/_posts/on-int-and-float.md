@@ -5,6 +5,7 @@ tags:
 - Computational Thinking
 - ACM-ICPC
 category: Notes
+# mathjax: true
 ---
 
 # 前言

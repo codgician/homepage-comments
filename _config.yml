@@ -39,7 +39,7 @@ relative_link: false
 future: true
 highlight:
   enable: false
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: "    "
 
@@ -73,9 +73,17 @@ feed:
   limit: 20
   hub:
   content:
-pandoc:
-  mathEngine: katex
-  
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

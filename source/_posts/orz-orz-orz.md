@@ -4,7 +4,7 @@ date: 2017-10-08 15:53:10
 tags: 
 - ACM-ICPC
 category: Notes
-
+# mathjax: true
 ---
 
 # 前言

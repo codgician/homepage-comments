@@ -124,21 +124,21 @@ qrcode:
 #         theme value:
 #         theme-name  # /vendors/prettify/themes/[theme-name].css
 prettify:
-    enable: true
+    enable: false
     theme: "tomorrow-night-eighties" # default value: "vibrant-ink"   # theme-name without '.css'
 
 #     Hanabi
 #         hanabi © egoist, Released under the MIT License
 #         https://github.com/egoist/hanabi
 #     
-    line_number: false # Show line number for code block
-    includeDefaultColors: true # Use default hanabi colors
+#     line_number: [true/false] # Show line number for code block
+#     includeDefaultColors: [true/false] # Use default hanabi colors
 #     customColors:     # This value accept a string or am array to setting for hanabi colors.
 #                       # If `includeDefaultColors` is true, this will append colors to the color pool
 #                       # If `includeDefaultColors` is false, this will instead default color pool
 hanabi:
     enable: false
-    line_number: true
+    line_number: false
     includeDefaultColors: true
     customColors: 
     
@@ -299,7 +299,7 @@ vendors:
 #   The new src will have the base domain you configured below.
 #   For example
 #       materialcdn: https://cdn.jsdelivr.net/npm/hexo-material@1.4.0/source
-    materialcdn:
+    materialcdn: 
 
 # Third party library
 #   You can load these files from public cdn.

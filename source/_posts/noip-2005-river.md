@@ -5,6 +5,7 @@ tags:
 - ACM-ICPC
 - Dynamic Programming
 category: Notes
+# mathjax: true
 ---
 
 # 题面
@@ -100,7 +101,7 @@ $$
 
 
 
-我们不妨假设我们得到了一组整数解 $x_0$ 和 $y_0$。并且，我们假设 $ 0 \leq x_0 \leq p$。
+我们不妨假设我们得到了一组整数解 $x_0$ 和 $y_0$。并且，我们假设 $0 \leq x_0 \leq p$。
 
 当 $Q \geq p(p + 1)$ 时，将这组解带入原方程并变换，易得：
 $$

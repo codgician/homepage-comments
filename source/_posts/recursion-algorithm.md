@@ -6,6 +6,7 @@ tags:
 - ACM-ICPC
 - Recursion
 category: Notes
+# mathjax: true
 ---
 
 # 前言
