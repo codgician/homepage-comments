@@ -258,8 +258,19 @@ comment:
     gitment_owner: codgician  # git repo's owner
     gitment_client_id: f91be9f9d92518c62fbe # github app client id 
     gitment_client_secret: 169dea340cd2443f0286affa5f4d8f00c60375e6  # github app client secret 
-    valine_leancloud_appId: # leancloud application app id
-    valine_leancloud_appKey: # leancloud application app key
+    valine_leancloud_appId:  # leancloud application app id
+    valine_leancloud_appKey:  # leancloud application app key
+    valine_notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+    valine_verify: false # valine verify code (true/false)
+    valine_pageSize: 10 # comment list page size
+    valine_avatar: identicon # gravatar style https://valine.js.org/#/avatar
+    valine_lang: en-us # i18n
+    valine_placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+    valine_guest_info: nick,mail,link #valine comment header info
+    gitalk_repo: # git repo of the hexo
+    gitalk_owner: # git repo's owner
+    gitalk_client_id: # github app client id 
+    gitalk_client_secret: # github app client secret
     
 # Search Systems
 # Available value:
