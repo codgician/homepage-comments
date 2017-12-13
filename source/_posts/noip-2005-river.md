@@ -139,7 +139,7 @@ for (int i = 1, j = 0; i <= stoneNum; i++)
 
 
 
-[完整参考代码](https://github.com/codgician/ACM/blob/master/HDUOJ/4842/dp.cpp)
+[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/4842/dp.cpp)
 
 
 
