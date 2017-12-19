@@ -257,7 +257,7 @@ comment:
     gitment_repo: codgician.github.io   # git repo of the hexo
     gitment_owner: codgician  # git repo's owner
     gitment_client_id: f91be9f9d92518c62fbe # github app client id 
-    gitment_client_secret: 169dea340cd2443f0286affa5f4d8f00c60375e6  # github app client secret 
+    gitment_client_secret: 5f797c217c992e5a375c9e08c07af671b50b2321  # github app client secret 
     valine_leancloud_appId:  # leancloud application app id
     valine_leancloud_appKey:  # leancloud application app key
     valine_notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki

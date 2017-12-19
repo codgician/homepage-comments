@@ -74,7 +74,7 @@ feed:
   hub:
   content:
 markdown_it_plus:
-  highlight: false
+  highlight: true
   html: true
   xhtmlOut: true
   breaks: true
