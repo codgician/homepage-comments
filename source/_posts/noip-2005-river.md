@@ -4,7 +4,7 @@ date: 2017-11-07 12:22:00
 tags: 
 - ACM-ICPC
 - Dynamic Programming
-category: Notes
+category: Solutions
 # mathjax: true
 ---
 
