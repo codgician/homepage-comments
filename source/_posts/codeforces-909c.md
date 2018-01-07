@@ -1,5 +1,5 @@
 ---
-title: Codeforces 909C: Python Indentation
+title: Codeforces 909C - Python Indentation
 date: 2018-01-07 23:22:00
 tags: 
 - ACM-ICPC
@@ -104,4 +104,3 @@ for (int j = maxIndentation; j >= 0; j--)
 
 -   Nickolas - [Codeforces Round #455 (Div.2) Editorial](http://codeforces.com/blog/entry/56666)
 -   Leohh - [Codeforces 909C Python Indentation：树状数组优化dp](http://www.cnblogs.com/Leohh/p/8135525.html)
-
