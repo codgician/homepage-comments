@@ -73,8 +73,12 @@ feed:
   limit: 20
   hub:
   content:
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'default'
+  line_number: true    # default false
 markdown_it_plus:
-  highlight: true
+  highlight: false
   html: true
   xhtmlOut: true
   breaks: true
