@@ -4,8 +4,8 @@
 
 # Site
 title: Codgician
-subtitle: Code and mogic.
-description: Codgician's home and lab.
+subtitle: 
+description: Code and mogic.
 author: Jimmy Zhang
 language: en
 timezone: Asia/Shanghai
@@ -75,15 +75,15 @@ feed:
   content:
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
-  theme: 'default'
-  line_number: true    # default false
+  theme: 'vs'
+  line_number: false    # default false
 markdown_it_plus:
   highlight: false
   html: true
   xhtmlOut: true
-  breaks: true
+  breaks: false
   langPrefix:
-  linkify: true
+  linkify: false
   typographer:
   quotes: “”‘’
   pre_class:
