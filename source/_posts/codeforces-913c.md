@@ -1,6 +1,6 @@
 ---
 title: Codeforces 913C - Party Lemonade
-date: 2018-01-07 23:22:00
+date: 2018-01-08 11:58:00
 tags: 
 - ACM-ICPC
 - Dynamic Programming
