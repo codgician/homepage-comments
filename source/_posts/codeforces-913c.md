@@ -1,9 +1,10 @@
 ---
 title: Codeforces 913C - Party Lemonade
-date: 2018-01-08 11:58:00
+date: 2018-01-09 11:58:00
 tags: 
 - ACM-ICPC
-- Dynamic Programming
+- Greedy
+- Bitmasks
 - Codeforces
 category: Solutions
 # mathjax: true
@@ -35,5 +36,5 @@ category: Solutions
 
 [Submission #34039523](http://codeforces.com/contest/913/submission/34039523)
 
-鉴于 Codeforces 喜欢抽风，这里提供一个备份连接 [GitHub](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/913C/greedy.cpp)。
+[GitHub - Backup Link](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/913C/greedy.cpp)
 
