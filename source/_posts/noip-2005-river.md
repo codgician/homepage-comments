@@ -5,7 +5,7 @@ tags:
 - ACM-ICPC
 - Dynamic Programming
 category: Solutions
-# mathjax: true
+mathjax: true
 ---
 
 # 题面

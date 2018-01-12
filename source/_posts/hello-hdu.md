@@ -6,6 +6,7 @@ tags:
 - HDU
 category: Life
 thumbnail: /2017/09/15/hello-hdu/cover.jpg
+mathjax: false
 ---
 
 # 前言

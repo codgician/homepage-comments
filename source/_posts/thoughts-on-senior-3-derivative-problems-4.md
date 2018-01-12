@@ -5,7 +5,7 @@ tags:
  - Maths
  - Derivative
 category: Notes
-# mathjax: true
+mathjax: true
 ---
 
 # 简介

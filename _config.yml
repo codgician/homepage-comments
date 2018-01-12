@@ -73,20 +73,8 @@ feed:
   limit: 20
   hub:
   content:
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'vs'
-  line_number: false    # default false
-markdown_it_plus:
-  highlight: false
-  html: true
-  xhtmlOut: true
-  breaks: false
-  langPrefix:
-  linkify: false
-  typographer:
-  quotes: “”‘’
-  pre_class:
+pandoc:
+  mathEngine: mathjax
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

@@ -317,14 +317,14 @@ vendors:
 #   For example
 #       jquery: https://cdn.bootcss.com/jquery/2.2.1/jquery.js
     # jQuery 2.2.0
-    jquery:
+    jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
     # nprogress 0.2.0
-    nprogress:
+    nprogress: https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js
     # FontAwesome 4.5.0
-    fontawesome:
+    fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
     # MathJax 2.7.0-2.7.1
-    mathjax:
+    mathjax: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js
     # Prettify r298 (only prettify.js)
-    prettify:
+    prettify: https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js
     # Material Icons 3.0.1
-    material_icons:
+    material_icons: https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css

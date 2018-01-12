@@ -5,6 +5,7 @@ tags:
 - Pwn
 - Router
 thumbnail: /2017/04/09/accidentally-hacked-neighbors-router/cover.png
+mathjax: false
 ---
 
 # 前言

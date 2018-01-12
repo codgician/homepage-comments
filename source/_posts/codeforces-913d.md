@@ -7,7 +7,7 @@ tags:
 - Binary Search
 - Codeforces
 category: Solutions
-# mathjax: true
+mathjax: true
 ---
 
 # 题面

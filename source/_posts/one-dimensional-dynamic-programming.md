@@ -6,7 +6,7 @@ tags:
 - ACM-ICPC
 - Dynamic Programming
 category: Notes
-# mathjax: true
+mathjax: true
 ---
 
 # 前言

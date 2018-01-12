@@ -5,7 +5,7 @@ tags:
  - Maths
  - Derivative
 category: Notes
-# mathjax: true
+mathjax: true
 ---
 
 **挖坑待填……**
@@ -80,8 +80,6 @@ f(1) = a - 1 \ge 0
 
 **未完待续...**
 
-
-文章遵循[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)协议。
 
 # 参考文献
 1. 张杨文主编.高考数学你真的掌握了吗 函数 [M].北京：清华大学出版社, 2014 (2016.5 重印)
