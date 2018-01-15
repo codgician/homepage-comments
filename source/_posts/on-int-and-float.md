@@ -259,6 +259,6 @@ NaN 是什么？可以吃吗？
 - 维基百科 - [IEEE 754](https://zh.wikipedia.org/wiki/IEEE_754)
 - Wikipedia - [IEEE 754-1985](https://en.wikipedia.org/wiki/IEEE_754-1985)
 - adream307 - [float的内存结构](http://blog.csdn.net/adream307/article/details/7246993)
-- andyhzw - [**C/C++中浮点数的存储方式](http://blog.chinaunix.net/uid-28458801-id-3507427.html)
+- andyhzw - [C/C++中浮点数的存储方式](http://blog.chinaunix.net/uid-28458801-id-3507427.html)
 - wenrang - [浮点数与IEEE浮点标准](http://blog.csdn.net/wenrang/article/details/5758759)
 
