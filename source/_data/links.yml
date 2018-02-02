@@ -1,5 +1,5 @@
 Codgic:
-  link: https://codgi.cc
+  link: https://codgi.cc:2
   avatar: https://github.com/Codgic/codgic-web-legacy/raw/master/web/public/assets/res/android-chrome-192x192.png
   descr: "Coding Magic."
 fstqwq:
@@ -9,11 +9,11 @@ fstqwq:
 t123yh:
   link: https://blog.t123yh.xyz:2
   avatar: https://blog.t123yh.xyz:2/wp-content/uploads/2016/06/ic_launcher.png
-  descr: "技术无止境！"
-千里冰封:
+  descr: "Coding Fantasy."
+ice1000:
   link: http://ice1000.org
   avatar: https://avatars0.githubusercontent.com/u/16398479
-  descr: "知其变，守其恒，为天下式"
+  descr: "Intermediate Representation"
 HPLarea:
   link: https://www.hplv.pw
   avatar: http://ok39jbzvu.bkt.clouddn.com/wp-content/uploads/2017/01/cropped-cropped-favicon-192x192.png
@@ -22,3 +22,11 @@ I'm Nota!:
   link: https://nota.moe
   avatar: https://nota.moe/wp-content/uploads/fbrfg/android-chrome-192x192.png
   descr: "信手涂鸦"
+cxhscst:
+  link: http://www.cnblogs.com/cxhscst2/
+  avatar: http://userpic.codeforces.com/433340/title/c01692b1ed843f0e.jpg
+  descr: "I told the world one day I'll pay it back."
+Claris:
+  link: http://www.cnblogs.com/clrs97/
+  avatar: http://userpic.codeforces.com/204519/title/a1eb1ec50d8d769f.jpg
+  descr: "%%%"
