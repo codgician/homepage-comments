@@ -3,11 +3,11 @@
   "version": "1.1.0",
   "private": true,
   "hexo": {
-    "version": "3.4.4"
+    "version": "3.5.0"
   },
   "license": "LGPL-3.0",
   "dependencies": {
-    "hexo": "^3.4.4",
+    "hexo": "^3.5.0",
     "hexo-asset-image": "^0.0.3",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.5",
@@ -19,7 +19,7 @@
     "hexo-helper-post-top": "^0.0.1",
     "hexo-helper-qrcode": "^1.0.2",
     "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-pandoc": "^0.2.1",
+    "hexo-renderer-pandoc": "^0.2.2",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.1"
   }
