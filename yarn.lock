@@ -1092,7 +1092,7 @@ hexo-renderer-ejs@^0.3.1:
     ejs "^2.3.4"
     object-assign "^4.0.1"
 
-hexo-renderer-pandoc@^0.2.1:
+hexo-renderer-pandoc@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/hexo-renderer-pandoc/-/hexo-renderer-pandoc-0.2.2.tgz#30d82fb03d287b1a6cd2d0743f93683893677700"
 
@@ -1159,7 +1159,7 @@ hexo@^3.1.1:
     titlecase "^1.1.2"
     warehouse "^2.2.0"
 
-hexo@^3.4.4:
+hexo@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/hexo/-/hexo-3.5.0.tgz#85a272b36e5c7bfea3571eca064910ed1bc12c8f"
   dependencies:
