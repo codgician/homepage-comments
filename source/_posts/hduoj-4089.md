@@ -142,6 +142,5 @@ P.S. 像我这种智商欠费的🐷在写概率 DP 时还是不要为了省一�
 # %%%
 
 - morgan_xww - [Hdu 4089 Activation (概率dp) - 2011 ACM-ICPC Beijing Regional Contest Problem I](http://blog.csdn.net/morgan_xww/article/details/6920236)
-
 - 将狼踩尽 - [HDU 4089 Activation（概率DP）](http://www.cnblogs.com/jianglangcaijin/archive/2013/05/04/3060411.html)
 
