@@ -637,10 +637,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-ejs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ejs/-/ejs-1.0.0.tgz#c9c60a48a46ee452fb32a71c317b95e5aa1fcb3d"
-
 ejs@^2.3.4:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.7.tgz#cc872c168880ae3c7189762fd5ffc00896c9518a"
@@ -1041,10 +1037,10 @@ hexo-generator-index@^0.2.1:
     object-assign "^4.0.1"
 
 hexo-generator-search@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/hexo-generator-search/-/hexo-generator-search-2.1.1.tgz#bce5651b9c0dc1d3b0dd6d40e025fba412e788d9"
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/hexo-generator-search/-/hexo-generator-search-2.2.0.tgz#1b6f44caafa58482cd9f11e76508d1649b1d40ff"
   dependencies:
-    ejs "^1.0.0"
+    nunjucks "^3.0.1"
     utils-merge "^1.0.0"
 
 hexo-generator-tag@^0.2.0:
