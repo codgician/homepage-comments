@@ -254,10 +254,10 @@ comment:
     changyan_conf:
     changyan_thread_key_type: path
     livere_data_uid:
-    gitment_repo: codgician.github.io   # git repo of the hexo
-    gitment_owner: codgician  # git repo's owner
-    gitment_client_id: f91be9f9d92518c62fbe # github app client id 
-    gitment_client_secret: 5f797c217c992e5a375c9e08c07af671b50b2321  # github app client secret 
+    gitment_repo: # git repo of the hexo
+    gitment_owner: # git repo's owner
+    gitment_client_id: # github app client id 
+    gitment_client_secret: # github app client secret 
     valine_leancloud_appId:  # leancloud application app id
     valine_leancloud_appKey:  # leancloud application app key
     valine_notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
@@ -267,10 +267,10 @@ comment:
     valine_lang: en-us # i18n
     valine_placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
     valine_guest_info: nick,mail,link #valine comment header info
-    gitalk_repo: # git repo of the hexo
-    gitalk_owner: # git repo's owner
-    gitalk_client_id: # github app client id 
-    gitalk_client_secret: # github app client secret
+    gitalk_repo: codgician.github.io # git repo of the hexo
+    gitalk_owner: codgician # git repo's owner
+    gitalk_client_id: f91be9f9d92518c62fbe # github app client id 
+    gitalk_client_secret: 5f797c217c992e5a375c9e08c07af671b50b2321 # github app client secret
     
 # Search Systems
 # Available value:
