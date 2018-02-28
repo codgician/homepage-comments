@@ -75,6 +75,12 @@ feed:
   content:
 pandoc:
   mathEngine: mathjax
+uglify:
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - "*.min.js"
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
