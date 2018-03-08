@@ -7,7 +7,7 @@ tags:
 - Probability
 - HDUOJ
 category: Solutions
-mathjax: true
+#mathjax: true
 ---
 
 # 题面
@@ -33,27 +33,23 @@ mathjax: true
 
 如何进行状态转移？我们不难推出：
 $$
-\begin{equation}
 dp[i][j] = 
 \begin{cases}
 P_\text{actFail}dp[i][1] + P_\text{connLost}dp[i][i] + P_\text{down} & j =1 \\
 P_\text{actFail}dp[i][j] + P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] + P_\text{down} & 2 \le j \le k \\
 P_\text{actFail}dp[i][j] + P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] & j > k
 \end{cases}
-\end{equation}
 $$
 
 
 接下来我们对其进行化简：
 $$
-\begin{equation}
 dp[i][j] = 
 \begin{cases}
 \frac{P_\text{connLost}dp[i][i] + P_\text{down}}{1 - P_\text{actFail}} & j =1 \\
 \frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] + P_\text{down}}{1 - P_\text{actFail}} & 2 \le j \le k \\
 \frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1]}{1 - P_\text{actFail}} & j > k
-\end{cases}
-\end{equation}
+\end{cases}
 $$
 
 
@@ -69,14 +65,12 @@ $$
 
 因此，转移方程被进一步化简为：
 $$
-\begin{equation}
 dp[i][j] = 
 \begin{cases}
 P_\text{connLost}'dp[i][i] + P_\text{down}' & j =1 \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
-\end{cases}
-\end{equation}
+\end{cases}
 $$
 
 
@@ -114,14 +108,12 @@ $$
 
 接下来我们剩下的唯一问题就是 $c[j]$ 具体是什么了。我们也不难看出：
 $$
-\begin{equation}
 c[j] = 
 \begin{cases}
 P_\text{down}' & j = 1 \\
 P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
 P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
-\end{cases}
-\end{equation}
+\end{cases}
 $$
 
 

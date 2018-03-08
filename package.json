@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "private": true,
   "hexo": {
-    "version": "3.5.0"
+    "version": "3.6.0"
   },
   "license": "LGPL-3.0",
   "dependencies": {
@@ -18,8 +18,9 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-helper-post-top": "^0.0.1",
     "hexo-helper-qrcode": "^1.0.2",
+    "hexo-katexify": "https://github.com/codgician/hexo-katexify.git",
     "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-pandoc": "^0.2.2",
+    "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.1",
     "hexo-uglify": "^0.0.5"

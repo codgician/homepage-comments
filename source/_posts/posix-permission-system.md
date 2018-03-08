@@ -6,7 +6,7 @@ tags:
 - Unix
 category: Notes
 thumbnail: /2017/09/04/posix-permission-system/cover.jpg
-mathjax: false
+#mathjax: false
 ---
 
 # 前言

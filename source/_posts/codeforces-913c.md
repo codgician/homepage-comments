@@ -7,7 +7,7 @@ tags:
 - Bitmasks
 - Codeforces
 category: Solutions
-mathjax: true
+#mathjax: true
 ---
 
 # 题面

@@ -8,7 +8,7 @@ tags:
 - HDU
 category: Notes
 thumbnail: /2017/11/29/hdu-freshman-cup-2017/cover.jpg
-mathjax: true
+#mathjax: true
 ---
 # 前言
 

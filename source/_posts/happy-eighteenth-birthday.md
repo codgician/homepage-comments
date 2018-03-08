@@ -5,7 +5,7 @@ tags:
   - Life
 category: Life
 thumbnail: /2017/05/26/happy-eighteenth-birthday/cover.jpg
-mathjax: false
+#mathjax: false
 ---
 
 It's a special day to celebrate, yet with little time left towards College Entrance Examination there is not much to celebrate.
