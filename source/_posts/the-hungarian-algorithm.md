@@ -56,7 +56,6 @@ category: Solutions
 ![Fig.5 && 6](the-hungarian-algorithm/fig-5-to-6.png)
 
 
-
 # 无权二分图的最大匹配
 
 ## 思想
@@ -399,4 +398,5 @@ int hungarian()
 - liam0205 - [二分图最大匹配问题与匈牙利算法的核心思想](https://liam0205.me/2016/04/03/Hungarian-algorithm-in-the-maximum-matching-problem-of-bigraph/)
 - Dark_Scope - [趣写算法系列之--匈牙利算法](http://blog.csdn.net/dark_scope/article/details/8880547)
 - SixDayCoder - [二分图的最佳完美匹配——KM算法](http://blog.csdn.net/sixdaycoder/article/details/47720471)
+- 伊甸一点 - [我的KM算法详解](https://www.cnblogs.com/zpfbuaa/p/7218607.html)
 - 段文弱 - [KM算法详解+模板](http://www.cnblogs.com/wenruo/p/5264235.html)
