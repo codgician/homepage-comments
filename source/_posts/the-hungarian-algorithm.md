@@ -6,7 +6,7 @@ tags:
 - Graph Theory
 - Bipartite Matching
 - The Hungarian Algorithm
-category: Solutions
+category: Notes
 #mathjax: true
 ---
 
