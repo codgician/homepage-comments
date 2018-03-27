@@ -1,10 +1,10 @@
 ---
-title: HRBUST 2372 - 小L的问题
+title: HRBUSTOJ 2372 - 小L的问题
 date: 2018-03-27 11:46:01
 tags: 
 - ACM-ICPC
 - Dynamic Programming
-- HRBUST
+- HRBUSTOJ
 category: Solutions
 #mathjax: true
 ---
@@ -25,7 +25,7 @@ category: Solutions
 
 我们来看看 $i = 4$ 时存在的下面这种情况：
 
-![一个神奇的情况](hrbust-2372/one-particular-case.png)
+![一个神奇的情况](hrbustoj-2372/one-particular-case.png)
 
 显然，这个情况是无法从之前的任何一个合法状态转移过来的。那么显然，这意味着我们光记录合法状态是不够的。
 
@@ -33,13 +33,13 @@ category: Solutions
 
 我们不难发现，对于每一列事实上都只有 $4$ 种状态：
 
-![每列的四种状态](hrbust-2372/four-states.png)
+![每列的四种状态](hrbustoj-2372/four-states.png)
 
 那么我们不妨用 $dp[i][s]$ 来表示第 $i$ 列之前均满，第 $i$ 列状态为 $s$，且第 $i$ 列之后均空时的方案个数。
 
 我们可以以此来思考一下每一个 $dp[i][s]$ 可以如何从 $dp[i - 1][t]$ 转移而来：
 
-![状态转移](hrbust-2372/transformation.png)
+![状态转移](hrbustoj-2372/transformation.png)
 
 
 
