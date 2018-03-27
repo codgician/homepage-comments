@@ -1,5 +1,5 @@
 ---
-title: HRBUST - 2372: 小L的问题
+title: HRBUST 2372 - 小L的问题
 date: 2018-03-27 11:46:01
 tags: 
 - ACM-ICPC
@@ -11,7 +11,7 @@ category: Solutions
 
 # 题面
 
-对于一个宽度为 $2$ 长度为 $n \ (n \le 1e18)$ 的棋盘，用 $1 \times 2$ 大小的矩形骨牌和 $3$ 格大小的 $L$ 型骨牌去填充棋牌并使得棋盘被完全覆盖。问方案数（对 1000000007 取模）。
+对于一个宽度为 $2$ 长度为 $n \ (n \le 1e18)$ 的棋盘，用 $1 \times 2$ 大小的矩形骨牌和 $3$ 格大小的 $L$ 型骨牌去填充棋牌并使得棋盘被完全覆盖。问方案的个数（对 1000000007 取模）？
 
 [题目链接](http://acm.hrbust.edu.cn/index.php?m=ProblemSet&a=showProblem&problem_id=2372)
 
