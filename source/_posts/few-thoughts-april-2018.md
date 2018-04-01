@@ -4,7 +4,7 @@ date: 2018-04-01 10:15:10
 tags: 
 - ACM-ICPC
 category: Life
-thumbnail: cover.jpg
+thumbnail: /2018/04/01/few-thoughts-april-2018/cover.jpg
 #mathjax: false
 ---
 
