@@ -1,5 +1,5 @@
 ---
-title: HDUOJ - 4366: Successor
+title: HDUOJ 4366 - Successor
 date: 2018-04-10 12:16:01
 tags: 
 - ACM-ICPC
