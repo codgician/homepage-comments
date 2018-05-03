@@ -49,7 +49,8 @@ dp[i][j] =
 \frac{P_\text{connLost}dp[i][i] + P_\text{down}}{1 - P_\text{actFail}} & j =1 \\
 \frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] + P_\text{down}}{1 - P_\text{actFail}} & 2 \le j \le k \\
 \frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1]}{1 - P_\text{actFail}} & j > k
-\end{cases}
+\end{cases}
+
 $$
 
 
@@ -70,7 +71,7 @@ dp[i][j] =
 P_\text{connLost}'dp[i][i] + P_\text{down}' & j =1 \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
-\end{cases}
+\end{cases}
 $$
 
 
@@ -113,7 +114,8 @@ c[j] =
 P_\text{down}' & j = 1 \\
 P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
 P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
-\end{cases}
+\end{cases}
+
 $$
 
 
