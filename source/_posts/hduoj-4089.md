@@ -12,8 +12,6 @@ category: Solutions
 
 # 题面
 
-[题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=4089)
-
 有 $N$ 个玩家要激活某种游戏，然而游戏的激活服务器对于这 $N$ 个玩家的激活请求只能一个一个处理（初始时主角 Tomato 排在第 $M$）。
 
 对于队列中的第一个人，激活时可能遇到一下四种情况：
@@ -25,6 +23,7 @@ category: Solutions
 
 求服务器服务中断并且此时 Tomato 排名 $\leq K$ 的概率（后文中记该事件为事件 $A$）。
 
+[题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=4089)
 
 
 # 概率DP...
@@ -72,6 +71,7 @@ P_\text{connLost}'dp[i][i] + P_\text{down}' & j =1 \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
 \end{cases}
+
 $$
 
 
@@ -137,4 +137,3 @@ P.S. 像我这种智商欠费的🐷在写概率 DP 时还是不要为了省一�
 
 - morgan_xww - [Hdu 4089 Activation (概率dp) - 2011 ACM-ICPC Beijing Regional Contest Problem I](http://blog.csdn.net/morgan_xww/article/details/6920236)
 - 将狼踩尽 - [HDU 4089 Activation（概率DP）](http://www.cnblogs.com/jianglangcaijin/archive/2013/05/04/3060411.html)
-

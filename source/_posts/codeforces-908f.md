@@ -23,7 +23,7 @@ Roy 和 Biv 想用一些边把这些点连起来。任意两点间都可以连�
 
 试求最小边长度之和。
 
-
+[题目链接](http://codeforces.com/contest/908/problem/F)
 
 # 贪心！
 

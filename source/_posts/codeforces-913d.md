@@ -10,13 +10,9 @@ category: Solutions
 #mathjax: true
 ---
 
+什么也别说先让我哭一会儿，嗷呜呜呜呜呜呜~ 😭
+
 # 题面
-
-什么也别说先让我哭一会儿，嗷呜呜呜呜呜呜~ :sob:
-
-[题目链接](http://codeforces.com/contest/913/problem/D)
-
-大致题意：
 
 某场考试时长为 $T \ (1 \le T \le 10^9)$ 毫秒，并且由 $n \ (1 \le n \le 2 \cdot 10^5)$ 道题目组成（每题 $1$ 分）。对于第 $i$ 道题目，你可以选择花费 $t_i \ (1 \le t_i \le 10^4)$ 毫秒来解出它或是直接跳过它。
 
@@ -24,7 +20,7 @@ category: Solutions
 
 你显然希望获得最大分数，那就看你选择做哪几道题咯（如果有多种答案随便输出一种就好）~
 
-
+[题目链接](http://codeforces.com/contest/913/problem/D)
 
 # 贪心！
 
@@ -50,15 +46,11 @@ category: Solutions
 
 ## 二分搜索
 
+由朴素很容易就能想到二分搜索。我们只需要对 $k$ 在 $0 \sim n$ 间进行二分搜索就好了，这样的复杂度是 $\mathcal{O}(nlogn)$。
+
 [Submission #34048622](http://codeforces.com/contest/913/submission/34048622)
 
 [GitHub - Backup Link](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/913D/greedy%2Bbinary_search.cpp)
-
-由朴素很容易就能想到二分搜索。我们只需要对 $k$ 在 $0 \sim n$ 间进行二分搜索就好了，这样的复杂度是 $\mathcal{O}(nlogn)$。
-
-## 其它
-
-挖坑待填……
 
 
 
