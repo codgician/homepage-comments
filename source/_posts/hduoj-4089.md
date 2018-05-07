@@ -34,9 +34,9 @@ category: Solutions
 $$
 dp[i][j] = 
 \begin{cases}
-P_\text{actFail}dp[i][1] + P_\text{connLost}dp[i][i] + P_\text{down} & j =1 \\
-P_\text{actFail}dp[i][j] + P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] + P_\text{down} & 2 \le j \le k \\
-P_\text{actFail}dp[i][j] + P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] & j > k
+P_\text{actFail} dp[i][1] + P_\text{connLost} dp[i][i] + P_\text{down} & j =1 \\
+P_\text{actFail} dp[i][j] + P_\text{connLost} dp[i][j - 1] + P_\text{actSuccess} dp[i - 1][j - 1] + P_\text{down} & 2 \le j \le k \\
+P_\text{actFail} dp[i][j] + P_\text{connLost} dp[i][j - 1] + P_\text{actSuccess} dp[i - 1][j - 1] & j > k \\
 \end{cases}
 $$
 
@@ -47,9 +47,8 @@ dp[i][j] =
 \begin{cases}
 \frac{P_\text{connLost}dp[i][i] + P_\text{down}}{1 - P_\text{actFail}} & j =1 \\
 \frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1] + P_\text{down}}{1 - P_\text{actFail}} & 2 \le j \le k \\
-\frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1]}{1 - P_\text{actFail}} & j > k
+\frac{P_\text{connLost}dp[i][j - 1] + P_\text{actSuccess}dp[i - 1][j - 1]}{1 - P_\text{actFail}} & j > k \\
 \end{cases}
-
 $$
 
 
@@ -58,7 +57,7 @@ $$
 \begin{aligned}
 P_\text{connLost}' & = \frac{P_\text{connLost}}{1 - P_\text{actFail}} \\
 P_\text{actSuccess}' & = \frac{P_\text{actSuccess}}{1 - P_\text{actFail}} \\
-P_\text{down}' & = \frac{P_\text{down}}{1 - P_\text{actFail}}
+P_\text{down}' & = \frac{P_\text{down}}{1 - P_\text{actFail}} \\
 \end{aligned}
 $$
 
@@ -69,9 +68,8 @@ dp[i][j] =
 \begin{cases}
 P_\text{connLost}'dp[i][i] + P_\text{down}' & j =1 \\
 P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
-P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
+P_\text{connLost}'dp[i][j - 1] + P_\text{actSuccess}'dp[i - 1][j - 1] & j > k \\
 \end{cases}
-
 $$
 
 
@@ -95,7 +93,7 @@ dp[i][i] & = P_\text{connLost}'dp[i][i - 1] + c[i] \\
 & = P_\text{connLost}'(P_\text{connLost}'dp[i][i - 2] + c[i - 1]) + c[i] \\
 & = \ ... \\
 & = {P_\text{connLost}'}^{i - 1}dp[i][1] + {P_\text{connLost}'}^{i - 2}c[2] + ... + P_\text{connLost}c[i - 1] + c[i] \\
-& = {P_\text{connLost}'}^{i}dp[i][i] + {P_\text{connLost}'}^{i - 1}c[1] + ... + P_\text{connLost}c[i - 1] + c[i]
+& = {P_\text{connLost}'}^{i}dp[i][i] + {P_\text{connLost}'}^{i - 1}c[1] + ... + P_\text{connLost}c[i - 1] + c[i] \\
 \end{aligned}
 $$
 
@@ -115,7 +113,6 @@ P_\text{down}' & j = 1 \\
 P_\text{actSuccess}'dp[i - 1][j - 1] + P_\text{down}' & 2 \le j \le k \\
 P_\text{actSuccess}'dp[i - 1][j - 1] & j > k
 \end{cases}
-
 $$
 
 
