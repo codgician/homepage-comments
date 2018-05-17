@@ -6,7 +6,7 @@ tags:
 - ACM-ICPC
 - Contest
 - HDU
-category: Notes
+category: Solutions
 thumbnail: /2017/11/29/hdu-freshman-cup-2017/cover.jpg
 #mathjax: true
 ---
