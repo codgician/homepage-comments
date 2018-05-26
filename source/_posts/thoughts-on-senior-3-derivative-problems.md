@@ -2,7 +2,7 @@
 title: 高考导数 - “两点”问题
 date: 2017-04-02 14:31:20
 tags: 
- - Maths
+ - Mathematics
  - Derivative
 category: Notes
 #mathjax: true

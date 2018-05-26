@@ -2,7 +2,7 @@
 title: 高考导数 - 洛必达法则
 date: 2017-04-08 20:26:59
 tags: 
- - Maths
+ - Mathematics
  - Derivative
 category: Notes
 #mathjax: true

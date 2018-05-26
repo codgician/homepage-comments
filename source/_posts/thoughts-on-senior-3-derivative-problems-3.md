@@ -2,7 +2,7 @@
 title: 高考导数 - 对端点效应的优化
 date: 2017-04-08 20:25:20
 tags: 
- - Maths
+ - Mathematics
  - Derivative
 category: Notes
 #mathjax: true

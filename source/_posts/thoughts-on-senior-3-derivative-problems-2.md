@@ -2,7 +2,7 @@
 title: 高考导数 - 优化函数以方便求解
 date: 2017-04-08 20:21:50
 tags: 
- - Maths
+ - Mathematics
  - Derivative
 category: Notes
 #mathjax: true
