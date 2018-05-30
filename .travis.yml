@@ -1,8 +1,10 @@
 language: node_js
 node_js:
   - "lts/*"
-
 dist: trusty
+addons:
+    apt:
+      update: true
 
 install:
   # Install pandoc.
