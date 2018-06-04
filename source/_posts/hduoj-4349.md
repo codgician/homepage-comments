@@ -25,7 +25,7 @@ category: Solutions
 $$
 \begin{aligned}
 \binom{n}{m} & \equiv \binom{n \bmod 2}{m \bmod 2}\cdot \binom{n \left. \right/ 2}{m \left. \right/ 2} \pmod 2 \\
-& \equiv \binom{n \bmod 2}{m \bmod 2} \cdot \binom{n \left. \right/ 2 \bmod 2}{m \left. \right/ 2 \bmod 2} \cdot \binom{n \left. \right/ 4}{m \left. \right/ 4} \pmod 2\\
+& \equiv \binom{n \bmod 2}{m \bmod 2} \cdot \binom{n \left. \right/ 2 \bmod 2}{m \left. \right/ 2 \bmod 2} \cdot \binom{n \left. \right/ 4}{m \left. \right/ 4} \pmod 2 \\
 \dots
 \end{aligned}
 $$
