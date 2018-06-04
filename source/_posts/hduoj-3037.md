@@ -34,35 +34,35 @@ x_1 + x_2 + \dots + x_n & = m \\
 $$
 于是我们就可以愉快地使用隔板法啦，其解的种数为：
 $$
-C_{m + n - 1}^{n - 1}
+\binom{m + n - 1}{n - 1}
 $$
 也就是：
 $$
-C_{m + n - 1}^{m}
+\binom{m + n - 1}{m}
 $$
 
 这样一来，我们所要求的答案即：
 $$
-C_{n - 1}^{0} + C_{1 + n - 1}^{1} + C_{2 + n - 1}^{2} + \dots +C_{m + n - 1}^{m}
+\binom{n - 1}{0} + \binom{1 + n - 1}{1} + \binom{2 + n - 1}{2} + \dots +\binom{m + n - 1}{m}
 $$
 我们联想到组合数的递推式：
 $$
-C_{n}^{m} = C_{n - 1}^{m} + C_{n - 1}^{m - 1}
+\binom{n}{m} = \binom{n - 1}{m} + \binom{n - 1}{m - 1}
 $$
 
 于是答案可化简为：
 $$
 \begin{aligned}
-& C_{n - 1}^{0} + C_{1 + n - 1}^{1} + C_{2 + n - 1}^{2} + \dots + C_{m + n - 1}^{m}  \\
-& = C_{n}^{0} + C_{n}^{1} + C_{n + 1}^{2} + \dots + C_{m + n - 1}^{m} \\
-& = C_{n + 1}^{1} + C_{n + 1}^{2} + \dots + C_{m + n - 1}^{m} \\
+& \binom{n - 1}{0} + \binom{1 + n - 1}{1} + \binom{2 + n - 1}{2} + \dots + \binom{m + n - 1}{m}  \\
+& = \binom{n}{0} + \binom{n}{1} + \binom{n + 1}{2} + \dots + \binom{m + n - 1}{m} \\
+& = \binom{n + 1}{1} + \binom{n + 1}{2} + \dots + \binom{m + n - 1}{m} \\
 & = \dots \\
-& = C_{m + n} ^ {m} 
+& = \binom{m + n} {m} 
 \end{aligned}
 $$
 具体求解的时候考虑使用 **Lucas 定理**， 即当 $p$ 是质数时，对于任意整数 $1 \le m \le n$ 时有：
 $$
-C^{m}_{n} \equiv C^{m \bmod p}_{n \bmod p} \cdot C^{m / p}_{n / p} \pmod{p}
+\binom{n}{m} \equiv \binom{n \bmod p}{m \bmod p} \cdot \binom{n \left.\right/ p}{m \left.\right/ p} \pmod{p}
 $$
 
 同时在计算大组合数取模的时候，可先计算分子 $n!$ 再计算分母 $m!(n - m)!$ 每项的逆元，全部乘起来即可。复杂度 $\mathcal{O}(n\log{n})$。
