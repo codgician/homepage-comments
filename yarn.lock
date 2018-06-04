@@ -1103,11 +1103,11 @@ hexo-i18n@^0.2.1:
 
 "hexo-katexify@https://github.com/codgician/hexo-katexify.git":
   version "1.0.2"
-  resolved "https://github.com/codgician/hexo-katexify.git#f2f477582906149d54d645a21813e741cbda45bb"
+  resolved "https://github.com/codgician/hexo-katexify.git#6b1a59df6d02fcec7c6484317bd3713500d4d6fa"
   dependencies:
     he "^1.1.1"
-    katex "0.9.0"
-    resolve "^1.5.0"
+    katex "^0.9.0"
+    resolve "^1.7.1"
 
 hexo-log@^0.2.0:
   version "0.2.0"
@@ -1503,7 +1503,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-katex@0.9.0:
+katex@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/katex/-/katex-0.9.0.tgz#26a7d082c21d53725422d2d71da9b2d8455fbd4a"
   dependencies:
@@ -2195,6 +2195,12 @@ request@^2.55.0:
 resolve@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
+  dependencies:
+    path-parse "^1.0.5"
+
+resolve@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
     path-parse "^1.0.5"
 
