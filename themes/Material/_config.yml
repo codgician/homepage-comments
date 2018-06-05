@@ -33,7 +33,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Come what may, I know the way."
+    slogan: "Thinking makes perfect."
     theme_color: "#1976D2"
     theme_sub_color: "#2196F3"
     hyperlink_color: "#2196F3"
@@ -54,7 +54,7 @@ reading:
 # Thumbnail Settings
 thumbnail:
     purecolor:
-    random_amount: 19
+    random_amount: 20
 
 # Background Settings
 # bing available parameter:
@@ -227,9 +227,8 @@ sidebar:
             divider: true
     article_num:
         use: true
-        divider: false
-    footer:
         divider: true
+    footer:
         theme: true
         support: false
         feedback: false
@@ -265,7 +264,7 @@ comment:
     valine_pageSize: 10 # comment list page size
     valine_avatar: identicon # gravatar style https://valine.js.org/#/avatar
     valine_lang: en-us # i18n
-    valine_placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+    valine_placeholder: "What are your thoughts?" # valine comment input placeholder(like: Please leave your footprints )
     valine_guest_info: nick,mail,link #valine comment header info
     gitalk_repo: codgician.github.io # git repo of the hexo
     gitalk_owner: codgician # git repo's owner
