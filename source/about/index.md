@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2017-06-24 09:47:50
-thumbnail: /img/daily_pic.png
+thumbnail: /img/daily_pic.jpg
 ---
 Hi there!
 
