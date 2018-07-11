@@ -1,6 +1,6 @@
 ---
 title: "Codeforces 1000F - One Occurrence"
-date: 2018-07-10 18:17:00
+date: 2018-07-11 20:17:00
 tags: 
 - ACM-ICPC
 - Data Structure
