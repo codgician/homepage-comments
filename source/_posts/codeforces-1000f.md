@@ -1,6 +1,6 @@
 ---
 title: "Codeforces 1000F - One Occurrence"
-date: 2018-07-11 20:17:00
+date: 2018-07-11 20:05:00
 tags: 
 - ACM-ICPC
 - Data Structure
@@ -43,11 +43,11 @@ $1 \le n, a_i, q \le 5 \cdot 10^5$
 
 # 在线做法
 
-可持久化线段树。
+思路与离线版类似，但是实现时使用可持久化线段树就可以在线了。
 
-挖坑待填……
+简而言之，查询区间 $[l, r]$ 时就等效于查询第 $r$ 个历史版本，而第 $i$ 个历史版本就代表原数组的 $[1, i]$ 部分对应的线段树。
 
-
+[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/1000F/persistent_segment_tree.cpp)
 
 # %%%
 
