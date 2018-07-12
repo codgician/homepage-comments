@@ -5,6 +5,7 @@ tags:
 - ACM-ICPC
 - Data Structure
 - Segment Tree
+- Persistent Segment Tree
 - Codeforces
 category: Solutions
 #mathjax: true
