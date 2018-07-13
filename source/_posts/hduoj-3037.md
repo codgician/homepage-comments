@@ -67,7 +67,7 @@ $$
 
 同时在计算大组合数取模的时候，可先计算分子 $n!$ 再计算分母 $m!(n - m)!$ 每项的逆元，全部乘起来即可。复杂度 $\mathcal{O}(n\log{n})$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/3037/lucas.cpp)
+[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/3037/combinatorics_lucas.cpp)
 
 
 

@@ -37,4 +37,4 @@ $$
 
 如果 $N_i = 0$，那么当且仅当 $M_i = 0$ 时才会有 $\binom{N_i}{M_i} \equiv 1 \pmod 2$，而如果 $N_i = 1$，那么不论 $M_i$ 取何值都有 $\binom{N_i}{M_i} \equiv 1 \pmod 2$。因此，奇数的个数实际上就是所有 $N_i = 1$ 位上 $M_i$ 的组合种数。记 $n$ 的二进制值为 $1$ 的位数为 $h$，那么由乘法原理答案显然就为 $2^{h}$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/4349/lucas.cpp)
+[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/4349/combinatorics_lucas.cpp)

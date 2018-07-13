@@ -52,7 +52,7 @@ dp[i][j] = dp[i - 1][j - 1] \cdot (2^i - 1) + dp[i - k][j - 1] \cdot \binom{i}{k
 $$
 
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/5155/dp_combination.cpp)
+[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/5155/dp_combinatorics.cpp)
 
 # 容斥原理
 
