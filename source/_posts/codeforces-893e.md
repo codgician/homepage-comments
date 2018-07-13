@@ -19,6 +19,7 @@ category: Solutions
 
 $1 \le x,y \le 10^6$
 
+[题目链接](http://codeforces.com/contest/893/problem/E)
 
 
 # 组合数学
