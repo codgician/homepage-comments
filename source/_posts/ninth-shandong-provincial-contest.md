@@ -4,7 +4,16 @@ date: 2018-07-19 15:21:00
 tags:
 - ACM-ICPC
 - Contest
-- Solution
+- Greedy
+- Bipartite Matching
+- Binary Search
+- Data Structure
+- Binary Indexed Tree
+- Mathematics
+- Inclusion-Exclusion Principle
+- Dynamic Programming
+- DFS
+- BFS
 category: Solutions
 thumbnail: /2018/07/19/ninth-shandong-provincial-contest/cover.jpg
 #mathjax: true

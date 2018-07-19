@@ -4,7 +4,6 @@ date: 2017-11-29 15:11:00
 tags:
 - ACM-ICPC
 - Contest
-- Solution
 - HDU
 category: Solutions
 thumbnail: /2017/11/29/hdu-freshman-cup-2017/cover.jpg
