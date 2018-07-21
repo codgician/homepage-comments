@@ -1,6 +1,6 @@
 ---
 title: HDUOJ 4005 - The war
-date: 2018-05-31 17:05:01
+date: 2018-07-21 16:15:01
 tags: 
 - ACM-ICPC
 - Graph Theory
