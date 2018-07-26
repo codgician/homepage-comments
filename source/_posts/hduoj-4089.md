@@ -4,6 +4,7 @@ date: 2018-02-17 16:50:00
 tags: 
 - ACM-ICPC
 - Dynamic Programming
+- Mathematics
 - Probability
 - HDUOJ
 category: Solutions
