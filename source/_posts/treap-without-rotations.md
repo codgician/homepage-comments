@@ -79,24 +79,24 @@ int merge(int fst, int snd)
 参考实现如下：
 
 ```cpp
-void split(int cntPt, int val, int & leftSon, int & rightSon)
+void split(int cntPt, int val, int & fst, int & snd)
 {
     if (!cntPt)
     {
-        leftSon = 0;
-        rightSon = 0;
+        fst = 0;
+        snd = 0;
         return;
     }
 
     if (treap[cntPt].value <= val)
     {
-        leftSon = cntPt;
-        split(treap[cntPt].rightSon, val, treap[cntPt].rightSon, rightSon);
+        fst = cntPt;
+        split(treap[cntPt].rightSon, val, treap[cntPt].rightSon, snd);
     }
     else
     {
-        rightSon = cntPt;
-        split(treap[cntPt].leftSon, val, leftSon, treap[cntPt].leftSon);
+        snd = cntPt;
+        split(treap[cntPt].leftSon, val, fst, treap[cntPt].leftSon);
     }
     update(cntPt);
 }
