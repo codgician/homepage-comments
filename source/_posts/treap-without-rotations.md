@@ -48,12 +48,12 @@ int merge(int fst, int snd)
     if (!fst)
         return snd;
     if (!snd)
-        return fst;	// 如果其中一棵为空树，返回另一棵即可
+        return fst; // 如果其中一棵为空树，返回另一棵即可
 
     if (treap[fst].key < treap[snd].key)
     {
         treap[fst].rightSon = merge(treap[fst].rightSon, snd);
-        update(fst);	// 更新子树大小
+        update(fst); // 更新子树大小
         return fst;
     }
     else
@@ -149,7 +149,7 @@ int findValByRank(int cntPt, int rnk)
         else
         {
             rnk -= treap[treap[cntPt].leftSon].size + 1;
-            cntPt = treap[cntPt].rightSon;	// 若当前子树大小 + 1 小于 rnk，则在右子树中查第 rnk - (当前子树大小 + 1) 大
+            cntPt = treap[cntPt].rightSon; // 若当前子树大小 + 1 小于 rnk，则在右子树中查第 rnk - (当前子树大小 + 1) 大
         }
     }
 }
@@ -167,7 +167,7 @@ int findValByRank(int cntPt, int rnk)
 
 # 参考文献
 
-- chen_tr - [ 偷懒专用平衡树——Treap](https://blog.csdn.net/chen_tr/article/details/50924073)
+- chen_tr - [偷懒专用平衡树——Treap](https://blog.csdn.net/chen_tr/article/details/50924073)
 - LadyLex - [无旋treap：从好奇到入门](https://www.cnblogs.com/LadyLex/p/7182491.html)
 - yyf0309 - [无旋转Treap简介](https://www.cnblogs.com/yyf0309/p/Unrotated_Treap.html)
 

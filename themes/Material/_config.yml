@@ -148,7 +148,17 @@ hanabi:
 #       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 # You can also use Front-Matter `license` to override this setting.
 license: 'This blog is under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 Unported License</a>.'
-    
+
+# Gallery Panel
+# You must activate Formspree before using
+gallery:
+    panel_show: false
+    left_show: true
+    left_title: Introduction
+    left_info: This is a Example.
+    right_show: true
+    right_title: Get in touch
+
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -175,6 +185,7 @@ sns:
     bilibili: "https://space.bilibili.com/14892311"
     telegram: "https://t.me/codgician"
     v2ex: "https://www.v2ex.com/member/codgician"
+    segmentfault: 
 
 # SNS Share Switch
 sns_share:
@@ -270,6 +281,16 @@ comment:
     gitalk_owner: codgician # git repo's owner
     gitalk_client_id: f91be9f9d92518c62fbe # github app client id 
     gitalk_client_secret: 5f797c217c992e5a375c9e08c07af671b50b2321 # github app client secret
+    wildfire_database_provider: firebase # firebase or wilddog
+    wildfire_wilddog_site_id:
+    wildfire_firebase_api_key:
+    wildfire_firebase_auth_domain:
+    wildfire_firebase_database_url:
+    wildfire_firebase_project_id:
+    wildfire_firebase_storage_bucket:
+    wildfire_firebase_messaging_sender_id:
+    wildfire_theme: light # light or dark
+    wildfire_locale: en # en or zh-CN
     
 # Search Systems
 # Available value:
