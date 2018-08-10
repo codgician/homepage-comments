@@ -25,8 +25,8 @@ $$
 1 & \binom{i}{j} \not \equiv 0 \pmod p \\
 \end{cases}
 $$
-记 $F(n, k)$ 为矩阵 $(\text{HMBB}_n)^k$ 中所有元素之和。
 
+记 $F(n, k)$ 为矩阵 $(\text{HMBB}_n)^k$ 中所有元素之和。
 给定 $n, k$，试求：
 $$
 \sum\limits_{i = 1}^{n} \sum\limits_{j = 1}^{k} F(i, j)
@@ -48,8 +48,7 @@ $0 < c, k \le 10^5$
 考虑 Lucas 定理：
 $$
 \begin{aligned}
-\binom{n}{m} & \equiv \binom{n \mod p}{m \mod p} \cdot \binom{n / p}{m / p} \pmod p
- \\
+\binom{n}{m} & \equiv \binom{n \mod p}{m \mod p} \cdot \binom{n / p}{m / p} \pmod p \\
  & \equiv \binom{n \mod p}{m \mod p} \cdot \binom{n / p \mod p}{m / p \mod p} \cdot \binom{n / p^2}{m / p^2} \pmod p \\
  & \dots \\
  \end{aligned}
@@ -88,17 +87,12 @@ $$
 我好像又联想到了之前做过的一道题：[HDUOJ 3037 - Saving Beans](https://blog.codgician.pw/2018/05/26/hduoj-3037/)。用其中类似的思想可以解决这一问题：
 
 >  解：原问题可转化为 $x_1 < (x_2 + 1) < (x_3 + 2) < \dots < (x_k + k - 1)$ 的方案数。换句话说，就是记 $y_i = x_i + i - 1$，$y_1 < y_2 < \dots < y_k$ 的方案数，其中 $0 \le y < p + k - 1$。显然等效于 $p + k - 1$ 种值里面取 $k$ 种不同的值：
->  $$
->  \binom{p + k - 1}{k} = \binom{p + k - 1}{p - 1}
->  $$
->
+> $$\binom{p + k - 1}{k} = \binom{p + k - 1}{p - 1}$$
 
 所以说对于每一位实际上就是上面公式里面带入 $k = j + 1$，我们可采取的方案数都为：
 $$
 \binom{p + (j + 1) - 1}{p - 1} = \binom{j + p}{p - 1}
 $$
-
-
 记这些数的 $p$ 进制都有 $i$ 位，显然这 $i$ 个位之间是相对独立的，因此方案数为：
 $$
 F(i, j) = \binom{j + p}{p - 1} ^ i
@@ -107,7 +101,6 @@ $$
 $$
 \sum\limits_{i = 1}^{n} \sum\limits_{j = 1}^{k} \binom{j + p}{p - 1}^i = \sum\limits_{j = 1}^{k} \sum\limits_{i = 1}^{n} \binom{j + p}{p - 1}^i
 $$
-
 # 实现
 
 由上述分析我们已经知道答案即：
@@ -115,14 +108,13 @@ $$
 \sum\limits_{j = 1}^{k} \sum\limits_{i = 1}^{n} \binom{j + p}{p - 1}^i
 $$
 
-
 其中后半部分可看作一个等比数列，用等比数列公式即可直接求出（需要注意特判公比为 $1$ 的情况）。
 
 如果我们预处理阶乘的话，求一个组合数的的复杂度为 $\mathcal{O}(\log{N})$ 级别，因此总复杂度为 $\mathcal{O}(N\log{N})$ 级别。
 
 另外由实践得知，第 $10^5$ 个质数为 $1299709$，因此我们在处理阶乘的时候至少需要处理至 $1299709 + 10^5$。
 
-
+[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6372/combinatorics_lucas.cpp)
 
 # %%%
 
