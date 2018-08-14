@@ -1,6 +1,6 @@
----
 title: 浅谈匈牙利算法
 date: 2018-03-09 12:52:01
+updated: 2018-08-14 16:32:00
 tags: 
 - ACM-ICPC
 - Graph Theory
@@ -8,7 +8,6 @@ tags:
 - The Hungarian Algorithm
 category: Notes
 #mathjax: true
----
 
 # 前言
 
@@ -293,6 +292,10 @@ $\text{sndMatch}$ 记录与右部节点相匹配的左部节点（即记录当�
 
 $\text{sndNeed}$ 则是记录当前寻找最大匹配过程中每一次找到找到满足 $i \in T, j \notin T$ 的边 $(i, j)$ 时的 $\Delta$ 值： $A_i + B_j - w(i, j)$。这个数组会在寻找最小 $\Delta$ 值的时候用到。
 
+## DFS 版本
+
+注：DFS 版本最坏时间复杂度可能高达 $\mathcal{O}(N^4)$，所以一般建议使用下文中的 BFS 版本（该结论引用自：[【原创】KM算法的Bfs写法](https://blog.csdn.net/c20182030/article/details/73330556)）。
+
 ```cpp
 int arr[SIZE][SIZE];
 int fstEx[SIZE], sndEx[SIZE];
@@ -386,6 +389,113 @@ int hungarian()
 }
 ```
 
+## BFS 版本
+
+```cpp
+int arr[SIZE][SIZE];
+int fstEx[SIZE], sndEx[SIZE];
+int sndMatch[SIZE], sndNeed[SIZE], pre[SIZE];
+bool sndVisited[SIZE];
+int sndNum, fstNum;
+
+void bfs(int fstId)
+{
+    for (int i = 0; i < sndNum; i++)
+    {
+        sndVisited[i] = false;
+        sndNeed[i] = INT_MAX;
+        pre[i] = -1;
+    }
+
+    int cntSnd = -1;
+    while (cntSnd == -1 || sndMatch[cntSnd] != -1)
+    {
+        int cntFst;
+        if (cntSnd == -1)
+            cntFst = fstId;
+        else
+        {
+            cntFst = sndMatch[cntSnd];
+            sndVisited[cntSnd] = true;
+        }
+
+        int minDelta = INT_MAX;
+        int minSnd = -1;
+        for (int i = 0; i < sndNum; i++)
+        {
+            if (!sndVisited[i])
+            {
+                if (sndNeed[i] > fstEx[cntFst] + sndEx[i] - arr[cntFst][i])
+                {
+                    sndNeed[i] = fstEx[cntFst] + sndEx[i] - arr[cntFst][i];
+                    pre[i] = cntSnd;
+                }
+
+                if (sndNeed[i] < minDelta)
+                {
+                    minDelta = sndNeed[i];
+                    minSnd = i;
+                }
+            }
+        }
+
+        fstEx[fstId] -= minDelta;
+        for (int i = 0; i < sndNum; i++)
+        {
+            if (sndVisited[i])
+            {
+                fstEx[sndMatch[i]] -= minDelta;
+                sndEx[i] += minDelta;
+            }
+            else
+                sndNeed[i] -= minDelta;
+        }
+
+        cntSnd = minSnd;
+    }
+
+    while (cntSnd != -1)
+    {
+        if (pre[cntSnd] == -1)
+            sndMatch[cntSnd] = fstId;
+        else
+            sndMatch[cntSnd] = sndMatch[pre[cntSnd]];
+        cntSnd = pre[cntSnd];
+    }
+}
+
+int hungarian()
+{
+    for (int i = 0; i < sndNum; i++)
+    {
+        sndMatch[i] = -1;
+        sndEx[i] = 0;
+    }
+
+    for (int i = 0; i < fstNum; i++)
+    {
+        fstEx[i] = arr[i][0];
+        for (int j = 1; j < sndNum; j++)
+        {
+            fstEx[i] = max(fstEx[i], arr[i][j]);
+        }
+    }
+
+    for (int i = 0; i < sndNum; i++)
+    {
+        bfs(i);
+    }
+
+    int ans = 0;
+    for (int i = 0; i < sndNum; i++)
+    {
+        if (sndMatch[i] != -1)
+            ans += arr[sndMatch[i]][i];
+    }
+    return ans;
+}
+```
+
 # 后语
 
 这篇文章算得上是我第一次写稍微有点难度的算法总结文章…… 可能会有很多错误，欢迎指正~
@@ -401,3 +511,4 @@ int hungarian()
 - SixDayCoder - [二分图的最佳完美匹配——KM算法](http://blog.csdn.net/sixdaycoder/article/details/47720471)
 - 伊甸一点 - [我的KM算法详解](https://www.cnblogs.com/zpfbuaa/p/7218607.html)
 - 段文弱 - [KM算法详解+模板](http://www.cnblogs.com/wenruo/p/5264235.html)
+- C20182030EPIC - [【原创】KM算法的Bfs写法](https://blog.csdn.net/c20182030/article/details/73330556)
