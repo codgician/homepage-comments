@@ -294,7 +294,7 @@ $\text{sndMatch}$ 记录与右部节点相匹配的左部节点（即记录当�
 
 $\text{sndNeed}$ 则是记录当前寻找最大匹配过程中每一次找到找到满足 $i \in T, j \notin T$ 的边 $(i, j)$ 时的 $\Delta$ 值： $A_i + B_j - w(i, j)$。这个数组会在寻找最小 $\Delta$ 值的时候用到。
 
-## DFS 版本
+### DFS 版本
 
 注：DFS 版本最坏时间复杂度可能高达 $\mathcal{O}(N^4)$，所以一般建议使用下文中的 BFS 版本（该结论引用自：[【原创】KM算法的Bfs写法](https://blog.csdn.net/c20182030/article/details/73330556)）。
 
@@ -391,7 +391,7 @@ int hungarian()
 }
 ```
 
-## BFS 版本
+### BFS 版本
 
 ```cpp
 int arr[SIZE][SIZE];
