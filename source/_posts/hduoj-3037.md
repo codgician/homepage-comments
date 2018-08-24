@@ -15,10 +15,16 @@ category: Solutions
 
 凛冬将至，松鼠正忙于采取豆豆。它们从 $n$ 棵树上采取豆豆，但处于可持续性发展的考虑，它们一共最多采取 $m$ 粒豆豆。假设每棵树上都有无限多的豆豆，请计算采取的方案种数并将结果对质数 $p$ 取模。
 
+**数据范围**：
+
+$1 \le n, m \le 10^9$
+
+$1 \le p \le 10^5$（保证 $p$ 为质数）
+
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=3037)
 
 
-# 排列组合
+# 分析
 
 实际上这个问题可以转换为求下述方程解的个数：
 $$
@@ -66,6 +72,8 @@ $$
 $$
 
 同时在计算大组合数取模的时候，可先计算分子 $n!$ 再计算分母 $m!(n - m)!$ 每项的逆元，全部乘起来即可。复杂度 $\mathcal{O}(n\log{n})$。
+
+# 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/3037/combinatorics_lucas.cpp)
 

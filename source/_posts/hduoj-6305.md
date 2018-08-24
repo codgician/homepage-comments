@@ -36,9 +36,9 @@ $1 \le a_i \le n$
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=6305)
 
-# 笛卡尔树
+# 分析
 
-根据题目定义，如果两个序列 *RMQ相似*，通俗地讲就是两个序列每个区间内最大值的位置都相同。这令我们联想到笛卡尔树这一数据结构。
+根据题目定义，如果两个序列 *RMQ相似*，通俗地讲就是两个序列每个区间内最大值的位置都相同。这令我们联想到**笛卡尔树**这一数据结构。
 
 我们先简单回顾一下笛卡尔树的特性：
 
@@ -61,9 +61,9 @@ E_{W_B} & =  \prod\limits_{i = 1}^{n} \frac{1}{size[i]} \cdot \frac{1}{2} + (1 -
 $$
 具体实现的时候要线性预处理逆元。
 
+# 实现
+
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6305/cartesian_tree.cpp)
-
-
 
 # %%%
 

@@ -4,7 +4,7 @@ date: 2018-07-22 20:01:23
 tags: 
 - ACM-ICPC
 - Mathematics
-- Quadratic Fractional Programming
+- Fractional Programming
 - Binary Search
 - HDUOJ
 category: Solutions
@@ -25,11 +25,13 @@ $1 \le A_i, B_i \le 1000$
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=6240)
 
-# 0-1 分数规划
+# 分析
 
 看看总费用的计算式就知道这是一道考察 0-1 分数规划 的题目…… 唯一不同之处是附加了一个条件：选用的服务器必须完全覆盖总时间区间 $[1, t]$。由于我只会二分答案来解决 0-1 分数规划问题，所以这里就只提供这种解法的题解（逃...
 
 至于裸的 0-1 分数规划问题如何用二分答案的方法求解本文不再详讲。既然要在此基础之上满足覆盖总时间区间，无非就是在对答案进行判定时（记当前待判定的答案是 $mid$），光贪心取完所有满足 $\frac{A_i}{B_i} \le mid$ 的服务器是不够的，我们还需要在此基础上再取一些服务器使得整个时间区间都被覆盖。为了做到这一点，我们可以首先将服务器按照所覆盖时间段的左端点从小到大排序，然后引入一种能够维护前缀最小值的数据结构（树状数组或线段树皆可），维护可完整覆盖时间区间 $[1, k]$ 内需额外选择**不**满足 $\frac{A_i}{B_i} \le mid$ 的服务器的最小总花费。最后查询 $[1, t]$ 就是为了确保完整覆盖时间区间还需额外租赁的服务器的最小总花费。
+
+# 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6240/binary_search_qfp_binary_indexed_tree.cpp)
 

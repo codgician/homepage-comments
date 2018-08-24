@@ -28,15 +28,13 @@ $1 \le m \le n \le 10^5$
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=6333)
 
+# 分块
 
-
-# 分析
+## 分析
 
 虽然经过 $\mathcal{O}(n)$ 的预处理后我们可以以 $\mathcal{O}(1)$ 算出 $\binom{n}{i}$，但是 $\mathcal{O}(Tn)$ 的复杂度显然是不能被接受的。
 
 那怎么办…… 我们希望复杂度能够降至 $\mathcal{O}(T\sqrt{n})$ 左右…… 分块？
-
-# 分块
 
 分块的思想即**大段维护，局部朴素**。假设块长为 $L$，令数组 $A[i][j]$ 代表 $\sum\limits_{k = 0}^{L \cdot j} \binom{i}{k}$，即前 $j$ 块的前缀和。
 
@@ -73,9 +71,13 @@ $$
 
 另外，如果本题按照 $\sqrt{N}$ 取块长三百左右的话貌似会 MLE…… 我是取四百左右过的。
 
+## 实现
+
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6333/combinatorics_partitioning.cpp)
 
 # 莫队
+
+## 分析
 
 当得知这道题还可以莫队时…… orz。
 
@@ -100,6 +102,8 @@ $$
 $$
 
 现在 $n$ 和 $m$ 的 $\mathcal{O}(1)$ 转移方式都有了…… 我们好像真的可以用莫队了诶。真心佩服出题人的脑洞。
+
+## 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6333/combinatorics_mo's_algorithm.cpp)
 

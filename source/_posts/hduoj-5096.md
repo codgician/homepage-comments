@@ -52,9 +52,7 @@ $1 \le M \le 10$
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=5096)
 
-
-
-# 无旋转 Treap
+# 分析
 
 这种查询排名的题目一看就会勾引我们往平衡树想…… 正巧前天瞎学了学无旋转的 Treap，于是我们就来试试能不能水过这道题吧……
 
@@ -65,5 +63,7 @@ $1 \le M \le 10$
 不过我们可以换个思路，考虑一个分数一个节点，然后在每个节点上再套一个 $set$ 来记录该分数下有哪些队伍。这样就要方便不少。不过这样一来，以某节点为根的子树大小就不再是 $\text{leftSon} + \text{rightSon} + 1$ 了，而应该是 $\text{leftSon} + \text{rightSon} + set.\text{size()}$。同时，插入和删除时就变成了先通过 **split** 操作分离出代表需更新队伍的分数的节点（如果该节点不存在的话就需要新建一个），然后对该节点上的 $set$ 进行 $\text{insert}$ 或者 $\text{erase}$ 操作，最后再把它们 **merge** 回去。$set$ 内可以根据第三类操作的输出顺序排序，这样在执行第三类操作时直接返回第一个元素就好了。至于很多其它细节，看看参考代码大概就会了。
 
 怎么题面比口胡题解还长啊…… 羞愧 🙈
+
+# 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/5096/treap_without_rotations.cpp)

@@ -45,17 +45,17 @@ $$
 
 即：
 $$
-\sum\limits_{k = 1}^{i - 1} \left[ \gcd(2i, k) \right] = \sum\limits_{k = 1}^{i - 1} \frac{\varphi(i)}{1 + (i \bmod 2)}
+\sum\limits_{k = 1}^{i - 1} \left[ \gcd(i, k) = 1 \right] = \frac{\varphi(i)}{1 + (i \bmod 2)}
 $$
 我们记：
 $$
-g(n) = \sum\limits_{k = 1}^{i - 1} \frac{\varphi(i)}{1 + (i \bmod 2)}
+g(i) = \frac{\varphi(i)}{1 + (i \bmod 2)}
 $$
 则原式即：
 $$
-\sum\limits_{i = 1}^{n} g(n)
+\sum\limits_{i = 1}^{n} g(i)
 $$
-预处理出 $g(n)$ 的前缀和并 $\mathcal{O}(1)$ 回答每个询问即可。
+预处理出 $g(i)$ 的前缀和并 $\mathcal{O}(1)$ 回答每个询问即可。
 
 ---
 

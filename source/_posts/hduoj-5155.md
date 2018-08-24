@@ -18,13 +18,15 @@ category: Solutions
 
 现有一个 $n \times m$ 的宝箱，已知每一行、每一列上都至少有一颗宝石，试求有多少种摆放方案（结果对 $1000000007$ 取模）。
 
-数据范围：
+**数据范围**：
 
 $1 \le n, m \le 50$
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=5155)
 
 # 动态规划
+
+## 分析
 
 我们不妨记 $dp[i][j]$ 代表对于 $i \times j$ 宝箱摆放方案的种数。
 
@@ -51,12 +53,13 @@ $$
 dp[i][j] = dp[i - 1][j - 1] \cdot (2^i - 1) + dp[i - k][j - 1] \cdot \binom{i}{k} \cdot 2 ^ {i- k}
 $$
 
+## 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/5155/dp_combinatorics.cpp)
 
 # 容斥原理
 
-> 由于本人数学渣，所以自己都没有很理解容斥原理的做法，等本辣鸡恶补组合数学后会再次填坑…… 🙈
+## 分析
 
 对于 $n \times m$ 的宝箱，首先我们假设每一行都已经至少存在一颗宝石了，现在我们来讨论列的情况。对 $m$ 列我们假设其中有 $i$ 列每行均无宝石。这种情况下的种数为：
 $$
@@ -81,6 +84,8 @@ $$
 \binom{m}{i} \cdot f(i)
 = \sum\limits_{i = 0}^{m - 1} (-1)^{i} \cdot \binom{m}{i} \cdot (2^{m - i} - 1)^{n}
 $$
+
+## 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/5155/inclusion_exclusion_principle.cpp)
 

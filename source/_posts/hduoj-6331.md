@@ -68,6 +68,8 @@ $$
 
 预处理复杂度就被压到了 $\mathcal{O}(n^3\sqrt{k})$。这样一来，总的复杂度就是 $\mathcal{O}(n^3\sqrt{k} + qn)$。
 
+# 实现
+
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6331/floyd_partitioning.cpp)
 
 # %%%
