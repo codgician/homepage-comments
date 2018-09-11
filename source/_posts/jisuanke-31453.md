@@ -1,6 +1,7 @@
 ---
 title: Jisuanke 31453 - Hard to prepare
 date: 2018-09-10 00:12:46
+updated: 2018-09-11 22:29:46
 tags: 
 - ACM-ICPC
 - Mathematics
@@ -24,11 +25,39 @@ $0 < n, k \le 10^6$。
 
 # 分析
 
-这里提供我比赛时超麻烦的思路…… 大神魔改[环形染色公式](https://blog.codgician.pw/2018/01/07/one-dimensional-dynamic-programming/#%E7%8E%AF%E5%BD%A2%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98)的做法本垃圾不是很懂…… 如果弄懂了就补上…… 嘤嘤嘤。 
+根据同或性质不难发现，在本题条件下，$i \odot j \neq 0$ 等价于 $i + j \neq 2^k - 1$。这也表明非法的两个编号奇偶性不同，故一定不相等。至于为什么随便举几个二进制下的例子就明白了……
 
 考虑动态规划（有点类似于 [HDUOJ - 1297 Children's Queue](https://blog.codgician.pw/2018/01/07/one-dimensional-dynamic-programming/#%E5%A4%8D%E6%9D%82%E7%9A%84%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98)）。
 
-根据同或性质不难发现，在本题条件下，$i \odot j \neq 0$ 等价于 $i + j \neq 2^k - 1$。这也表明非法的两个编号奇偶性不同，故一定不相等。至于为什么随便举几个二进制下的例子就明白了……
+# 简单的方法
+
+去网上搜了一篇题解才发现我是真的傻逼…… 呜呜呜。下面讲一讲较简单的方法。
+
+## 分析
+
+记 $dp[i]$ 代表有 $i$ 位宾客时的**满足题意要求**的方案数。
+
+首先考虑第一位，显然有 $2^k$ 种选择，然后剩余位数除了最后一位显然都有 $2^{k - 1}$ 种选择。 
+
+在考虑最后一位时，我们需要分情况讨论一下（记 $a_i$ 代表第 $i$ 位宾客面具种类）：
+
+- 如果 $a_{i - 1} \neq a_1$，那么 $a_i$ 不可以选 $2^k - 1 - a_{i - 1}$ 或是 $2^k - 1 - a_1$，共有 $2^k - 2$ 种选择；
+- 如果 $a_{i - 1} = a_1$，由于 $2^k - 1 - a_{i - 1} = 2^k - 1 - a_1$，所以有 $2^k - 1$ 种选择。
+
+由于在考虑 $a_{i - 1} \neq a_1$ 时已经计算过 $2^k - 2$ 种放法了，所以这里认为最后一个数字是一个定值（换句话说，再加一种就行了），所以我们还需要加上 $dp[i - 2]$。于是我们得到转移方程：
+$$
+dp[i] = 2^k \cdot (2^k - 1)^{i - 2} \cdot (2^k - 2) + dp[i - 2]
+$$
+
+## 实现
+
+[完整参考代码 - 简单](https://github.com/codgician/ACM-ICPC/blob/master/Jisuanke/31453/dp_alt.cpp)
+
+ # 麻烦的方法
+
+不删是因为~~懒~~想纪念一下我有多蠢……嘤嘤嘤。
+
+## 分析
 
 我们记 $ans[i]$ 代表有 $i$ 位宾客时的**满足题意要求**的方案数，另外为了方便我们记 $a_i$ 为第 $i$ 位宾客面具上的编号。我们思考 $ans[i]$ 可被如何转化而来。
 
@@ -82,7 +111,7 @@ $$
 
 上面两个式子是等价的。
 
-# 实现
+## 实现
 
 根据上面的分析，有：
 $$
@@ -99,5 +128,8 @@ dp[0][0] = dp[0][1] = dp[1][1] = 0 \\
 dp[1][0] = 2^k \\
 \end{cases}
 $$
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Jisuanke/31453/dp.cpp)
+[完整参考代码 - 麻烦](https://github.com/codgician/ACM-ICPC/blob/master/Jisuanke/31453/dp.cpp)
 
+# %%%
+
+- JZK-Keven - [ICPC 2018 徐州网络预赛 A. Hard to prepare](https://blog.csdn.net/qq_41608020/article/details/82625069)
