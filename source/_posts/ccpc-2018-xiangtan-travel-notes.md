@@ -10,7 +10,7 @@ thumbnail: /2018/05/16/ccpc-2018-xiangtan-travel-notes/cover.jpg
 #mathjax: false
 ---
 
-# Day -1
+# Day 0
 
 打印了 Claris 巨佬的模板（虽然看不懂），顺便打印了几个自己整理的常用模板（然而最后全都没用上）。
 
@@ -26,7 +26,7 @@ thumbnail: /2018/05/16/ccpc-2018-xiangtan-travel-notes/cover.jpg
 
 晚上 Hanano 巨佬表示睡什么觉并安利了达芬奇睡眠法，瑟瑟发抖。最后十一点过的时候我忍不住还是滚到床上去睡觉了 QAQ。
 
-# Day 0
+# Day 1
 
 睡觉时完全处于一个小时醒一次的状态，于是四点过的时候就受不了爬起来~~看日出~~，然后发现 Hanano 貌似在下面待了一个晚上 QAQ。
 
@@ -44,7 +44,7 @@ thumbnail: /2018/05/16/ccpc-2018-xiangtan-travel-notes/cover.jpg
 
 在去觅食的路上反应过来了错在哪里，然后回招待所加了一行代码就过了样例，心情跌入谷底。无心复习的我晚上打了若干局 Wordament 和数独。
 
-# Day 1
+# Day 2
 
 早上起来感觉慌慌的，把开幕式翘了直接去了赛场。
 
