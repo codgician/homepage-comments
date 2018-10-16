@@ -18,7 +18,7 @@ thumbnail: /2018/10/16/acm-icpc-2018-asia-nanjing-regional-travel-notes/cover.jp
 
 早上起不来啊…… 好困啊…… 结果头天都说要咕咕咕的队友来得都比我早。
 
-高铁好评。尝试在高铁上用 Surface 最后 rush 一下模板，结果前面那个人突然把作为猛地往前一调我 Surface 就不见了…… 还好没悲剧。于是接下来我都没敢用电脑了，就看了一会儿小说。南航离火车站之隔一站地铁…… 然而我感觉在地铁站里面走花的时间比坐地铁还久 :new_moon_with_face:。
+高铁好评。尝试在高铁上用 Surface 最后 rush 一下模板，结果前面那个人突然把作为猛地往前一调我 Surface 就不见了…… 还好没悲剧。于是接下来我都没敢用电脑了，就看了一会儿小说。南航离火车站之隔一站地铁…… 然而我感觉在地铁站里面走花的时间比坐地铁还久。
 
 一出地铁就看到南航方向飞来一架直升机…… 然后又来一架…… 然后又是一架…… 果然南航，好强啊。进学校看横幅才知道貌似刚好赶上了一个 “南航 · 昌飞” 直升机主题招聘日，并且打出了 “您的专机已就位！AC311 乘机体验，让我们带你一起飞” 的标语。虽然很想坐直升机，但转念一想身边两位队友就已经可以带我飞了，所以也没什么关系了。照片不出意外地拍残了：
 
@@ -33,10 +33,6 @@ thumbnail: /2018/10/16/acm-icpc-2018-asia-nanjing-regional-travel-notes/cover.jp
 吃完饭后去体育馆就可以碰到电脑了。南航的体育馆好气派啊……
 
 ![体育馆](acm-icpc-2018-asia-nanjing-regional-travel-notes/nuaa-gymnasium.jpg)
-
-顺便拍了一张现场布局……
-
-![比赛现场](acm-icpc-2018-asia-nanjing-regional-travel-notes/warm-up.jpg)
 
 到现场发现高中大佬学长就坐在对面的位置 orzzzzz。看比赛手册以为是带 Unity 桌面环境的 Ubuntu 16.04 LTS，结果到手发现是 xfce 桌面环境的 Xubuntu，连 gedit 都没有。另外我们发现电脑巨卡 QAQ。Hanano 尝试在 Code::Blocks 里瞎写一些东西，然后发现有一定几率写一半电脑突然卡住，过几秒才好 QAQ。接着我们又发现，codeblocks 执行编译好程序的默认终端是 xterm，而 xterm 连复制粘贴都不行。我们尝试把其改成 xfce-terminal, 结果发现一改在 codeblocks 里保存代码的时候就会跳 exception，然后一点 stop codeblocks 就闪退。心态崩了 QAQ。
 
