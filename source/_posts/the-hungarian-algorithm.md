@@ -1,7 +1,7 @@
 ---
 title: 浅谈匈牙利算法
 date: 2018-03-09 12:52:01
-updated: 2018-08-14 16:32:00
+updated: 2018-10-17 11:41:00
 tags: 
 - ACM-ICPC
 - Graph Theory
@@ -62,7 +62,7 @@ category: Notes
 
 ## 思想
 
-通过上面的概念，我们不难发现增广路径有一个十分重要的性质：**非匹配边比匹配边多一条**。因此，研究增广路径的意义是**改进匹配**。如果我们把增广路径中的非匹配边和匹配边交换，这样做不仅不会破坏匹配本身的性质（因为增广路径中所有的匹配边并不存在与其他点相连的匹配边），而且交换后匹配边的数目还会比原来多 1 条。
+通过上面的概念，我们不难发现增广路径有一个十分重要的性质：**非匹配边比匹配边多一条**。因此，研究增广路径的意义是**改进匹配**。如果我们把增广路径中的非匹配边和匹配边交换，这样做不仅不会破坏匹配本身的性质（因为增广路径中所有的匹配边并不存在与其他点相连的匹配边），而且交换后匹配边的数目还会比原来多 $1$ 条。
 
 如果我们不停地寻找增广路径，并在每一次找到增广路径后交换增广路径中的匹配点和非匹配点以增加匹配边的数目，这样直到再也找不到增广路径时，我们就得到了该二分图的最大匹配。这就是**匈牙利算法**的本质，因此有时我们也称其为**增广路算法**。
 
@@ -106,7 +106,7 @@ category: Notes
 
 匈牙利算法实际上基于**贪心策略**。它的一个重要特点是：当一个节点成为匹配点后，至多因为找到增广路而更换匹配对象，但是**绝对不会从匹配点变成非匹配点**。
 
-如果要更详细（但不够严密）地说明，我们可以从反证法考虑：
+如果要更详细地说明，我们可以从反证法考虑：
 
 假设存在这样的**非最大匹配**，在其中已经无法找到增广路径。
 
@@ -142,18 +142,13 @@ int sndMatch[SIZE];
 int fstNum, sndNum;
 
 // Find snd vertex for fst vertex 
-bool canFind(int fstId)
-{
-    for (int i = 0; i < sndNum; i++)
-    {
+bool canFind(int fstId) {
+    for (int i = 0; i < sndNum; i++) {
         // If edge exists and snd vertex has not been visited
-        if (arr[fstId][i] && !sndVisited[i])
-        {
+        if (arr[fstId][i] && !sndVisited[i]) {
             sndVisited[i] = true;
-            
             // Two conditions mentioned above
-            if (sndMatch[i] == -1 || canFind(sndMatch[i]))
-            {
+            if (sndMatch[i] == -1 || canFind(sndMatch[i])) {
                 sndMatch[i] = fstId;
                 return true;
             }
@@ -162,16 +157,12 @@ bool canFind(int fstId)
     return false;
 }
 
-int hungarian()
-{
-    int ans = 0; 	// Number of edges in maximum bipartite matching
-    for (int i = 0; i < fstNum; i++)
-    {
+int hungarian() {
+    int ans = 0;    // Number of edges in maximum bipartite matching
+    for (int i = 0; i < fstNum; i++) {
         // Initialize every snd vertex as unvisited
         memset(sndVisited, false, sizeof(sndVisited));
-        
-        if (canFind(i))
-        {
+        if (canFind(i)) {
             ans++;
         }
     }
@@ -217,13 +208,13 @@ $$
 
 在相等子图中，完备匹配的边权之和为：
 $$
-\sum^{N}_{i = 1}(A_i + B_i)
+\sum\limits_{i = 1}^{N} (A_i + B_i)
 $$
 也就是所有顶标之和。
 
 $\because$ 顶标满足：
 $$
-\forall i, j, A_i + B_j \geq w(i, j)
+\forall i, j: \ A_i + B_j \geq w(i, j)
 $$
 $\therefore$ 在整个二分图中，任何一组匹配的边权都不可能大于所有顶标的和。
 
@@ -239,7 +230,7 @@ $\therefore$ 在整个二分图中，任何一组匹配的边权都不可能大�
 
 ## 流程
 
-1. 初始化顶标的值： $A_i = max_{i \leq j \leq N} \{ w(i, j) \}, B_j = 0$；
+1. 初始化顶标的值： $A_i = \max\limits_{i \leq j \leq N}{w(i, j)},  \ B_j = 0$；
 2. 用“无权二分图的最大匹配”中提到的算法寻找相等子图的完备匹配；
 3. 若未找到增广路径则采用适当策略修改顶标的值；
 4. 重复上述 2、3 直到找到相等子图的完备匹配为止。
@@ -305,86 +296,73 @@ int sndMatch[SIZE], sndNeed[SIZE];
 bool fstVisited[SIZE], sndVisited[SIZE];
 int sndNum, fstNum;
 
-bool canFind(int fstId)
-{
+bool canFind(int fstId) {
     fstVisited[fstId] = true;
-    for (int i = 0; i < sndNum; i++)
-    {
-        if (sndVisited[i])
+    for (int i = 0; i < sndNum; i++) {
+        if (sndVisited[i]) {
             continue;
-
+        }
         int delta = fstEx[fstId] + sndEx[i] - arr[fstId][i];
-        if (delta == 0)
-        {
+        if (delta == 0) {
             sndVisited[i] = true;
-            if (sndMatch[i] == -1 || canFind(sndMatch[i]))
-            {
+            if (sndMatch[i] == -1 || canFind(sndMatch[i])) {
                 sndMatch[i] = fstId;
                 return true;
             }
-        }
-        else
-        {
+        } else {
             sndNeed[i] = min(sndNeed[i], delta);
         }
     }
     return false;
 }
 
-int hungarian()
-{
+int hungarian() {
     memset(sndMatch, -1, sizeof(sndMatch));
     memset(sndEx, 0, sizeof(sndEx));
 
-    for (int i = 0; i < fstNum; i++)
-    {
+    for (int i = 0; i < fstNum; i++) {
         fstEx[i] = arr[i][0];
-        for (int j = 1; j < sndNum; j++)
-        {
+        for (int j = 1; j < sndNum; j++) {
             fstEx[i] = max(fstEx[i], arr[i][j]);
         }
     }
 
-    for (int i = 0; i < fstNum; i++)
-    {
-        for (int j = 0; j < sndNum; j++)
-        {
+    for (int i = 0; i < fstNum; i++) {
+        for (int j = 0; j < sndNum; j++) {
             sndNeed[j] = INF;
         }
 
-        while (true)
-        {
+        while (true) {
             memset(fstVisited, false, sizeof(fstVisited));
             memset(sndVisited, false, sizeof(sndVisited));
 
-            if (canFind(i))
+            if (canFind(i)) {
                 break;
-
+            }
             int minDelta = INF;
-            for (int j = 0; j < sndNum; j++)
-            {
-                if (!sndVisited[j])
+            for (int j = 0; j < sndNum; j++) {
+                if (!sndVisited[j]) {
                     minDelta = min(minDelta, sndNeed[j]);
+                }
             }
 
-            for (int j = 0; j < fstNum; j++)
-            {
-                if (fstVisited[j])
+            for (int j = 0; j < fstNum; j++) {
+                if (fstVisited[j]) {
                     fstEx[j] -= minDelta;
+                }
             }
-            for (int j = 0; j < sndNum; j++)
-            {
-                if (sndVisited[j])
+            for (int j = 0; j < sndNum; j++) {
+                if (sndVisited[j]) {
                     sndEx[j] += minDelta;
-                else
+                } else {
                     sndNeed[j] -= minDelta;
+                }
             }
         }
     }
 
     int ans = 0;
-    for (int i = 0; i < sndNum; i++)
-    {
+    for (int i = 0; i < sndNum; i++) {
         ans += arr[sndMatch[i]][i];
     }
     return ans;
@@ -400,41 +378,31 @@ int sndMatch[SIZE], sndNeed[SIZE], pre[SIZE];
 bool sndVisited[SIZE];
 int sndNum, fstNum;
 
-void bfs(int fstId)
-{
-    for (int i = 0; i < sndNum; i++)
-    {
+void bfs(int fstId) {
+    for (int i = 0; i < sndNum; i++) {
         sndVisited[i] = false;
         sndNeed[i] = INT_MAX;
         pre[i] = -1;
     }
 
     int cntSnd = -1;
-    while (cntSnd == -1 || sndMatch[cntSnd] != -1)
-    {
+    while (cntSnd == -1 || sndMatch[cntSnd] != -1) {
         int cntFst;
-        if (cntSnd == -1)
+        if (cntSnd == -1) {
             cntFst = fstId;
-        else
-        {
+        } else {
             cntFst = sndMatch[cntSnd];
             sndVisited[cntSnd] = true;
         }
 
-        int minDelta = INT_MAX;
-        int minSnd = -1;
-        for (int i = 0; i < sndNum; i++)
-        {
-            if (!sndVisited[i])
-            {
-                if (sndNeed[i] > fstEx[cntFst] + sndEx[i] - arr[cntFst][i])
-                {
+        int minDelta = INT_MAX, minSnd = -1;
+        for (int i = 0; i < sndNum; i++) {
+            if (!sndVisited[i]) {
+                if (sndNeed[i] > fstEx[cntFst] + sndEx[i] - arr[cntFst][i]) {
                     sndNeed[i] = fstEx[cntFst] + sndEx[i] - arr[cntFst][i];
                     pre[i] = cntSnd;
                 }
-
-                if (sndNeed[i] < minDelta)
-                {
+                if (sndNeed[i] < minDelta) {
                     minDelta = sndNeed[i];
                     minSnd = i;
                 }
@@ -442,22 +410,18 @@ void bfs(int fstId)
         }
 
         fstEx[fstId] -= minDelta;
-        for (int i = 0; i < sndNum; i++)
-        {
-            if (sndVisited[i])
-            {
+        for (int i = 0; i < sndNum; i++) {
+            if (sndVisited[i]) {
                 fstEx[sndMatch[i]] -= minDelta;
                 sndEx[i] += minDelta;
-            }
-            else
+            } else {
                 sndNeed[i] -= minDelta;
+            }
         }
-
         cntSnd = minSnd;
     }
 
-    while (cntSnd != -1)
-    {
+    while (cntSnd != -1) {
         if (pre[cntSnd] == -1)
             sndMatch[cntSnd] = fstId;
         else
@@ -466,31 +430,25 @@ void bfs(int fstId)
     }
 }
 
-int hungarian()
-{
-    for (int i = 0; i < sndNum; i++)
-    {
+int hungarian() {
+    for (int i = 0; i < sndNum; i++) {
         sndMatch[i] = -1;
         sndEx[i] = 0;
     }
 
-    for (int i = 0; i < fstNum; i++)
-    {
+    for (int i = 0; i < fstNum; i++) {
         fstEx[i] = arr[i][0];
-        for (int j = 1; j < sndNum; j++)
-        {
+        for (int j = 1; j < sndNum; j++) {
             fstEx[i] = max(fstEx[i], arr[i][j]);
         }
     }
 
-    for (int i = 0; i < sndNum; i++)
-    {
+    for (int i = 0; i < sndNum; i++) {
         bfs(i);
     }
 
     int ans = 0;
-    for (int i = 0; i < sndNum; i++)
-    {
+    for (int i = 0; i < sndNum; i++) {
         if (sndMatch[i] != -1)
             ans += arr[sndMatch[i]][i];
     }
