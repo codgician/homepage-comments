@@ -1,6 +1,7 @@
 ---
 title: 浅谈类欧几里德算法
 date: 2018-10-18 22:54:39
+updated: 2018-10-19 08:43:45
 tags: 
 - ACM-ICPC
 - Mathematics
@@ -81,7 +82,7 @@ $$
 f(a, b, c, n)
 & = \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor} \\
 & = \sum\limits_{i = 0}^{n} {\left[ \left\lfloor \frac{a}{c} \right\rfloor i + \left\lfloor \frac{b}{c} \right\rfloor + \left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor \right]} \\
-& = \sum\limits_{i = 0}^{n} {i \left\lfloor \frac{a}{c} \right\rfloor} + \sum\limits_{i = 0}^{n} {\left\lfloor \frac{b}{c} \right\rfloor} + \sum\limits_{i = 0}^{n} {\left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} \\
+& = \left\lfloor \frac{a}{c} \right\rfloor \sum\limits_{i = 0}^{n} {i} + \left\lfloor \frac{b}{c} \right\rfloor \sum\limits_{i = 0}^{n} {1} + \sum\limits_{i = 0}^{n} {\left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} \\
 & = \left\lfloor \frac{a}{c} \right\rfloor \frac{1}{2}n(n + 1) + \left\lfloor \frac{b}{c} \right\rfloor (n + 1) + f(a \bmod c, b \bmod c, c, n) \\
 \end{aligned}
 $$
@@ -149,7 +150,7 @@ $$
 \begin{aligned}
 g(a, b, c, n) & = \sum\limits_{i = 0}^{n} {i \left\lfloor \frac{ai + b}{c} \right\rfloor} \\
 & = \sum\limits_{i = 0}^{n} {i \cdot ( \left\lfloor \frac{a}{c} \right\rfloor i + \left\lfloor \frac{b}{c} \right\rfloor + \left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor)} \\
-& = \sum\limits_{i = 0}^{n} {i^2 \left\lfloor \frac{a}{c} \right\rfloor} + \sum\limits_{i = 0}^{n} {i \left\lfloor \frac{b}{c} \right\rfloor} + \sum\limits_{i = 0}^{n} {i \left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} \\
+& = \left\lfloor \frac{a}{c} \right\rfloor \sum\limits_{i = 0}^{n} {i^2} + \left\lfloor \frac{b}{c} \right\rfloor\sum\limits_{i = 0}^{n} {i} + \sum\limits_{i = 0}^{n} {i \left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} \\
 & = \left\lfloor \frac{a}{c} \right\rfloor \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{b}{c} \right\rfloor \frac{1}{2}n(n + 1) + g(a \bmod c, b \bmod c, c, n) \\
 \end{aligned}
 $$
@@ -196,7 +197,7 @@ $$
 g(a, b, c, n) = 
 \begin{cases}
 \left\lfloor \frac{a}{c} \right\rfloor \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{b}{c} \right\rfloor \frac{1}{2}n(n + 1) + g(a \bmod c, b \bmod c, c, n) & a \ge c \lor b \ge c \\
-\frac{1}{2} \cdot \left[ mn(n + 1) - h(c, c - b - 1, a, m - 1) - f(c, c - b - 1, a, m - 1) \right] & \text{otherwise} \\
+\frac{1}{2} \left[ mn(n + 1) - h(c, c - b - 1, a, m - 1) - f(c, c - b - 1, a, m - 1) \right] & \text{otherwise} \\
 \end{cases}
 $$
 
@@ -230,7 +231,7 @@ $$
 = & \left\lfloor \frac{a}{c} \right\rfloor^2 \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{a}{c} \right\rfloor \left\lfloor \frac{b}{c} \right\rfloor 2n(n + 1) + \left\lfloor \frac{b}{c} \right\rfloor^2 (n + 1) \\
 \\
 2\sum\limits_{i = 0}^{n} & {(\left\lfloor \frac{a}{c} \right\rfloor i + \left\lfloor \frac{b}{c} \right\rfloor)} \left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor \\
-= & 2\left\lfloor \frac{a}{c} \right\rfloor \sum\limits_{i = 0}^{n} {i \cdot \left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} + 2\left\lfloor \frac{b}{c} \right\rfloor \sum\limits_{i = 0}^{n} {\left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} \\
+= & 2\left\lfloor \frac{a}{c} \right\rfloor \sum\limits_{i = 0}^{n} {i\left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} + 2\left\lfloor \frac{b}{c} \right\rfloor \sum\limits_{i = 0}^{n} {\left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor} \\
 = & 2\left\lfloor \frac{a}{c} \right\rfloor g(a \bmod c, b \bmod c, c, n) + 2\left\lfloor \frac{b}{c} \right\rfloor f(a \bmod c, b \bmod c, c, n) \\
 \\
 \sum\limits_{i = 0}^{n} & {\left\lfloor \frac{(a \bmod c)i + (b \bmod c)}{c} \right\rfloor}^2 \\
@@ -266,7 +267,7 @@ h(a, b, c, n)
 = & 2\sum\limits_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {j \cdot (j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} + f(a, b, c, n) \\
 = & 2\sum\limits_{j = 0}^{m - 1} j \cdot \sum\limits_{i = 0}^{n} {\left[ cj < (ai + b) - c + 1 \right]} + f(a, b, c, n) \\
 = & 2\sum\limits_{j = 0}^{m - 1} j \cdot \sum\limits_{i = 0}^{n} {(\left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor < i)} + f(a, b, c, n) \\
-= & 2\sum\limits_{j = 0}^{m - 1} j \cdot(n - \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor) + f(a, b, c, n) \\
+= & 2\sum\limits_{j = 0}^{m - 1} j \cdot (n - \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor) + f(a, b, c, n) \\
 = & 2n\sum\limits_{j = 0}^{m - 1} {j} - 2\sum\limits_{j = 0}^{m - 1} {j \cdot \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor} + f(a, b, c, n) \\
 = & 2n \cdot \frac{1}{2}(m - 1)m - 2g(c, c - b - 1, a, m - 1) + f(a, b, c, n) \\
 \end{aligned}
@@ -285,11 +286,11 @@ $$
 ## 结论
 
 $$
-h(a, b, c, n) =
+h(a, b, c, n) = 
 \begin{cases}
-\left\lfloor \frac{a}{c} \right\rfloor^2 \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{a}{c} \right\rfloor \left\lfloor \frac{b}{c} \right\rfloor 2n(n + 1) + \left\lfloor \frac{b}{c} \right\rfloor^2 (n + 1) \\
-+ 2\left\lfloor \frac{a}{c} \right\rfloor g(a \bmod c, b \bmod c, c, n) + 2\left\lfloor \frac{b}{c} \right\rfloor f(a \bmod c, b \bmod c, c, n) \\
-+ h(a \bmod c, b \bmod c, c, n) & a \ge c \lor b \ge c \\
+\left\lfloor \frac{a}{c} \right\rfloor^2 \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{a}{c} \right\rfloor \left\lfloor \frac{b}{c} \right\rfloor 2n(n + 1) + \left\lfloor \frac{b}{c} \right\rfloor^2(n + 1) & \\
+\ + 2\left\lfloor \frac{a}{c} \right\rfloor g(a \bmod c, b \bmod c, c, n) + 2\left\lfloor \frac{b}{c} \right\rfloor f(a \bmod c, b \bmod c, c, n) & \\
+\ + h(a \bmod c, b \bmod c, c, n) & a \ge c \lor b \ge c \\
 nm^2 - 2g(c, c - b - 1, a, m - 1) - f(c, c - b - 1, a, m - 1) & \text{otherwise} \\
 \end{cases}
 $$
