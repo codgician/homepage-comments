@@ -1,7 +1,7 @@
 ---
 title: 浅谈类欧几里德算法
 date: 2018-10-18 22:54:39
-updated: 2018-10-19 08:43:45
+updated: 2018-10-19 09:13:25
 tags: 
 - ACM-ICPC
 - Mathematics
@@ -27,6 +27,8 @@ $$
 后文中将简称它们为 $f$ 式，$g$ 式与 $h$ 式。
 
 # 引理
+
+考虑 $a, b, c$ 均为正整数。
 
 ## #1
 
@@ -193,6 +195,7 @@ $$
 
 ## 结论
 
+令 $m = \left\lfloor \frac{an + b}{c} \right\rfloor$，有：
 $$
 g(a, b, c, n) = 
 \begin{cases}
@@ -285,6 +288,7 @@ $$
 
 ## 结论
 
+令 $m = \left\lfloor \frac{an + b}{c} \right\rfloor$，有：
 $$
 h(a, b, c, n) = 
 \begin{cases}
@@ -296,6 +300,16 @@ nm^2 - 2g(c, c - b - 1, a, m - 1) - f(c, c - b - 1, a, m - 1) & \text{otherwise}
 $$
 
 # 代码实现
+
+咕咕咕……
+
+# 更通用的情况
+
+在讨论完 $f, g, h$ 式的推到后，我们来看一种更加通用的情况：
+$$
+\sum\limits_{i = 0}^{n} {i^{k_1} \left\lfloor \frac{ai + b}{c} \right\rfloor ^{k_2}}
+$$
+题目链接：[类欧几里得算法 - 题目 - LibreOJ](https://loj.ac/problem/138)
 
 咕咕咕……
 
