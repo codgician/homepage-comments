@@ -1,14 +1,15 @@
 ---
+uuid: 8a93c77c-d853-11e8-a68d-cb37d861e4a7
 title: HDUOJ 6240 - Server
 date: 2018-07-22 20:01:23
+updated: 2018-07-22 20:01:23
 tags: 
-- ACM-ICPC
-- Mathematics
-- Fractional Programming
-- Binary Search
-- HDUOJ
+  - ACM-ICPC
+  - Mathematics
+  - Fractional Programming
+  - Binary Search
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面

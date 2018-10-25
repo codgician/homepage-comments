@@ -1,11 +1,11 @@
 ---
+uuid: a006ff1a-d859-11e8-8b2e-0b9c310e8239
 title: 高考导数 - 洛必达法则
 date: 2017-04-08 20:26:59
 tags: 
- - Mathematics
- - Derivative
+   - Mathematics
+   - Derivative
 category: Notes
-#mathjax: true
 ---
 
 # 简介
@@ -18,7 +18,7 @@ category: Notes
 
 首先我们来看看洛必达法则是个什么东西（以下内容摘自百科）：
 
-**(1) $\frac{0}{0}$型不等式极限：** 
+**(1) $\frac{0}{0}$型不等式极限**：
 
 若函数$f(x)$满足下列条件：
 
@@ -28,7 +28,7 @@ category: Notes
 
 则有：$\lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)} = A$  
 
-**(2) $\frac{\infty}{\infty}$型不等式极限：** 
+**(2) $\frac{\infty}{\infty}$型不等式极限**：
 
 若函数$f(x)$满足下列条件：
 
@@ -52,25 +52,32 @@ category: Notes
 (1) 证明：当$x > -1$时，$f(x) \ge \frac{x}{x+1}$；  
 (2) 设当$x \ge 0$时，$f(x) \le \frac{x}{ax + 1}$，求$a$的取值范围.
 
-*注：由于(1)问较简单，这里只分析第(2)问。*
+*注：由于(1)问较简单，这里只分析第(2)问*。
 
 **解:** (2)  
 **I.** 若$a < 0$  
 $\therefore$ 当$x \in (-\frac{1}{a},+\infty)$时：
+
 $$
 \frac{x}{ax + 1} < 0
 $$
+
 又$\because$ 在$x \in [0,+\infty)$时：
+
 $$
 f(x) = 1 - e^{-x} \ge 0
 $$
+
 $\therefore$ 当$x \in (-\frac{1}{a},+\infty)$时：
+
 $$
 f(x) > \frac{x}{ax + 1}
 $$
+
 与题意矛盾，舍去。  
 
-**II.** 若$a \ge 0$  
+**II.** 若$a \ge 0$
+
 $$
 \begin{aligned}
 & f(x) \le \frac{x}{ax + 1} \\
@@ -80,9 +87,11 @@ $$
 $$
 
 令：
+
 $$
 g(x) = \frac{xe^x - e^x + 1}{xe^x - x}
 $$
+
 $$
 \begin{aligned}
 \therefore g'(x) & = \frac{e^{2x} - x^2e^x - 2e^x + 1}{(xe^x - x)^2} \\
@@ -91,31 +100,37 @@ $$
 $$
 
 令：
+
 $$
 h(x) = e^x - x^2 - 2 - e^{-x}
 $$
+
 $$
 \therefore h'(x) = e^x - 2x - e^{-x}
 $$
+
 $$
 \therefore h''(x) = e^x + e^{-x} - 2 > 0
 $$
+
 $\therefore h'(x)$在$[0,+\infty)$单调递增，$h'(x) \ge h'(0) = 0$  
 $\therefore h(x)$在$[0,+\infty)$单调递增，$h(x) \ge h(0) = 0$  
-$\therefore g'(x) \ge 0$，$g(x)$在$[0,+\infty)$单调递增   
+$\therefore g'(x) \ge 0$，$g(x)$在$[0,+\infty)$单调递增
 
-*插一句话：好的，现在我们发现$g(x)$在$[0,+\infty)$单调递增，可是$g(0)$是没有意义的！这下子只好用洛必达法则了。*
+*插一句话：好的，现在我们发现$g(x)$在$[0,+\infty)$单调递增，可是$g(0)$是没有意义的！这下子只好用洛必达法则了*。
 
-由洛必达法则有：  
+由洛必达法则有：
+
 $$
 \begin{aligned}
-\lim\limits_{x \to 0}g(x) 
+\lim\limits_{x \to 0}g(x)
 & = \lim\limits_{x \to 0}\frac{xe^x - e^x + 1}{xe^x - x}  \\
 & = \lim\limits_{x \to 0}\frac{xe^x}{e^x + xe^x - 1} \\
 & = \lim\limits_{x \to 0}\frac{e^x + xe^x }{2e^x + xe^x} \\
 & = \frac{1}{2}
 \end{aligned}
 $$
+
 $\therefore g(x) \ge \frac{1}{2}$  
 $\therefore a \le \frac{1}{2}$
 
@@ -129,38 +144,47 @@ $\therefore a \le \frac{1}{2}$
 (1) 求a,b的值;  
 (2) 如果当$x > 0$，且$x \neq 0$时，$f(x) > \frac{lnx}{x - 1} + \frac{k}{x}$，求$k$的取值范围.  
 
-*注：(1)问过程略，解得 a = 1，b = 1，这里只分析第(2)问。*
+*注：(1)问过程略，解得 a = 1，b = 1，这里只分析第(2)问*。
 
 **解:** (2)  
 由题，有：
+
 $$
 \frac{lnx}{x + 1} + \frac{1}{x} > \frac{lnx}{x - 1} + \frac{k}{x}
 $$
+
 即：
+
 $$
 k < \frac{xlnx}{x + 1} + \frac{1}{x} - \frac{xlnx}{x - 1} = \frac{2xlnx}{1 - x^2} + 1
 $$
 
 令：
+
 $$
 g(x) = \frac{2xlnx}{1 - x^2} + 1 \ (x > 0, x \neq 1)
 $$
+
 $$
 \therefore g'(x) = \frac{2(x^2 + 1)lnx + 2(1 - x^2)}{(1 - x^2)^2} = \frac{2(x^2 + 1)}{(1 - x^2)^2}(lnx + \frac{1 - x^2}{x^2 + 1})
 $$
 
 令：
+
 $$
 h(x) = lnx + \frac{1 - x^2}{x^2 + 1}
 $$
+
 $$
 \therefore h'(x) = \frac{1}{x} + \frac{-4x}{(1 + x^2)^2} = \frac{(1 - x^2)^2}{x(1 + x^2)^2} > 0
 $$
+
 $\therefore h(x)$在$(0,+\infty)$上单调递增，且$h(1) = 0$  
 $\therefore x \in (0,1)$时，$h(x) < 0$；$x \in (1,+\infty)$时，$h(x) > 0$  
 $\therefore x \in (0,1)$时，$g'(x) < 0$，$g(x)$单调递减；$x \in (1,+\infty)$时，$g'(x) > 0$，$g(x)$单调递增  
 
 由洛必达法则有:
+
 $$
 \begin{aligned}
 \lim\limits_{x \to 1}g(x) & = \lim\limits_{x \to 1}(\frac{2xlnx}{1 - x^2} + 1) \\
@@ -182,5 +206,6 @@ $\therefore k \in (-\infty,0)$
 相信在初中学过数学竞赛的朋友们进入高中后都会发现，在高中阶段学的知识可以帮助我们轻而易举地解答许多数学联赛中的难题。比如，对于部分要求角度的几何题，我干嘛还要费尽心思看看哪里能做辅助线？直接用向量、正余玄定理、乃至三角函数恒等变换就可以轻松解决。然而，如果我们在初中阶段就这么做，纵使能够成功解题，但我们却没有使我们的转化思想等能力得到锻炼。就像我在前言中所说的一样，若干年后我们很可能并不会从事数学相关的行业，而什么正余玄定理之类的定理也很可能被我们逐步遗忘，但那种乐于探究的精神和转换思想作为一种习惯将会长存于我们心中，成为我们性格的一部分。这样，我理解中的数学教育初衷也就达到了。
 
 # 参考文献
-1. 陈柞同主编.创知路高考数学解题手册 立体几何·解析几何·导数·定积分 [M].北京, 2017
-2. 蔡小雄主编.更高更妙的高中数学 一题多解与一题多变 [M].浙江：浙江大学出版社, 2016
+
+- 陈柞同主编.创知路高考数学解题手册 立体几何·解析几何·导数·定积分 [M].北京, 2017
+- 蔡小雄主编.更高更妙的高中数学 一题多解与一题多变 [M].浙江：浙江大学出版社, 2016

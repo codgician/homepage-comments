@@ -1,4 +1,5 @@
 ---
+uuid: 6c2bacd2-d84e-11e8-ace3-1fb6dfac859f
 title: ACM-ICPC 2018 亚洲区域赛南京站游记
 date: 2018-10-16 22:50:35
 tags: 
@@ -7,7 +8,6 @@ tags:
   - Life
 category: Travel
 thumbnail: /2018/10/16/acm-icpc-2018-asia-nanjing-regional-travel-notes/cover.jpg
-#mathjax: false
 ---
 
 # Day 0

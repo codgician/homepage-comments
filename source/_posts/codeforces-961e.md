@@ -1,13 +1,14 @@
 ---
+uuid: 9e69b170-d84f-11e8-9fbf-43a5a451cb42
 title: Codeforces 961E - Tufurama
 date: 2018-04-06 13:17:00
+updated: 2018-04-06 13:17:00
 tags: 
-- ACM-ICPC
-- Data Structure
-- Binary Indexed Tree
-- Codeforces
+  - ACM-ICPC
+  - Data Structure
+  - Binary Indexed Tree
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -17,8 +18,6 @@ Polycarp 决定二刷他最喜欢的电视剧 Tufurama，但是当他搜索这�
 注：$(i, j)$ 和 $(j, i)$ 视作一对。
 
 [题目链接](http://codeforces.com/problemset/problem/961/E)
-
-
 
 # 转化
 
@@ -45,8 +44,6 @@ Polycarp 决定二刷他最喜欢的电视剧 Tufurama，但是当他搜索这�
 
 很显然，这个样例的答案为 $1$，因为只存在一对： $(1, 2)$。
 
-
-
 # 暴力
 
 我们依然按照上面的样例去思考，让我们想想暴力怎么做。
@@ -60,8 +57,6 @@ Polycarp 决定二刷他最喜欢的电视剧 Tufurama，但是当他搜索这�
 - $i = 3$ 时，看第 $3$ 行前 $a_3 = 1$ 个方格中有色方格的个数：$0$。
 
 那么最后的答案就是 $\frac{1}{2} \times (1 + 1) = 1$ 咯。
-
-
 
 # 优化
 
@@ -83,15 +78,10 @@ Polycarp 决定二刷他最喜欢的电视剧 Tufurama，但是当他搜索这�
 
 最终的答案就是 $\frac{1}{2} \times (1 + 1) = 1$ 。
 
-
-
 # 参考代码
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/961E/binary_indexed_tree.cpp)
 
-
-
 # %%%
 
 - Vovuh - [Educational Codeforces Round 41 Tutorial](http://codeforces.com/blog/entry/58743)
-

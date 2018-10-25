@@ -1,11 +1,12 @@
 ---
+uuid: 72f7ecc6-d851-11e8-bddf-df3efa608294
 title: Happy 18th Birthday!
 date: 2017-05-26 13:19:35
+updated: 2017-05-26 13:19:35
 tags: 
   - Life
 category: Life
 thumbnail: /2017/05/26/happy-18th-birthday/cover.jpg
-#mathjax: false
 ---
 
 It's a special day to celebrate, yet with little time left towards College Entrance Examination there is not much to celebrate.

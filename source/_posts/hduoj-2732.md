@@ -1,13 +1,14 @@
 ---
+uuid: 4863c254-d852-11e8-88e7-dbbce118ec5f
 title: HDUOJ 2732 - Leapin' Lizards
 date: 2018-03-27 23:00:01
+updated: 2018-03-27 23:00:01
 tags: 
-- ACM-ICPC
-- Graph Theory
-- Maximum Flow Problem
-- HDUOJ
+  - ACM-ICPC
+  - Graph Theory
+  - Maximum Flow Problem
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -53,4 +54,3 @@ $1 \le d, w_i \le 3$
 参考代码采用了 Dinic 算法来求解最大流。
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/2732/dinic.cpp)
-

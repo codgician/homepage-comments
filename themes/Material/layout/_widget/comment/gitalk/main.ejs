@@ -14,9 +14,7 @@
             admin: ['<%= theme.comment.gitalk_owner %>'],
             // facebook-like distraction free mode
             distractionFreeMode: false,
-            
-            // Temporary workaround
-            id: '<%= page.title.substr(0,48) %>'
+            id: '<%= page.uuid %>'
         })
    gitalk.render('gitalk-container')
 </script>

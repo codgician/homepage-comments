@@ -1,13 +1,15 @@
 ---
+uuid: 9d3d7398-d85b-11e8-96ff-d71103bac7fc
 title: About
 date: 2017-06-24 09:47:50
+updated: 2017-06-24 09:47:50
 thumbnail: /img/daily_pic.jpg
 ---
 Hi there!
 
 I am Jimmy, an ordinary student who wish to be forever a student. With an obsession in coding, staying young and exploring while alive has always been my ultimate dream.
 
-I started this blog in hope of sharing some memorable moments and interesting findings. Different articles might be presented in different languages (which might look chaotic) because this blog is for both Chinese and English readers. 
+I started this blog in hope of sharing some memorable moments and interesting findings. Different articles might be presented in different languages (which might look chaotic) because this blog is for both Chinese and English readers.
 
 Anyway, thanks for visiting and have fun here!
 
@@ -25,7 +27,7 @@ Anyway, thanks for visiting and have fun here!
 
 My RSA Public Key:
 
-```
+```text
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu92Kj86kWbDACFp8/Ft0
 de9x1i7bzdlz2VEWrJKPUtHXLNumKYdbi9OlhaI/NKjsV9Hu9VGW9iZS6yoBEENO

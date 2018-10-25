@@ -1,13 +1,14 @@
 ---
+uuid: 8e9c000e-d84f-11e8-afbc-7bca5dc5090c
 title: Codeforces 913D - Too Easy Problems
 date: 2018-01-09 20:54:00
+updated: 2018-04-06 13:17:00
 tags: 
-- ACM-ICPC
-- Greedy
-- Binary Search
-- Codeforces
+  - ACM-ICPC
+  - Greedy
+  - Binary Search
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 什么也别说先让我哭一会儿，嗷呜呜呜呜呜呜~ 😭
@@ -34,8 +35,6 @@ category: Solutions
 
 在寻找到 $k$ 后输出方案就很容易咯（在上述验证 $k$ 可行性的过程中实际上都已经把方案找出来了... 唯一要注意的是输出原始题号而非排序后的题号，所以结构体中要存储原始题号）~
 
-
-
 # 具体实现
 
 ## 朴素
@@ -52,9 +51,6 @@ category: Solutions
 
 [GitHub - Backup Link](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/913D/greedy%2Bbinary_search.cpp)
 
-
-
 # %%%
 
--   tourist - [Hello 2018 -- Tutorial](http://codeforces.com/blog/entry/56992)
-
+- tourist - [Hello 2018 -- Tutorial](http://codeforces.com/blog/entry/56992)

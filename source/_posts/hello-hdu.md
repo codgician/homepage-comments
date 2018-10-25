@@ -1,11 +1,12 @@
 ---
+uuid: db04fde2-d854-11e8-b7ca-4b0c415a148d
 title: Hello HDU!
 date: 2017-09-15 21:10:08
+updated: 2017-09-15 21:10:08
 tags: 
-- HDU
+  - HDU
 category: Life
 thumbnail: /2017/09/15/hello-hdu/cover.jpg
-#mathjax: false
 ---
 
 # 前言
@@ -45,8 +46,6 @@ thumbnail: /2017/09/15/hello-hdu/cover.jpg
 > 1024 * 768 AOC Monitor
 
 第一次亲身体验 Aero 特效让我惊喜地上蹿下跳，~~尖叫连连~~。我惊异于软件能带给人们的乐趣，并更加热爱与珍惜我眼前这一高级无比的“玩具”。
-
-
 
 # 二
 
@@ -99,8 +98,6 @@ Chameleon, FakeSMC, OpenHaltRestart, dsdt…这些字样成为了我最珍贵的
 
 至于显卡嘛……我又不怎么运行 graphic-demanding 的程序所以就懒得升级啦。在升级后我又再次~~狗改不了吃屎~~投入了 10.9 Mavericks 的怀抱。在这个时间点，搭建黑苹果平台的难度已经远远低于之前，而且完美的程度也越来越高（原来都少有人去折腾电源管理之类的）。这次采用了 Clover 做为引导器，最后一路走到了现在，10.13 High Sierra。
 
-
-
 # 三
 
 相比之下，虽然我很早就开始接触电脑，但是真正开始编程的时间太晚太晚了。
@@ -126,8 +123,6 @@ Chameleon, FakeSMC, OpenHaltRestart, dsdt…这些字样成为了我最珍贵的
 然而现在我不这么觉得了。
 
 t123yh 指出，没有 composer 包管理， 完全没有遵循 OOP、代码风格混乱不堪的 CWOJ 是极其不适合长久维护的。我们曾经想依照旧代码将项目现代化，然而庞大的工作量打破了我们的这一幻想。勇敢地，我决定放弃维护老版 Codgic，并将其推倒完全重写。新的 Codgic 将会是前后端分离的，将会采用 TypeScript，API 部分将会是无状态的…… 在将来的某一天或许会与你见面 ~~(也或许不会)~~。
-
-
 
 # 四
 
@@ -170,4 +165,3 @@ I wanna try even though I could fail
 哦，梦想总是那么诱人，而现实却总是那么残酷。
 
 愿当汪洋中的浪花，纵使生命永远定格在礁岩之上，也不放弃向前的期翼与勇气。
-

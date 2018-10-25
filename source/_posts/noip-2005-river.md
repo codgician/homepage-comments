@@ -1,11 +1,12 @@
 ---
+uuid: 308a4c62-d856-11e8-89fc-f770676e70c9
 title: NOIP 2005 - 过河
 date: 2017-11-07 12:22:00
+updated: 2017-11-07 12:22:00
 tags: 
-- ACM-ICPC
-- Dynamic Programming
+  - ACM-ICPC
+  - Dynamic Programming
 category: Solutions
-mathjax: true
 ---
 
 # 题面
@@ -39,9 +40,11 @@ $\text{stoneNum}$：桥上石头个数 $M$
 ## 转移方程
 
 我们可以很容易写出状态转移方程：
+
 $$
 dp[i] = min\{dp[i], dp[i - j] + \text{isStone}[i] \ | \  \text{minHop} \leq j \leq \text{maxHop}\}
 $$
+
 简单地写出伪代码：
 
 ```cpp
@@ -84,28 +87,30 @@ if (minHop == maxHop)
 ---
 
 我们不妨假设青蛙一次跳跃的距离为 $p$ 或者 $p + 1$（均为整数），在经历了 $x$ 次距离为 $p$ 的跳跃和 $y$ 次距离为 $p + 1$ 的跳跃后移动的总距离为 $Q$。那么有：
+
 $$
 px + (p + 1)y = Q
 $$
 
-
 我们知道，$p$ 和 $p + 1$ 的最大公约数 $gcd (p, p + 1) = 1$，所以由**拓展欧几里得算法**，很容易得知对于方程：
+
 $$
 px + (p + 1)y = gcd(p, p + 1) = 1
 $$
 一定存在**整数解**。
 
 那么显然，对于方程：
+
 $$
 px + (p + 1)y = Q
 $$
+
 也就一定存在整数解咯。
-
-
 
 我们不妨假设我们得到了一组整数解 $x_0$ 和 $y_0$。并且，我们假设 $0 \leq x_0 \leq p$。
 
 当 $Q \geq p(p + 1)$ 时，将这组解带入原方程并变换，易得：
+
 $$
 \begin{aligned}
 & y_0 = \frac{Q - px_0}{p + 1} \\
@@ -145,6 +150,5 @@ for (int i = 1, j = 0; i <= stoneNum; i++)
 
 # %%%
 
-yuyanggo - [noip2005 过河 （数论+动态规划）](http://blog.csdn.net/yuyanggo/article/details/48341259)
-
-JmingS - [hdu 4842（NOIP 2005 过河）之 动态规划（距离压缩）](http://www.cnblogs.com/shijianming/p/5149559.html)
+- yuyanggo - [noip2005 过河 （数论+动态规划）](http://blog.csdn.net/yuyanggo/article/details/48341259)
+- JmingS - [hdu 4842（NOIP 2005 过河）之 动态规划（距离压缩）](http://www.cnblogs.com/shijianming/p/5149559.html)

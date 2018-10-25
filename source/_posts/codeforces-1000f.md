@@ -1,14 +1,15 @@
 ---
+uuid: c9cf9154-d84f-11e8-a65e-fb4ca51a622c
 title: "Codeforces 1000F - One Occurrence"
 date: 2018-07-11 20:05:00
+updated: 2018-07-11 20:05:00
 tags: 
-- ACM-ICPC
-- Data Structure
-- Segment Tree
-- Persistent Segment Tree
-- Codeforces
+  - ACM-ICPC
+  - Data Structure
+  - Segment Tree
+  - Persistent Segment Tree
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -20,8 +21,6 @@ category: Solutions
 $1 \le n, a_i, q \le 5 \cdot 10^5$
 
 [题目链接](http://codeforces.com/problemset/problem/1000/F)
-
-
 
 # 离线做法
 
@@ -53,5 +52,3 @@ $1 \le n, a_i, q \le 5 \cdot 10^5$
 # %%%
 
 - BledDest - [Educational Codeforces Round 46 Tutorial](http://codeforces.com/blog/entry/60288)
-
-  

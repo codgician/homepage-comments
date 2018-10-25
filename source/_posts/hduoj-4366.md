@@ -1,13 +1,14 @@
 ---
+uuid: f2adccbe-d852-11e8-9885-1f844d9fec21
 title: HDUOJ 4366 - Successor
 date: 2018-04-10 12:16:01
+updated: 2018-04-10 12:16:01
 tags: 
-- ACM-ICPC
-- Data Structure
-- Segment Tree
-- HDUOJ
+  - ACM-ICPC
+  - Data Structure
+  - Segment Tree
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -35,4 +36,3 @@ $2 \le m \le 50000$
 # 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/4366/segment_tree.cpp)
-

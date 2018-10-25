@@ -1,13 +1,14 @@
 ---
+uuid: f39de338-d84e-11e8-a6b7-87ff6eae0548
 title: CCPC 2018 湘潭邀请赛游记
 date: 2018-05-16 13:19:35
+updated: 2018-05-16 13:19:35
 tags: 
   - ACM-ICPC
   - Contest
   - Life
 category: Travel
 thumbnail: /2018/05/16/ccpc-2018-xiangtan-travel-notes/cover.jpg
-#mathjax: false
 ---
 
 # Day 0

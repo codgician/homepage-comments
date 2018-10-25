@@ -1,14 +1,15 @@
 ---
+uuid: 5614fa7a-d853-11e8-ab38-e71f9f19510d
 title: HDUOJ 5514 - Frogs
 date: 2018-10-03 22:42:10
+updated: 2018-10-03 22:42:10
 tags: 
-- ACM-ICPC
-- Mathematics
-- Number Theory
-- Inclusion-Exclusion Principle
-- HDUOJ
+  - ACM-ICPC
+  - Mathematics
+  - Number Theory
+  - Inclusion-Exclusion Principle
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -62,7 +63,7 @@ $$
 $$
 与规定矛盾，得证一定是互质的。
 
-------
+---
 
 既然互质，我们求和的时候可以借助一个结论：
 
@@ -84,7 +85,7 @@ $$
 $$
 通过代入 $x = 2$，我们不难发现这对 $x = 2$ 也成立。
 
-------
+---
 
 我们剩下解决的问题是，可能石头 $i$ 可被跳到但是我们规定其属于的那只蛤不存在。在这种情况下我们当然是要假装它存在了。在引入虚拟蛤时，如果存在某蛤步长为 $l$，而新引入的虚拟蛤步长为 $k \cdot l$，那么这显然都答案是没有任何影响的。根据规定，能占有石头的蛤的步长 $l$ 一定是 $m$ 的约数，所以我们可以考虑预处理出 $l$ 的所有约数。 对于蛤 $j$，若 $a_j$ 可整除 $m$ 的某因数 $s$，则考虑加入 $s$ 作为虚拟蛤，同时应用上面的公式计算出这只蛤所占有的石头下标之和。
 
@@ -94,7 +95,7 @@ $$
 
 我们以第一组样例举一个例子：
 
-```
+```text
 2 12
 9 10
 ```
@@ -132,7 +133,7 @@ $$
 
 我们依然以第一组样例举一个例子：
 
-```
+```text
 2 12
 9 10
 ```
@@ -162,4 +163,3 @@ $$
 - qingshui23 - [HDU 5514 Frogs（欧拉函数+数论YY）](https://blog.csdn.net/qingshui23/article/details/73091006)
 - wenruo - [hdu5514-Frogs（容斥原理）好题](https://www.cnblogs.com/wenruo/p/5964323.html)
 - weixin_38287798 - [HDU 5514Frogs](https://blog.csdn.net/weixin_38287798/article/details/82887595)
-

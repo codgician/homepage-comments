@@ -1,15 +1,16 @@
 ---
+uuid: 4c8e2e08-d84f-11e8-aa1b-77bf308d6a9d
 title: Codeforces 908F - New Year and Rainbow Roads
 date: 2018-04-11 13:08:00
+updated: 2018-04-11 13:08:00
 tags: 
-- ACM-ICPC
-- Greedy
-- Codeforces
+  - ACM-ICPC
+  - Greedy
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
-**太耻辱了！！！**
+**太耻辱了**！！！
 
 Educational Round 42 中的 E 题就是这道题，然而本辣鸡看一眼就往 MST 去想了。补题的时候偷懒不写题解，那补题还有什么意义？浪费时间？自我安慰？亡羊补牢为时未晚，现在把这道题的题解补上。
 
@@ -45,11 +46,8 @@ Roy 和 Biv 想用一些边把这些点连起来。任意两点间都可以连�
 
 另外，我们需要单独注意一下没有 $G$ 点的情况。
 
-
-
 # 参考代码
 
 [Submission #33805058](http://codeforces.com/contest/908/submission/33805058)
 
 [GitHub Backup Link](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/908F/greedy.cpp)
-

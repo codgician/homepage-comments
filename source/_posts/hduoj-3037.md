@@ -1,14 +1,15 @@
 ---
+uuid: 60649856-d852-11e8-9006-57bebcce26eb
 title: HDUOJ 3037 - Saving Beans
 date: 2018-05-26 20:00:01
+updated: 2018-05-26 20:00:01
 tags: 
-- ACM-ICPC
-- Mathematics
-- Combinatorics
-- Lucas' Theorem
-- HDUOJ
+  - ACM-ICPC
+  - Mathematics
+  - Combinatorics
+  - Lucas' Theorem
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -22,7 +23,6 @@ $1 \le n, m \le 10^9$
 $1 \le p \le 10^5$（保证 $p$ 为质数）
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=3037)
-
 
 # 分析
 
@@ -63,7 +63,7 @@ $$
 & = \binom{n}{0} + \binom{n}{1} + \binom{n + 1}{2} + \dots + \binom{m + n - 1}{m} \\
 & = \binom{n + 1}{1} + \binom{n + 1}{2} + \dots + \binom{m + n - 1}{m} \\
 & = \dots \\
-& = \binom{m + n} {m} 
+& = \binom{m + n} {m}
 \end{aligned}
 $$
 具体求解的时候考虑使用 **Lucas 定理**， 即当 $p$ 是质数时，对于任意整数 $1 \le m \le n$ 时有：
@@ -76,6 +76,3 @@ $$
 # 实现
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/3037/combinatorics_lucas.cpp)
-
-
-

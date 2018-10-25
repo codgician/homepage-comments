@@ -1,11 +1,11 @@
 ---
+uuid: dd0035a0-d84d-11e8-b20b-bd3f30314497
 title: 一不小心进了某邻居的网络
 date: 2017-04-09 15:53:10
 tags: 
-- Pwn
-- Router
+  - Pwn
+  - Router
 thumbnail: /2017/04/09/accidentally-hacked-neighbors-router/cover.png
-#mathjax: false
 ---
 
 # 前言

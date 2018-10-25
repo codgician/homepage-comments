@@ -1,13 +1,13 @@
 ---
+uuid: 21bc567e-d858-11e8-a31c-cf1dc3b4e650
 title: 浅谈类欧几里德算法
 date: 2018-10-18 22:54:39
 updated: 2018-10-19 09:13:25
 tags: 
-- ACM-ICPC
-- Mathematics
-- Number Theory
+  - ACM-ICPC
+  - Mathematics
+  - Number Theory
 category: Notes
-#mathjax: true
 ---
 
 > 本文数学公式较长，建议在屏幕较大的设备上阅读。
@@ -93,7 +93,7 @@ $$
 
 $$
 \begin{aligned}
-f(a, b, c, n) 
+f(a, b, c, n)
 & = \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor} \\
 & = \sum\limits_{i = 0}^{n} \sum\limits_{j = 0}^{\left\lfloor \frac{ai + b}{c} \right\rfloor - 1} {1} \\
 & = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {(\left\lfloor \frac{ai + b}{c} \right\rfloor > j)}
@@ -129,7 +129,7 @@ $$
 令 $m = \left\lfloor \frac{an + b}{c} \right\rfloor$，有：
 
 $$
-f(a, b, c, n) = 
+f(a, b, c, n) =
 \begin{cases}
 \left\lfloor \frac{a}{c} \right\rfloor \frac{n(n + 1)}{2} + \left\lfloor \frac{b}{c} \right\rfloor (n + 1) + f(a \bmod c, b \bmod c, c, n) & a \ge c \lor b \ge c \\
 nm - f(c, c - b - 1, a, m - 1) & \text{otherwise} \\
@@ -183,7 +183,7 @@ $$
 $$
 \begin{aligned}
 g(a, b, c, n)
-& = \sum\limits_{j = 0}^{m - 1} {\frac{1}{2} (\left\lfloor 
+& = \sum\limits_{j = 0}^{m - 1} {\frac{1}{2} (\left\lfloor
 \frac{cj + c - b - 1}{a} \right\rfloor + n + 1) \cdot (n - \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor)} \\
 & = \frac{1}{2} \sum\limits_{j = 0}^{m - 1} {\left[ n(n + 1) - {\left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor}^2 - \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor \right]} \\
 & = \frac{1}{2} \left[ \sum\limits_{j = 0}^{m - 1} {n(n + 1)} - \sum\limits_{j = 0}^{m - 1} {\left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor}^2 - \sum\limits_{j = 0}^{m - 1} {\left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor} \right] \\
@@ -197,7 +197,7 @@ $$
 
 令 $m = \left\lfloor \frac{an + b}{c} \right\rfloor$，有：
 $$
-g(a, b, c, n) = 
+g(a, b, c, n) =
 \begin{cases}
 \left\lfloor \frac{a}{c} \right\rfloor \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{b}{c} \right\rfloor \frac{1}{2}n(n + 1) + g(a \bmod c, b \bmod c, c, n) & a \ge c \lor b \ge c \\
 \frac{1}{2} \left[ mn(n + 1) - h(c, c - b - 1, a, m - 1) - f(c, c - b - 1, a, m - 1) \right] & \text{otherwise} \\
@@ -289,8 +289,9 @@ $$
 ## 结论
 
 令 $m = \left\lfloor \frac{an + b}{c} \right\rfloor$，有：
+
 $$
-h(a, b, c, n) = 
+h(a, b, c, n) =
 \begin{cases}
 \left\lfloor \frac{a}{c} \right\rfloor^2 \frac{1}{6}n(n + 1)(2n + 1) + \left\lfloor \frac{a}{c} \right\rfloor \left\lfloor \frac{b}{c} \right\rfloor 2n(n + 1) + \left\lfloor \frac{b}{c} \right\rfloor^2(n + 1) & \\
 \ + 2\left\lfloor \frac{a}{c} \right\rfloor g(a \bmod c, b \bmod c, c, n) + 2\left\lfloor \frac{b}{c} \right\rfloor f(a \bmod c, b \bmod c, c, n) & \\
@@ -305,7 +306,8 @@ $$
 
 # 更通用的情况
 
-在讨论完 $f, g, h$ 式的推到后，我们来看一种更加通用的情况：
+在讨论完 $f, g, h$ 式的推导后，我们来看一种更加通用的情况：
+
 $$
 \sum\limits_{i = 0}^{n} {i^{k_1} \left\lfloor \frac{ai + b}{c} \right\rfloor ^{k_2}}
 $$

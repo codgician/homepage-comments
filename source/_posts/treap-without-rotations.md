@@ -1,12 +1,13 @@
 ---
+uuid: 2e9f0b86-d85b-11e8-99eb-5f8a18b2e43c
 title: 浅谈无旋转 Treap
 date: 2018-07-28 15:15:01
+updated: 2018-07-28 15:15:01
 tags: 
-- ACM-ICPC
-- Data Structure
-- Treap
+  - ACM-ICPC
+  - Data Structure
+  - Treap
 category: Notes
-#mathjax: true
 ---
 
 # 简介
@@ -30,7 +31,7 @@ category: Notes
 - **merge (A, B)**：合并两棵子树（它们的根节点分别是 $A$ 和 $B$），复杂度 $\mathcal{O}(\log{n})$；
 - **split (A, k)**：将以 $A$ 为根节点的树分裂为两棵子树：前者包含 $A$ 中的前 $k$ 小的节点（或者是小于 $k$ 的节点），后者包含剩余节点。复杂度 $\mathcal{O}(\log{n})$。
 
-**注意：合并操作的前提是其中一棵 Treap 上的所有键值（即 $value$）小于另一棵 Treap 上的键值，否则只能启发式合并！**
+**注意：合并操作的前提是其中一棵 Treap 上的所有键值（即 $value$）小于另一棵 Treap 上的键值，否则只能启发式合并**！
 
 有了这两个操作，我们就可以实现平衡树的大部分功能了。但在此之前，让我们先来看看如何实现这两个核心函数。
 
@@ -170,4 +171,3 @@ int findValByRank(int cntPt, int rnk)
 - chen_tr - [偷懒专用平衡树——Treap](https://blog.csdn.net/chen_tr/article/details/50924073)
 - LadyLex - [无旋treap：从好奇到入门](https://www.cnblogs.com/LadyLex/p/7182491.html)
 - yyf0309 - [无旋转Treap简介](https://www.cnblogs.com/yyf0309/p/Unrotated_Treap.html)
-

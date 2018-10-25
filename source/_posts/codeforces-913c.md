@@ -1,13 +1,14 @@
 ---
+uuid: 82699cba-d84f-11e8-a484-7bc5058e2052
 title: Codeforces 913C - Party Lemonade
 date: 2018-01-09 11:58:00
+updated: 2018-01-09 11:58:00
 tags: 
-- ACM-ICPC
-- Greedy
-- Bitmasks
-- Codeforces
+  - ACM-ICPC
+  - Greedy
+  - Bitmasks
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 因为手残和脑残 ranking 暴降 75，呜呜呜呜呜呜呜~
@@ -35,4 +36,3 @@ category: Solutions
 [Submission #34039523](http://codeforces.com/contest/913/submission/34039523)
 
 [GitHub - Backup Link](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/913C/greedy.cpp)
-

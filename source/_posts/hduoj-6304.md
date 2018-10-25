@@ -1,26 +1,29 @@
 ---
+uuid: acea1f2e-d853-11e8-9254-7fa789039a59
 title: HDUOJ 6304 - Chiaki Sequence Revisited
 date: 2018-07-24 14:47:23
+updated: 2018-07-24 14:47:23
 tags: 
-- ACM-ICPC
-- Observation
-- Mathematics
-- Binary Search
-- HDUOJ
+  - ACM-ICPC
+  - Observation
+  - Mathematics
+  - Binary Search
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
 
 定义一个序列 $a$：
+
 $$
-a_n = 
+a_n =
 \begin{cases}
 1 & n = 1, 2 \\
 a_{n - a_{n - 1}} + a_{n - 1 - a_{n - 2}} & n \ge 3
 \end{cases}
 $$
+
 记序列 $a$ 的前缀和 $s_i = \sum\limits_{k = 1}^{i} a_k$。现共有 $T$ 组数据，每组数据给定 $k$，试求 $s_k$ 对 $10^9 + 7$ 取模后的值。
 
 **数据范围**：
@@ -50,30 +53,39 @@ $$
 ---
 
 现在我们不妨把出现了 $f(i)$ 次的 $i$ 都看成一个长度为 $f(i)$ 的块。直观地说，就是把原序列这样划分：
+
 $$
 [1],\  [2, 2], \  [3], \ [4, 4, 4], \ [5], \ [6,6], \ [7], \ [8, 8, 8], \ \dots
 $$
+
 那么前 $k$ 个数里面应该会有 $t$ 个这样完整的块，另外最后可能还有一个不完整的块。我们需要求的 $s_k$，也就是前面完整块的和，再加上最后一个不完整块的和（如果有的话）。
 
 前 $t$ 个完整块的和：
+
 $$
 \sum\limits_{i = 1}^{t} (i \cdot f(i))
 $$
+
 前 $t$ 个完整块一共包含数的个数：
+
 $$
 \sum\limits_{i = 1}^{t} f(i)
 $$
+
 所以剩余数的个数：
+
 $$
 k - \sum\limits_{i = 1}^{t} f(i)
 $$
 
-
 我们知道这个剩余的不完整的块中所有的数都是 $t + 1$，所以不完整块的和：
+
 $$
 (t + 1) \cdot (k - \sum\limits_{i = 1}^{t} f(i))
 $$
+
 加起来便有：
+
 $$
 s_k = \sum\limits_{i = 1}^{t} (i \cdot f(i)) + (t + 1) \cdot (k - \sum_{i = 1}^{t} f(i))
 $$

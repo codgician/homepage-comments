@@ -1,11 +1,13 @@
 ---
+uuid: de0f6d4c-d84f-11e8-9fd0-27d5181e2c9d
 title: Codeforces Gym 101630J - Journey from Petersburg to Moscow
 date: 2018-10-09 20:39:12
+updated: 2018-10-09 20:39:12
 tags: 
-- ACM-ICPC
-- Graph Theory
-- Shortest Path
-- Codeforces Gym
+  - ACM-ICPC
+  - Graph Theory
+  - Shortest Path
+  - Codeforces Gym
 category: Solutions
 #mathjax: true
 ---
@@ -44,7 +46,6 @@ category: Solutions
 
 - 若 $c_{i + 1} \le x < c_i$ 且 $i \ge k + 1$，对 $x$ 加 $1$ 将使得 $f_p(x)$ 的值增加：
 
-
   $$
   \begin{aligned}
   f_p(x + 1) - f_p(x) & = \sum\limits_{j = 1}^{i}(c_j - x - 1) + k(x + 1) - \sum\limits_{j = 1}^{i}(c_j - x) - kx \\
@@ -74,7 +75,6 @@ category: Solutions
 - 若 $l > k$，则在上述分析中不难发现 $f_p(c_k)$ 就是当前路径前 $k$ 大边权之和。
 
 既然 $f(x)$ 是上述值中的最小值，那么它自然就是所有路径中前 $k$ 大边权值和的最小值，即我们要求的答案 $ans$。
-
 
 复杂度：$\mathcal{O}(m^2\log{n})$
 

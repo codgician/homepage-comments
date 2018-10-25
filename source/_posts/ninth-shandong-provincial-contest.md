@@ -1,23 +1,24 @@
 ---
+uuid: f805549a-d855-11e8-bef9-27720696aa03
 title: 第九届“浪潮杯”山东省程序设计竞赛
 date: 2018-07-19 15:21:00
+updated: 2018-07-19 15:21:00
 tags:
-- ACM-ICPC
-- Contest
-- Greedy
-- Graph Theory
-- Bipartite Matching
-- Binary Search
-- Data Structure
-- Binary Indexed Tree
-- Mathematics
-- Inclusion-Exclusion Principle
-- Dynamic Programming
-- DFS
-- BFS
+  - ACM-ICPC
+  - Contest
+  - Greedy
+  - Graph Theory
+  - Bipartite Matching
+  - Binary Search
+  - Data Structure
+  - Binary Indexed Tree
+  - Mathematics
+  - Inclusion-Exclusion Principle
+  - Dynamic Programming
+  - DFS
+  - BFS
 category: Solutions
 thumbnail: /2018/07/19/ninth-shandong-provincial-contest/cover.jpg
-#mathjax: true
 ---
 # 简介
 
@@ -27,7 +28,7 @@ thumbnail: /2018/07/19/ninth-shandong-provincial-contest/cover.jpg
 
 [重现赛地址](https://www.nowcoder.com/acm/contest/123)
 
-# A: Anagram 
+# A: Anagram
 
 贪心。
 
@@ -146,13 +147,15 @@ DFS + 贪心。
 这样一来，我们不妨把所有石子异或和 $\text{xorSum}$ 视作背包容量，每堆石子视作物品，并且选用物品个数不能超过 $d$。这就成了一个变形的背包问题，只不过总容量从加法和变成了异或和。
 
 我们记录 $dp[i][j][k]$ 表示对于前 $i$ 件物品，从中选取 $j$ 件物品且已选取物品异或和为 $k$ 时的总方案数。不难写出如下状态转移方程：
+
 $$
-dp[i][j][k] = 
+dp[i][j][k] =
 \begin{cases}
 dp[i - 1][j][k] & j = 0 \\
 dp[i - 1][j][k] + dp[i - 1][j - 1][k \oplus a_i] & j > 0 \\
 \end{cases}
 $$
+
 至于初始化，我们初始化 $dp[0][0][0] = 1$。
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123G/dp.cpp)
@@ -164,4 +167,3 @@ BFS。
 既然保证图中只有一个空格，那么相比考虑骨牌的移动我们不妨考虑这个空格的移动。这样子一来这道题就显得很简单了。
 
 [完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123H/bfs.cpp)
-

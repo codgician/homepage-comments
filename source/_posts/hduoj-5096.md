@@ -1,13 +1,14 @@
 ---
+uuid: 0af5c362-d853-11e8-b7cd-9b279a865165
 title: HDUOJ 5096 - ACM Rank
 date: 2018-07-29 17:01:20
+updated: 2018-07-29 17:01:20
 tags: 
-- ACM-ICPC
-- Data Structure
-- Treap
-- HDUOJ
+  - ACM-ICPC
+  - Data Structure
+  - Treap
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面

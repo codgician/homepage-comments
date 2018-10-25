@@ -1,21 +1,18 @@
 ---
+uuid: 73563b7c-d857-11e8-abe1-ef28ffcb62ca
 title: 水题中的教训
 date: 2017-10-08 15:53:10
+updated: 2017-10-08 15:53:10
 tags: 
-- ACM-ICPC
+  - ACM-ICPC
 category: Notes
-#mathjax: false
 ---
 
 # 前言
 
-在 HDU，想报名进 ACM 集训队水水都有条件，不在 HDUOJ 上水上几十道题连报名考试的机会都木有……于是为例尽快达到要求题量我就趁国庆的时间上 HDUOJ 专挑水题做，本以为专做水题 AC 率应该很养眼的，结果事实证名我自己什么水平心里果然一点 char(66) 数都没有。
-
-
+在 HDU，想报名进 ACM 集训队水水都有条件，不在 HDUOJ 上水上几十道题连报名考试的机会都木有……于是为例尽快达到要求题量我就趁国庆的时间上 HDUOJ 专挑水题做，本以为专做水题 AC 率应该很养眼的，结果事实证名我自己什么水平心里果然一点 `char(66)` 数都没有。
 
 # 犯得最多的蠢错
-
-
 
 ## 浮点数的精度丢失
 
@@ -25,17 +22,13 @@ category: Notes
 
 当指数变大时连续两数间的间隙也会越来越大，导致精度丢失（即指数相同、有效数字相邻的两浮点数实际值之间的差距越来越大，当差距大到一定程度时就会导致明显的精度丢失）。而双精度由于尾码更长，所以在指数相同时精度丢失的情况比单精度少不少。
 
-去学习了一圈后写了一篇笔记 https://codgician.github.io/2017/08/18/on-int-and-float。
+去学习了一圈后写了一篇笔记 [乱谈整型与浮点](https://codgician.github.io/2017/08/18/on-int-and-float)。
 
-
-
-## cin 和 scanf 混用导致谜之出错
+## std::cin 和 scanf 混用导致谜之出错
 
 比如 HDUOJ: [1864](http://acm.hdu.edu.cn/showproblem.php?pid=1864)
 
 呜呜呜呜呜我调了三个小时啊喂，到处找数据测试都没问题…… 我辣么可爱，我什么要这样欺负我呜呜呜……
-
-
 
 ## 运算过程中一不小心溢出
 
@@ -43,15 +36,11 @@ category: Notes
 
 在相乘的时候实际上就已经有可能超过 int32 上限了，而这道题数据精妙到即使使用 int64 也毫无卵用。所以就要先除后乘，不过除之前还一定要保证能够整除，否则……
 
- 
-
 ## 担心溢出 先除后乘出现精度问题
 
 比如 HDUOJ: [2032](http://acm.hdu.edu.cn/showproblem.php?pid=2032)
 
 我可能有毒。这道题还是不优化了吧（逃
-
-
 
 ## 循环完后搞忘移动指针指向下一位
 
@@ -59,11 +48,9 @@ category: Notes
 
 你怎么不上天！
 
-
-
 ## 没有看清输入/输出格式
 
-比如 HDUOJ: [1000](http://acm.hdu.edu.cn/showproblem.php?pid=1000), [1096](http://acm.hdu.edu.cn/showproblem.php?pid=1096), [2018](http://acm.hdu.edu.cn/showproblem.php?pid=2018), [2027](http://acm.hdu.edu.cn/showproblem.php?pid=2027) 
+比如 HDUOJ: [1000](http://acm.hdu.edu.cn/showproblem.php?pid=1000), [1096](http://acm.hdu.edu.cn/showproblem.php?pid=1096), [2018](http://acm.hdu.edu.cn/showproblem.php?pid=2018), [2027](http://acm.hdu.edu.cn/showproblem.php?pid=2027)
 
 我都不好意思说我 A + B 问题都 TM 提交了 8 次才 A 掉， 原因就是带着 NOIP 的思维惯性做题而没有注意题目要求的输入格式。
 
@@ -81,15 +68,11 @@ category: Notes
 
 orz 以后一定要看清楚啊……
 
-
-
 ## 微小的笔误
 
 比如 HDUOJ: [2001](http://acm.hdu.edu.cn/showproblem.php?pid=2001)
 
 笔误，把 x 误写作 ans。
-
-
 
 ## 找最值时忘记初始化已知最值
 
@@ -97,18 +80,14 @@ orz 以后一定要看清楚啊……
 
 捂脸。
 
-
-
 ## 蠢哭
 
 比如 HDUOJ: [1106](http://acm.hdu.edu.cn/showproblem.php?pid=1106)
 
 组合多位数时乘以 10 的幂次序搞反了，即最高位乘了 $10^0$，次高位乘了 $10^1$，以此类推…… 然后看了半天没看出来。
 
-
-
 # 郑重声明
 
-**以上错误再犯就穿女装一天**
+以上错误再犯就穿女装一天 QAQ
 
 不过好像我不告诉你我犯了错你也不知道啊（逃

@@ -1395,7 +1395,14 @@ hexo-util@^0.6.0, hexo-util@^0.6.3:
     html-entities "^1.2.0"
     striptags "^2.1.1"
 
-hexo@^3.0.0, hexo@^3.7.1:
+hexo-uuid@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hexo-uuid/-/hexo-uuid-1.0.2.tgz#8a5c9425e63ae7e54c8512996297cdf4c145e41d"
+  integrity sha512-HNxDyBip0Mtqxy/OPCDlIzHzCItDExShw9Ei4vDk2557x6MexiGmVZpusPagtnpp0C1+BhfRHZlCh2bbjAQ5MQ==
+  dependencies:
+    uuid "^2.0.1"
+
+hexo@^3.0.0:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/hexo/-/hexo-3.7.1.tgz#0381874e67891b521b9e3023ef4db85a62337f96"
   integrity sha512-+RRN4C8oWYzEnW0NtqNrIfIITRTvXpMoE6OrK5aK4nrO+4lzp0JfZkoxnsINVXUPmzHRimLWUzO95x9lt33jEg==
@@ -1444,6 +1451,39 @@ hexo@^3.1.1:
     hexo-i18n "^0.2.1"
     hexo-log "^0.2.0"
     hexo-util "^0.6.0"
+    js-yaml "^3.6.1"
+    lodash "^4.17.5"
+    minimatch "^3.0.4"
+    moment "^2.19.4"
+    moment-timezone "^0.5.14"
+    nunjucks "^3.1.2"
+    pretty-hrtime "^1.0.2"
+    resolve "^1.5.0"
+    strip-ansi "^4.0.0"
+    strip-indent "^2.0.0"
+    swig-extras "0.0.1"
+    swig-templates "^2.0.2"
+    text-table "^0.2.0"
+    tildify "^1.2.0"
+    titlecase "^1.1.2"
+    warehouse "^2.2.0"
+
+hexo@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/hexo/-/hexo-3.8.0.tgz#4d05cce558ded5c14dfa1516bbae3971747f9747"
+  integrity sha512-qMk0TZ+ErKMD25R+HMHFvbyTAcKszmGZYtQHT2pzVnZgitkJCShZ7b2qDbedtWBBizhutNbKkhQ4D3Dqivaviw==
+  dependencies:
+    abbrev "^1.0.7"
+    archy "^1.0.0"
+    bluebird "^3.4.0"
+    chalk "^2.3.1"
+    cheerio "0.22.0"
+    hexo-cli "^1.1.0"
+    hexo-front-matter "^0.2.2"
+    hexo-fs "^0.2.0"
+    hexo-i18n "^0.2.1"
+    hexo-log "^0.2.0"
+    hexo-util "^0.6.3"
     js-yaml "^3.6.1"
     lodash "^4.17.5"
     minimatch "^3.0.4"
@@ -3030,6 +3070,11 @@ utils-merge@1.0.1, utils-merge@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+uuid@^2.0.1:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
+  integrity sha1-Z+LoY3lyFVMN/zGOW/nc6/1Hsho=
 
 uuid@^3.0.0, uuid@^3.1.0:
   version "3.2.1"

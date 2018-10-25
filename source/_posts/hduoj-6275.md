@@ -1,6 +1,8 @@
 ---
+uuid: 04d4b390-d84d-11e8-92fe-f38ce4f3d6bb
 title: HDUOJ 6275 - Mod, Xor and Everything
 date: 2018-10-25 18:10:23
+updated: 2018-10-25 18:10:23
 tags: 
 - ACM-ICPC
 - Mathematics
@@ -101,4 +103,3 @@ $$
 # %%%
 
 - rzO_KQP_Orz - [【hdu6275】【2017ccpc杭州L】Mod, Xor and Everything 题解](https://blog.csdn.net/rzO_KQP_Orz/article/details/83120181?utm_source=blogxgwz0)
-

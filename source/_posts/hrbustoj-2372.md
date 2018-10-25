@@ -1,12 +1,13 @@
 ---
+uuid: fe7779c6-d854-11e8-bdd2-5f5cf95d406d
 title: HRBUSTOJ 2372 - 小L的问题
 date: 2018-03-27 11:46:01
+updated: 2018-03-27 11:46:01
 tags: 
-- ACM-ICPC
-- Dynamic Programming
-- HRBUSTOJ
+  - ACM-ICPC
+  - Dynamic Programming
+  - HRBUSTOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -45,8 +46,6 @@ $1 \le n \le 10^{18}$
 
 ![状态转移](hrbustoj-2372/transformation.png)
 
-
-
 由上图，我们可以很直观地发现：
 
 $dp[i][0]$ 可以在 $dp[i - 1][3]$ 的基础上什么都不做得来；
@@ -58,6 +57,7 @@ $dp[i][2]$ 可以在 $dp[i - 1][0]$ 的基础上加一个 $L$ 型骨牌，或在
 $dp[i][3]$ 可以在 $dp[i - 1][0]$ 的基础上横着加两个 $1 \times 2$ 型骨牌，或在 $dp[i - 1][1]$ 的基础上加一个 $L$ 型骨牌， 或在 $dp[i - 1][2]$ 的基础上加一个 $L$ 型骨牌，或在 $dp[i - 1][3]$ 的基础上竖着加一个 $1 \times 2$ 型骨牌得来；
 
 即得出：
+
 $$
 \begin{cases}
 dp[i][0] = dp[i - 1][3] \\
@@ -66,20 +66,26 @@ dp[i][2] = dp[i - 1][0] + dp[i - 1][1] \\
 dp[i][3] = dp[i - 1][0] + dp[i - 1][1] + dp[i - 1][2] + dp[i - 1][3] \\
 \end{cases}
 $$
+
 而我们最后要求的答案，也就是 $dp[n][3]$：
+
 $$
 ans[n] = dp[n][3]
 $$
+
 最后，我们也不难找出边界情况，也就是：
+
 $$
 \begin{cases}
 dp[1][0] = 1 \\
 dp[1][1] = 0 \\
-dp[1][2] = 0 \\ 
+dp[1][2] = 0 \\
 dp[1][3] = 1 \\
 \end{cases}
 $$
+
 当然，你也可以简单地记作：
+
 $$
 dp[0][3] = 1
 $$
@@ -87,6 +93,7 @@ $$
 ---
 
 在此基础上，我们还可以考虑对原转移方程进行化简：
+
 $$
 \begin{aligned}
 ans[i] &= dp[i][3] \\
@@ -98,11 +105,12 @@ ans[i] &= dp[i][3] \\
 &= 2 \cdot ans[i - 1] + ans[i - 3] \\
 \end{aligned}
 $$
+
 于是我们由此得到了：
+
 $$
 ans[i] = 2 \cdot ans[i - 1] + ans[i - 3]
 $$
-
 
 # 实现
 

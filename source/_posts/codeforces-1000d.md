@@ -1,12 +1,13 @@
 ---
+uuid: aeadb478-d84f-11e8-a5ca-b39482a2bcb8
 title: "Codeforces 1000D - Yet Another Problem on Subsequence"
 date: 2018-07-10 18:17:00
+updated: 2018-07-10 18:17:00
 tags: 
-- ACM-ICPC
-- Dynamic Programming
-- Codeforces
+  - ACM-ICPC
+  - Dynamic Programming
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 # 题面

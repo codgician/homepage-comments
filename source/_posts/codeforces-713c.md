@@ -1,12 +1,13 @@
 ---
+uuid: 0e40daa6-d84f-11e8-8c5c-ffe705b2a873
 title: Codeforces 713C - Sonya and Problem Wihtout a Legend
 date: 2018-05-08 16:08:00
+updated: 2018-05-08 16:08:00
 tags: 
-- ACM-ICPC
-- Dynamic Programming
-- Codeforces
+  - ACM-ICPC
+  - Dynamic Programming
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -50,7 +51,6 @@ $$
 dp[i][j] = \min\limits_{0 \le k \le j} \{ dp[i - 1][k] \} + |arr[i] - val[j]|
 $$
 
-
 朴素的实现方法复杂度高达 $\mathcal{O}(N^3)$，这里提供两种优化思路。
 
 ## 优化思路一
@@ -66,7 +66,7 @@ $$
 
 我们可以把 $dp[i][j]$ 的含义改为处理完前 $i$ 个元素并且 $b_i \le j$ 时的最小操作数，那么相应地，状态转移方程式为：
 $$
-dp[i][j] = 
+dp[i][j] =
 \begin{cases}
 dp[i - 1][j] = dp[i - 1][j] + |arr[i] - val[i]| & j = 1 \\
 \min \{ dp[i - 1][j] + |arr[i] - val[i]|, dp[i][j - 1]\} & j > 1\\
@@ -84,8 +84,9 @@ $$
 ~~这个方法真的好难理解啊，我也不知道我在写什么（求不打死，逃~~
 
 首先，我们记 $f_i(x)$ 表示使得 $arr[1 \dots i]$ 单调递增并且 $arr[i] \le x$ 时所需要的最少操作数。我们不难得到求解 $f_i(x)$ 的递推方式（即得到 $f_i$ 与 $f_{i - 1}$ 之间的关系）：
+
 $$
-f_i(x) = 
+f_i(x) =
 \begin{cases}
 \min\limits_{Y \le X} \{ |arr[i] - Y| \} & i = 1 \\
 \min\limits_{Y \le X} \{ f_{i - 1}(Y) + |arr[i] - Y|  \} & i > 1 \\
@@ -114,7 +115,7 @@ $$
 
 整理一下：
 $$
-f_i(opt(i)) = 
+f_i(opt(i)) =
 \begin{cases}
 f_{i - 1}(opt(i - 1)) & opt(i - 1) \le arr[i] \\
 f_{i - 1}(opt(i - 1)) + |arr[i] - opt(i - 1)| & opt(i - 1) > arr[i] \\

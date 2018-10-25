@@ -1,12 +1,13 @@
 ---
+uuid: 35f5c390-d84f-11e8-84d5-8b9f56e4c4a9
 title: Codeforces 893E - Counting Arrays
 date: 2018-07-14 00:30:00
+updated: 2018-07-14 00:30:00
 tags: 
-- ACM-ICPC
-- Combinatorics
-- Codeforces
+  - ACM-ICPC
+  - Combinatorics
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -21,7 +22,6 @@ $1 \le x,y \le 10^6$
 
 [题目链接](http://codeforces.com/contest/893/problem/E)
 
-
 # 组合数学
 
 ## 思路
@@ -30,7 +30,6 @@ $1 \le x,y \le 10^6$
 $$
 x = p_1^{k_1} \cdot p_2^{k_2} \cdot \dots \cdot p_n^{k_n}
 $$
-
 
 同时，我们知道序列中的任意一个值 $a_i$ 一定可以表示为如下形式：
 $$
@@ -71,4 +70,4 @@ $$
 
 # %%%
 
-- miskcoo - [ \[数论\] 线性求所有逆元的方法](http://blog.miskcoo.com/2014/09/linear-find-all-invert)
+- miskcoo - [\[数论\] 线性求所有逆元的方法](http://blog.miskcoo.com/2014/09/linear-find-all-invert)

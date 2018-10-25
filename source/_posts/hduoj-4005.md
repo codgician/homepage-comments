@@ -1,14 +1,15 @@
 ---
+uuid: 7ea3a4f6-d852-11e8-9cde-3b41489f9964
 title: HDUOJ 4005 - The war
 date: 2018-07-21 16:15:01
+updated: 2018-07-21 16:15:01
 tags: 
-- ACM-ICPC
-- Graph Theory
-- Tarjan
-- DFS
-- HDUOJ
+  - ACM-ICPC
+  - Graph Theory
+  - Tarjan
+  - DFS
+  - HDUOJ
 category: Solutions
-#mathjax: true
 ---
 
 # 题面

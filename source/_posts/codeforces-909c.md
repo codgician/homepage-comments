@@ -1,12 +1,13 @@
 ---
+uuid: 6d7f804e-d84f-11e8-9fa0-0f19f01ae3d5
 title: Codeforces 909C - Python Indentation
 date: 2018-01-07 23:22:00
+updated: 2018-01-07 23:22:00
 tags: 
-- ACM-ICPC
-- Dynamic Programming
-- Codeforces
+  - ACM-ICPC
+  - Dynamic Programming
+  - Codeforces
 category: Solutions
-#mathjax: true
 ---
 
 # 题面
@@ -15,8 +16,8 @@ Python 中语句块并没有大括号包围，而是靠缩进来定义的。
 
 现在有一种简化版的 Python，只含有两种语句：
 
--   `s`：Simple statement，即一般的语句。
--   `f`：For statement，即循环语句（相当于 `for`），并且其循环体不可为空。
+- `s`：Simple statement，即一般的语句。
+- `f`：For statement，即循环语句（相当于 `for`），并且其循环体不可为空。
 
 现在给你一段没有缩进的这种简化版 Python 的代码，请你计算有多少种合法的 Python 程序。
 
@@ -26,8 +27,8 @@ Python 中语句块并没有大括号包围，而是靠缩进来定义的。
 
 我们来看看第 $n$ 行语句。不管第 $n$ 行语句是哪类语句，其可能的缩进实际上完全取决于第 $n - 1$ 行：
 
--   若第 $n - 1$ 行是 `f` ，第 $n$ 行的缩进只可能比第 $n - 1$ 行多 1；
--   若第 $n - 1$ 行是 `s` ，第 $n$ 行的缩进可以是 0 ~ 第 $n - 1$ 行缩进中的任意一值（即小于等于 $n - 1$ 行的缩进）。
+- 若第 $n - 1$ 行是 `f` ，第 $n$ 行的缩进只可能比第 $n - 1$ 行多 1；
+- 若第 $n - 1$ 行是 `s` ，第 $n$ 行的缩进可以是 0 ~ 第 $n - 1$ 行缩进中的任意一值（即小于等于 $n - 1$ 行的缩进）。
 
 基于此发现，我们可以用 $dp[i][j]$ 表示状态，表示第 $i$ 行缩进为 $j$ 时的方案个数。边界条件即 $dp[0][0] = 1$。
 
@@ -43,13 +44,11 @@ Python 中语句块并没有大括号包围，而是靠缩进来定义的。
   dp[i][j] = \sum\limits_{k = j}^{M} dp[i - 1][k]
   $$
 
-
-
 那么最后我们所要求的总合法方案数就是（同样记最大可能缩进为 $M$）：
+
 $$
 \sum\limits_{k = 0}^{M} dp[i][k]
 $$
-
 
 # 具体实现？
 
@@ -88,9 +87,7 @@ for (int j = maxIndentation; j >= 0; j--)
 }
 ```
 
-
-
 # %%%
 
--   Nickolas - [Codeforces Round #455 (Div.2) Editorial](http://codeforces.com/blog/entry/56666)
--   Leohh - [Codeforces 909C Python Indentation：树状数组优化dp](http://www.cnblogs.com/Leohh/p/8135525.html)
+- Nickolas - [Codeforces Round #455 (Div.2) Editorial](http://codeforces.com/blog/entry/56666)
+- Leohh - [Codeforces 909C Python Indentation：树状数组优化dp](http://www.cnblogs.com/Leohh/p/8135525.html)
