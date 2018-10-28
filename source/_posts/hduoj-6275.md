@@ -4,10 +4,10 @@ title: HDUOJ 6275 - Mod, Xor and Everything
 date: 2018-10-25 18:10:23
 updated: 2018-10-25 18:10:23
 tags: 
-- ACM-ICPC
-- Mathematics
-- Quasi-Euclidean Algorithm
-- HDUOJ
+  - ACM-ICPC
+  - Mathematics
+  - Quasi-Euclidean Algorithm
+  - HDUOJ
 category: Solutions
 #mathjax: true
 ---

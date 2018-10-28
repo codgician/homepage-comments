@@ -28,7 +28,7 @@ $$
 
 # 引理
 
-考虑 $a, b, c$ 均为正整数。
+考虑 $a, b, c$ 均为非负整数。
 
 ## #1
 
@@ -96,7 +96,8 @@ $$
 f(a, b, c, n)
 & = \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor} \\
 & = \sum\limits_{i = 0}^{n} \sum\limits_{j = 0}^{\left\lfloor \frac{ai + b}{c} \right\rfloor - 1} {1} \\
-& = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {(\left\lfloor \frac{ai + b}{c} \right\rfloor > j)}
+& = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {(j \le \left\lfloor \frac{ai + b}{c} \right\rfloor - 1)} \\
+& = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {(j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} \\
 \end{aligned}
 $$
 
@@ -105,9 +106,9 @@ $$
 $$
 \begin{aligned}
 f(a, b, c, n)
-& = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {( \left\lfloor \frac{ai + b}{c} \right\rfloor > j )} \\
+& = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {(j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} \\
 & = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {\left[ cj < (ai + b) - c + 1 \right]} \\
-& = \sum\limits_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {( \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor < i )} \\
+& = \sum\limits_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {(i > \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor)} \\
 \end{aligned}
 $$
 
@@ -163,7 +164,8 @@ $$
 \begin{aligned}
 g(a, b, c, n) & = \sum\limits_{i = 0}^{n} {i \left\lfloor \frac{ai + b}{c} \right\rfloor} \\
 & = \sum\limits_{i = 0}^{n} \sum\limits_{j = 0}^{\left\lfloor \frac{ai + b}{c} \right\rfloor - 1} {i} \\
-& = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {i \cdot ( \left\lfloor \frac{ai + b}{c} \right\rfloor > j)} \\
+& = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {i \cdot (j \le \left\lfloor \frac{ai + b}{c} \right\rfloor - 1)} \\
+& = \sum_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {i \cdot (j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} \\
 \end{aligned}
 $$
 
@@ -172,9 +174,9 @@ $$
 $$
 \begin{aligned}
 g(a, b, c, n)
-& = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {i \cdot ( \left\lfloor \frac{ai + b}{c} \right\rfloor > j)} \\
+& = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {i \cdot (j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} \\
 & = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {i \cdot \left[ cj < (ai + b) - c + 1 \right]} \\
-& = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {i \cdot (\left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor < i)} \\
+& = \sum_{j = 0}^{m - 1} \sum\limits_{i = 0}^{n} {i \cdot (i > \left\lfloor \frac{cj + c - b - 1}{a} \right\rfloor)} \\
 \end{aligned}
 $$
 
@@ -258,7 +260,9 @@ $$
 \begin{aligned}
 h(a, b, c, n) = & \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor}^2 \\
 = & \sum\limits_{i = 0}^{n} (2 \sum\limits_{j= 0}^{\left\lfloor \frac{ai + b}{c} \right\rfloor - 1} {j} + \left\lfloor \frac{ai + b}{c} \right\rfloor) \\
-= & 2\sum\limits_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {j \cdot (j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} + \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor} \\
+= & 2\sum\limits_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {j \cdot (j \le \left\lfloor \frac{ai + b}{c} \right\rfloor - 1)} + \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor} \\
+
+= & 2\sum\limits_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {j \cdot (j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} + f(a, b, c, n) \\
 \end{aligned}
 $$
 
