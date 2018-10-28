@@ -261,7 +261,6 @@ $$
 h(a, b, c, n) = & \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor}^2 \\
 = & \sum\limits_{i = 0}^{n} (2 \sum\limits_{j= 0}^{\left\lfloor \frac{ai + b}{c} \right\rfloor - 1} {j} + \left\lfloor \frac{ai + b}{c} \right\rfloor) \\
 = & 2\sum\limits_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {j \cdot (j \le \left\lfloor \frac{ai + b}{c} \right\rfloor - 1)} + \sum\limits_{i = 0}^{n} {\left\lfloor \frac{ai + b}{c} \right\rfloor} \\
-
 = & 2\sum\limits_{j = 0}^{\left\lfloor \frac{an + b}{c} \right\rfloor - 1} \sum\limits_{i = 0}^{n} {j \cdot (j < \left\lfloor \frac{ai + b}{c} \right\rfloor)} + f(a, b, c, n) \\
 \end{aligned}
 $$
