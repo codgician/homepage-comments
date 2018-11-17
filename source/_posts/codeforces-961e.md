@@ -80,7 +80,7 @@ Polycarp 决定二刷他最喜欢的电视剧 Tufurama，但是当他搜索这�
 
 # 参考代码
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/961E/binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/961E/binary_indexed_tree.cpp)
 
 # %%%
 

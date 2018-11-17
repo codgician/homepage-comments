@@ -54,7 +54,7 @@ $1 \le m, c_i \le 100000$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/4005/tarjan_edcc.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/4005/tarjan_edcc.cpp)
 
 # %%%
 

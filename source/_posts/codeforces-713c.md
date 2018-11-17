@@ -60,7 +60,7 @@ $$
 dp[i][j] = \text{prevMinVal} + |arr[i] - val[j]|
 $$
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/713C/dp.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/713C/dp.cpp)
 
 ## 优化思路二
 
@@ -75,7 +75,7 @@ $$
 
 其中 $ dp[i - 1][j] + |arr[i] - val[i]|$ 代表 $b_i = j$ 时的最小操作数，而 $dp[i][j - 1]$ 则代表 $b_i < j$ 时的最小操作数，两者中的最小值也就是 $dp[i][j]$ 啦。细节上为了方便可以把直接把 $dp[0][j]$ 全部初始化为 $0$。 这样做也可以省掉 $k$ 那一层循环使得复杂度降为 $\mathcal{O}(N^2)$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/713C/dp_alt.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/713C/dp_alt.cpp)
 
 # 神奇的数学方法
 
@@ -131,4 +131,4 @@ $$
 - 当 $arr[i] \ge opt(i - 1)$ 时，我们只需将 $arr[i]$ 加入大根堆中（新增一个引起函数斜率变化的点）；
 - 当 $arr[i] < opt(i - 1)$ 时，我们显然需要把 $arr[i]$ 变成 $opt(i - 1)$ （也就是堆顶）。在此之后，我们需要弹出堆顶，并将 $arr[i]$ 两次加入大根堆（对不同的 $i$， $opt(i)$ 是可以有重值的）。这样维护了之前提到的性质 "在 $x = arr[i]$ 左边，引起 $f_i(x)$ 斜率变化的点有 $i$ 个"（因为这事实上等效于将 $[-\infty, arr[i]]$ 的斜率 $-1$，$[arr[i], opt(i - 1)]$ 的斜率 $+1$）。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/713C/priority_queue.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/713C/priority_queue.cpp)

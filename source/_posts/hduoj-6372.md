@@ -128,7 +128,7 @@ $$
 
 另外由实践得知，第 $10^5$ 个质数为 $1299709$，因此我们在处理阶乘的时候至少需要处理至 $1299709 + 10^5$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6372/combinatorics_lucas.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6372/combinatorics_lucas.cpp)
 
 # %%%
 

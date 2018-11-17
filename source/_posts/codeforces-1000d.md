@@ -35,7 +35,7 @@ $$
 
 另外，我们需要初始化 $dp[k + 1]$ 为 $1$。这等于是我们对于每一个序列虚拟了一个第 $k + 1$ 位，以应对整个序列就是一个好数组的情况（比如样例一）。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/1000D/dp.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/1000D/dp.cpp)
 
 # %%%
 

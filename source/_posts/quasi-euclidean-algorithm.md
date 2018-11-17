@@ -305,7 +305,28 @@ $$
 
 # 代码实现
 
-咕咕咕……
+## 仅 f 式
+
+```cpp
+long long int quasiEuclidean(long long int a, long long int b, long long int c, long long int n) {
+    if (a == 0) {
+        return (n + 1) * (b / c);
+    }
+
+    if (a >= c || b >= c) {
+        long long int tmp = (n & 1) ? ((n + 1) >> 1) * n : (n >> 1) * (n + 1);
+        return (a / c) * tmp + (b / c) * (n + 1) + quasiEuclidean(a % c, b % c, c, n);
+    }
+
+    long long int m = (a * n + b) / c;
+    return n * m - quasiEuclidean(c, c - b - 1, a, m - 1);
+}
+```
+
+## f, g, h 式
+
+由于没有找到相应的模板题，所以…… 咕咕咕……
+
 
 # 更通用的情况
 

@@ -99,4 +99,4 @@ $$
 
 借助线性筛，我们可以在 $\mathcal{O}(N)$ 的复杂度内初始化欧拉函数，同时我们也可以在 $O(N)$ 时间内初始化 $g(n)$ 的前缀和。初始化好后再对不同询问进行 $\mathcal{O}(1)$ 回答即可。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6434/euler's_totient_function.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6434/euler's_totient_function.cpp)

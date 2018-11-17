@@ -34,7 +34,7 @@ thumbnail: /2018/07/19/ninth-shandong-provincial-contest/cover.jpg
 
 对于 **A** 串中的每一个字符，尽量使它变换次数最少，这样可以保证总变换次数最少。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123A/greedy.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123A/greedy.cpp)
 
 # B: Bullet
 
@@ -48,7 +48,7 @@ thumbnail: /2018/07/19/ninth-shandong-provincial-contest/cover.jpg
 
 复杂度：$\mathcal{O}(N^2\log{N})$
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123B/hungarian_binary_search.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123B/hungarian_binary_search.cpp)
 
 关于匈牙利算法的更多内容可以参考我的另一篇博文：[浅谈匈牙利算法](https://blog.codgician.pw/2018/03/09/the-hungarian-algorithm/)
 
@@ -60,7 +60,7 @@ thumbnail: /2018/07/19/ninth-shandong-provincial-contest/cover.jpg
 
 既然要建连通图，那么显然每个点的点权至少要被算上一次（因为它们都一定需要与另一个点相连）。我们希望与每个点相连的点的权值都最小，那么我们只需要找出权值最小的点，并让剩下的点都与它相连就好了。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123C/greedy.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123C/greedy.cpp)
 
 # D: Dance
 
@@ -70,7 +70,7 @@ DFS + 贪心。
 
 这个做法貌似不能称作正解，因为如果构造一棵 ” $\frac{N}{2}$ 个节点组成一条链，剩下 $\frac{N}{2}$ 个节点分别是前 $\frac{N}{2}$ 个节点的孩子“ 这样子的树，貌似可以把这个做法卡掉…… 还是出题人太良心了。🙈
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123D/dfs_greedy.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123D/dfs_greedy.cpp)
 
 # E: Sequence
 
@@ -93,7 +93,7 @@ DFS + 贪心。
 
 复杂度：$\mathcal{O}(N\log{N})$
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123E/binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123E/binary_indexed_tree.cpp)
 
 ## 方法二
 
@@ -109,7 +109,7 @@ DFS + 贪心。
 
 复杂度：$\mathcal{O}(N)$
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123E/observation.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123E/observation.cpp)
 
 # F: Four-tuples
 
@@ -134,7 +134,7 @@ DFS + 贪心。
 
 那么根据容斥原理，我们最终所要求的答案即：${1} - ({2} + {3} + {4}) + ({6} + {7}) + ({8} + {9} + {10} + {11}) - 3 \cdot {12}$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123F/inclusion_exclusion_principle.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123F/inclusion_exclusion_principle.cpp)
 
 # G: Game
 
@@ -158,7 +158,7 @@ $$
 
 至于初始化，我们初始化 $dp[0][0][0] = 1$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123G/dp.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123G/dp.cpp)
 
 # H: Dominoes
 
@@ -166,4 +166,4 @@ BFS。
 
 既然保证图中只有一个空格，那么相比考虑骨牌的移动我们不妨考虑这个空格的移动。这样子一来这道题就显得很简单了。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Newcoder/123H/bfs.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Newcoder/123H/bfs.cpp)

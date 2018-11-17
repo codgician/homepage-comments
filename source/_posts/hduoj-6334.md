@@ -115,7 +115,7 @@ $\sum n, \sum m \le 3 \times 10^5$
 
 本题实现起来有点难 QAQ。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6334/disjoint_set.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6334/disjoint_set.cpp)
 
 # %%%
 

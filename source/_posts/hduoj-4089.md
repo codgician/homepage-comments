@@ -132,7 +132,7 @@ $$
 
 像我这种智商欠费的🐷在写概率 DP 时还是不要为了省一点空间作死下标从 $0$ 开始了…… 😭
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/4089/dp.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/4089/dp.cpp)
 
 # %%%
 

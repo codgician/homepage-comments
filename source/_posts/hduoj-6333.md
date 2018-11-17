@@ -81,7 +81,7 @@ $$
 
 ## 实现
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6333/combinatorics_partitioning.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6333/combinatorics_partitioning.cpp)
 
 # 莫队
 
@@ -117,4 +117,4 @@ $$
 
 ## 实现
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6333/combinatorics_mo's_algorithm.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6333/combinatorics_mo's_algorithm.cpp)

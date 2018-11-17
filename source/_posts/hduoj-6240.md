@@ -34,7 +34,7 @@ $1 \le A_i, B_i \le 1000$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6240/binary_search_fp_binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6240/binary_search_fp_binary_indexed_tree.cpp)
 
 # %%%
 

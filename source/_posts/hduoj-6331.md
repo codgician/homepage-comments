@@ -78,7 +78,7 @@ $$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/HDUOJ/6331/floyd_partitioning.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6331/floyd_partitioning.cpp)
 
 # %%%
 

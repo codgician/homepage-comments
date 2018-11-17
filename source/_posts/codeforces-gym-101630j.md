@@ -84,7 +84,7 @@ category: Solutions
 
 改变边权可以考虑在进行 Dijkstra 时进行，这样更容易实现。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces-Gym/101630J/dijkstra.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces-Gym/101630J/dijkstra.cpp)
 
 # %%%
 

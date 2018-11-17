@@ -64,9 +64,9 @@ $$
 
 另外在做这道题的过程中顺便学到了一种[线性预处理逆元的算法](http://blog.miskcoo.com/2014/09/linear-find-all-invert)，但这道题用不到。为了试试这种算法，第一份参考代码中使用了这一算法来预处理逆元。
 
-[完整参考代码 - 1](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/893E/combinatorics.cpp)
+[完整参考代码 - 1](https://github.com/codgician/ICPC/blob/master/Codeforces/893E/combinatorics.cpp)
 
-[完整参考代码 - 2](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/893E/combinatorics_alt.cpp)
+[完整参考代码 - 2](https://github.com/codgician/ICPC/blob/master/Codeforces/893E/combinatorics_alt.cpp)
 
 # %%%
 

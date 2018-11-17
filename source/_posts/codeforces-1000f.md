@@ -39,7 +39,7 @@ $1 \le n, a_i, q \le 5 \cdot 10^5$
 
 接下来我们再回到这个复杂的情形。如果我们事先对所有查询区间 $[l, r]$ 按照右端点 $r$ 从小到大排序，接下来随着 $r$ 的增长维护线段树就可以把复杂情形转移为上面说的简单情形了。详细地说，在查询区间 $[l_i, r_i]$ 时，线段树的规模只有 $r_i$，而下一步查询区间 $[l _{i + 1}, r_{i + 1}]$ 时，我们先在线段树中加入 $(r_i, r_{i + 1}]$ 间的信息使得线段树规模扩大到 $r_{i + 1}$ 后再进行查询。这样就可以保证，每次查询 $[l, r]$ 的时候，当前数组的长度实际上只有 $r$，所以就可以用上一段提到的方法解决问题：在第 $i$ 位加入新值后（这意味着 $a[i]$ 上一次出现的位置 $j$ 不再满足性质一），如果 $\text{last}[i] \neq 0$ 则令 $\text{last}[\text{last}[i]] = +\infty$。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/1000F/segment_tree.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/1000F/segment_tree.cpp)
 
 # 在线做法
 
@@ -47,7 +47,7 @@ $1 \le n, a_i, q \le 5 \cdot 10^5$
 
 简而言之，查询区间 $[l, r]$ 时就等效于查询第 $r$ 个历史版本，而第 $i$ 个历史版本就代表原数组的 $[1, i]$ 部分对应的线段树。
 
-[完整参考代码](https://github.com/codgician/ACM-ICPC/blob/master/Codeforces/1000F/persistent_segment_tree.cpp)
+[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/1000F/persistent_segment_tree.cpp)
 
 # %%%
 
