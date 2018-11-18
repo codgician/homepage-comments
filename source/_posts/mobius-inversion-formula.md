@@ -111,9 +111,9 @@ $$
 \sum\limits_{n|d} \mu(\frac{d}{n})F(d) = f(n)
 $$
 
-## 应用
+# 应用
 
-### 与欧拉函数联系
+## 与欧拉函数联系
 
 这里我们尝试应用一下莫比乌斯反演来推导莫比乌斯函数 $\mu(n)$ 与欧拉函数 $\varphi(n)$ 间的关系。
 
@@ -138,9 +138,39 @@ $$
 \sum\limits_{d|n} \frac{\mu(d)}{d} = \frac{\varphi(n)}{n}
 $$
 
-### 与最大公约数联系
+## 与最大公约数联系
 
-**挖坑待填……**
+给定 $n, m$，求满足 $1 \le i \le n, \ 1 \le j \le m, \ \gcd(i, j) = 1$ 的数对 $\langle i, j \rangle$ 个数。
+
+换言之，即求：
+
+$$
+\sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = 1]
+$$
+
+暴力的做法显然复杂度是 $\mathcal{O}(n^2)$ 级别的。
+
+我们可以考虑利用莫比乌斯函数的性质：
+
+$$
+\begin{aligned}
+\sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = 1] = & \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m}\sum\limits_{d|\gcd(i, j)}\mu(d) \\
+= & \sum\limits_{d = 1}^{\min(i, j)}\mu(d) \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [d | \gcd(i, j)] \\
+= & \sum\limits_{d = 1}^{\min(i, j)} \mu(d)\left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor
+\end{aligned}
+$$
+
+我们可以用 $\mathcal{O}(N)$ 的复杂度预处理出 $\mu(n)$ 的前缀和，面对询问时我们可以用 $\mathcal{O}(\sqrt{N})$ 的复杂度进行整除分块并进行求解。
+
+那么如果我们要求的是 $\gcd(i, j) = k$ 怎么办？我们仅需做如下变换：
+
+$$
+\sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = k] = \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} [\gcd(i, j) = 1]
+$$
+
+接下来就跟之前的做法一样咯。
+
+至于更多的应用，强烈安利这篇博文： [莫比乌斯反演-让我们从基础开始](https://www.luogu.org/blog/An-Amazing-Blog/mu-bi-wu-si-fan-yan-ji-ge-ji-miao-di-dong-xi)。
 
 # %%%
 
