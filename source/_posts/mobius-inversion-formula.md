@@ -2,7 +2,7 @@
 uuid: c44d8340-ea69-11e8-b673-b37e9c899406
 title: 浅谈莫比乌斯反演
 date: 2018-11-18 13:07:42
-updated: 2018-11-18 15:12:45
+updated: 2018-11-18 16:52:55
 tags: 
   - ACM-ICPC
   - Mathematics
@@ -71,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-由前文提到的性质，当且仅当 $\frac{n}{k} = 1$ 时 $\sum\limits_{d|\frac{n}{k}} \mu(d) = 1$；否则该式值为 $0$。而 $\frac{n}{k} = 1$ 就意味着只有 $n = k$ 这一种情况，所以：
+由前文提到的性质，当且仅当 $\frac{n}{k} = 1$ 时 $\sum\limits_{d|\frac{n}{k}} \mu(d) = 1$；否则该式值为 $0$。所以：
 
 $$
 \begin{aligned}
@@ -80,34 +80,6 @@ $$
 $$
 
 得证。
-
-## 引理
-
-在展示另一个形式前，我们先来看一个引理：
-$$
-\sum\limits_{d|n} \mu(d)F(\frac{n}{d}) = \sum\limits_{d|n} \mu(\frac{n}{d})F(d)
-$$
-
-其实这个很好理解（虽然本垃圾也不知道是否严谨）。
-
-在 $n$ 确定的情况下， $\mu(d)F(\frac{n}{d})$ 实际上可以看作一个仅与 $d$ 有关的函数 $g(d)$。
-
-由整除的相关性质，显然有 $d | n \Leftrightarrow \frac{n}{d} | n$。由此我们易得对于任意函数 $g(d)$，有：
-
-$$
-\sum\limits_{d|n}g(d) = \sum\limits_{\frac{n}{d}|n} g(d)
-$$
-
-我们不妨令 $d = \frac{n}{t}$，将其带入等式左边即可得到：
-
-$$
-\begin{aligned}
-\sum\limits_{d|n} \mu(d)F(\frac{n}{d}) = & \sum\limits_{\frac{n}{t}|n} \mu(\frac{n}{t})F(t) \\
-= & \sum\limits_{t|n} \mu(\frac{n}{t})F(t)
-\end{aligned}
-$$
-
-把 $t$ 换回 $d$ 就好了……
 
 ## 形式 #2
 
@@ -123,18 +95,17 @@ $$
 
 ### 证明
 
-由之前提到的引理：
+令 $t = \frac{d}{n}$，有：
 
 $$
 \begin{aligned}
-\sum\limits_{n|d} \mu(\frac{d}{n})F(d) = & \sum\limits_{n|d}\mu(d)F(\frac{d}{n}) \\
-= & \sum\limits_{n|d}\mu(d)\sum\limits_{\frac{d}{n}|k}f(k) \\
-= & \sum\limits_{n|k}f(k)\sum\limits_{\frac{d}{n}|k} \mu(d) \\
-= & \sum\limits_{n|k}f(k)\sum\limits_{d|kn} \mu(d) \\
+\sum\limits_{n|d} \mu(\frac{d}{n})F(d) = & \sum\limits_{t = 1}^{+\infty}\mu(t)F(nt) \\
+= & \sum\limits_{t = 1}^{+\infty}\mu(t)\sum\limits_{nt|k}f(k) \\
+= & \sum\limits_{n|k}f(k)\sum\limits_{t|\frac{k}{n}}\mu(t)
 \end{aligned}
 $$
 
-由前文提到的性质，当且仅当 $kn = 1$ 时 $\sum\limits_{d|kn} \mu(d) = 1$，否则该式值为 $0$。而 $kn = 1$ 意味着只有 $k = n = 1$ 这一种情况，所以：
+由前文提到的性质，当且仅当 $\frac{k}{n} = 1$ 时 $\sum\limits_{t|\frac{k}{n}}\mu(t) = 1$，否则该式值为 $0$。所以：
 
 $$
 \sum\limits_{n|d} \mu(\frac{d}{n})F(d) = f(n)
