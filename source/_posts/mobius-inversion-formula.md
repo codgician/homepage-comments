@@ -2,7 +2,7 @@
 uuid: c44d8340-ea69-11e8-b673-b37e9c899406
 title: 浅谈莫比乌斯反演
 date: 2018-11-18 13:07:42
-updated: 2018-11-18 13:07:42
+updated: 2018-11-18 15:12:45
 tags: 
   - ACM-ICPC
   - Mathematics
@@ -48,7 +48,9 @@ $$
 
 # 莫比乌斯反演
 
-## 内容
+## 形式 #1
+
+### 内容
 
 定义 $F(n), f(n)$ 均为非负整数集合上的两个函数，则有：
 
@@ -58,7 +60,7 @@ $$
 
 简而言之，利用莫比乌斯反演，只要我们知道 $F(n)$ 或是 $f(n)$ 中一者的定义，就可以推知另一者的具体定义。
 
-## 证明
+### 证明
 
 下面我们给出莫比乌斯反演的一种简要证明：
 
@@ -69,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-由前文提到的性质，当且仅当 $\frac{n}{k} = 1$ 时 $\sum\limits_{d|\frac{n}{k}} \mu(d) = 1$；否则该式值为 $0$。所以：
+由前文提到的性质，当且仅当 $\frac{n}{k} = 1$ 时 $\sum\limits_{d|\frac{n}{k}} \mu(d) = 1$；否则该式值为 $0$。而 $\frac{n}{k} = 1$ 就意味着只有 $n = k$ 这一种情况，所以：
 
 $$
 \begin{aligned}
@@ -79,16 +81,9 @@ $$
 
 得证。
 
-## 另一种形式
+## 引理
 
-莫比乌斯反演有是以另一种形式呈现：
-
-$$
-F(n) = \sum\limits_{d|n}f(d) \Leftrightarrow f(n) = \sum\limits_{d|n} \mu(\frac{n}{d})F(n)
-$$
-
-换句话说：
-
+在展示另一个形式前，我们先来看一个引理：
 $$
 \sum\limits_{d|n} \mu(d)F(\frac{n}{d}) = \sum\limits_{d|n} \mu(\frac{n}{d})F(d)
 $$
@@ -114,9 +109,42 @@ $$
 
 把 $t$ 换回 $d$ 就好了……
 
-## 一例简单应用
+## 形式 #2
 
-这里我们尝试小小地应用一下莫比乌斯反演来推导莫比乌斯函数 $\mu(n)$ 与欧拉函数 $\varphi(n)$ 间的关系。
+### 内容
+
+定义 $F(n), f(n)$ 均为非负整数集合上的两个函数，则有：
+
+$$
+F(n) = \sum\limits_{n|d}f(d) \Leftrightarrow f(n) = \sum\limits_{n|d} \mu(\frac{d}{n})F(d)
+$$
+
+注意这一形式与上一形式最大的不同点，即求和条件由 $d|n$ 变为 $n|d$。
+
+### 证明
+
+由之前提到的引理：
+
+$$
+\begin{aligned}
+\sum\limits_{n|d} \mu(\frac{d}{n})F(d) = & \sum\limits_{n|d}\mu(d)F(\frac{d}{n}) \\
+= & \sum\limits_{n|d}\mu(d)\sum\limits_{\frac{d}{n}|k}f(k) \\
+= & \sum\limits_{n|k}f(k)\sum\limits_{\frac{d}{n}|k} \mu(d) \\
+= & \sum\limits_{n|k}f(k)\sum\limits_{d|kn} \mu(d) \\
+\end{aligned}
+$$
+
+由前文提到的性质，当且仅当 $kn = 1$ 时 $\sum\limits_{d|kn} \mu(d) = 1$，否则该式值为 $0$。而 $kn = 1$ 意味着只有 $k = n = 1$ 这一种情况，所以：
+
+$$
+\sum\limits_{n|d} \mu(\frac{d}{n})F(d) = f(n)
+$$
+
+## 应用
+
+### 与欧拉函数联系
+
+这里我们尝试应用一下莫比乌斯反演来推导莫比乌斯函数 $\mu(n)$ 与欧拉函数 $\varphi(n)$ 间的关系。
 
 首先欧拉函数有一个性质：
 
@@ -139,11 +167,13 @@ $$
 \sum\limits_{d|n} \frac{\mu(d)}{d} = \frac{\varphi(n)}{n}
 $$
 
-# 狄利克雷卷积
+### 与最大公约数联系
 
-挖坑待填……
+**挖坑待填……**
 
 # %%%
 
 - Ronald L. Graham, Donald E. Knuth, Oren Patashnik - Concrete Mathematics, Second Edition
 - peng-ym - [莫比乌斯反演](https://www.cnblogs.com/peng-ym/p/8647856.html)
+- outer_form - [莫比乌斯反演定理证明（两种形式）](https://blog.csdn.net/outer_form/article/details/50588307)
+- An-Amazing-Blog - [莫比乌斯反演-让我们从基础开始](https://www.luogu.org/blog/An-Amazing-Blog/mu-bi-wu-si-fan-yan-ji-ge-ji-miao-di-dong-xi)
