@@ -3,11 +3,11 @@ uuid: c44d8340-ea69-11e8-b673-b37e9c899406
 title: 浅谈莫比乌斯反演
 date: 2018-11-18 13:07:42
 updated: 2018-11-18 13:07:42
-tags: Notes
-category:
+tags: 
   - ACM-ICPC
   - Mathematics
   - Number Theory
+category: Notes
 ---
 
 # 简介
@@ -18,7 +18,7 @@ category:
 
 ## 定义
 
-对于正整数 $N$，若对其分解质因数有 $n = p_1^{c_1} p_2^{c_2} \dots p_k^{c_k} \ (c_i > 0)$，则：
+对于正整数 $n$，若对其分解质因数有 $n = p_1^{c_1} p_2^{c_2} \dots p_k^{c_k} \ (c_i > 0)$，则：
 
 $$
 \mu(n) =
