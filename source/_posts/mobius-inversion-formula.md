@@ -2,7 +2,7 @@
 uuid: c44d8340-ea69-11e8-b673-b37e9c899406
 title: 浅谈莫比乌斯反演
 date: 2018-11-18 13:07:42
-updated: 2018-11-18 16:52:55
+updated: 2018-11-19 16:44:12
 tags: 
   - ACM-ICPC
   - Mathematics
@@ -140,7 +140,7 @@ $$
 
 ## 与最大公约数联系
 
-给定 $n, m$，求满足 $1 \le i \le n, \ 1 \le j \le m, \ \gcd(i, j) = 1$ 的数对 $\langle i, j \rangle$ 个数。
+给定 $n, m$，求满足 $1 \le i \le n, \ 1 \le j \le m, \ \gcd(i, j) = 1$ 的数对 $\langle i, j \rangle$ 个数（其中 $\langle a, b \rangle$ 和 $\langle b, a \rangle$ 算两个不同的数对）。
 
 换言之，即求：
 
@@ -155,12 +155,14 @@ $$
 $$
 \begin{aligned}
 \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = 1] = & \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m}\sum\limits_{d|\gcd(i, j)}\mu(d) \\
-= & \sum\limits_{d = 1}^{\min(i, j)}\mu(d) \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [d | \gcd(i, j)] \\
-= & \sum\limits_{d = 1}^{\min(i, j)} \mu(d)\left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor
+= & \sum\limits_{d = 1}^{\min(n, m)}\mu(d) \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [d | \gcd(i, j)] \\
+= & \sum\limits_{d = 1}^{\min(n, m)} \mu(d)\left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor
 \end{aligned}
 $$
 
 我们可以用 $\mathcal{O}(N)$ 的复杂度预处理出 $\mu(n)$ 的前缀和，面对询问时我们可以用 $\mathcal{O}(\sqrt{N})$ 的复杂度进行整除分块并进行求解。
+
+---
 
 那么如果我们要求的是 $\gcd(i, j) = k$ 怎么办？我们仅需做如下变换：
 
@@ -168,7 +170,37 @@ $$
 \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = k] = \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} [\gcd(i, j) = 1]
 $$
 
-接下来就跟之前的做法一样咯。
+接下来就跟之前的做法一样咯，所以我们能得到：
+
+$$
+Ans = \sum\limits_{d = 1}^{\min(\left\lfloor \frac{n}{k} \right\rfloor, \left\lfloor \frac{m}{k} \right\rfloor)} \mu(d) \left\lfloor \frac{n}{kd} \right\rfloor \left\lfloor \frac{m}{kd} \right\rfloor
+$$
+
+---
+
+当然，我们也可以向莫比乌斯反演的的方向进行考虑。
+
+我们不妨记 $f(k)$ 代表满足 $\gcd(i, j) = k$ 的 $\langle i, j \rangle$ 对个数。那么 $F(k) = \sum\limits_{k|d}f(d)$ 的意义即为满足
+ $k|\gcd(i, j)$ 的 $\langle i, j \rangle$ 对数。而求满足 $1 \le i \le n, \ 1 \le j \le m$ 范围内 $k|\gcd(i, j)$ 这一条件的对数显然等价于 $1 \le i \le \left\lfloor \frac{n}{k} \right\rfloor, \ 1 \le j \le \left\lfloor \frac{m}{k} \right\rfloor$ 范围内 $1|\gcd(i, j)$ 的对数（显然在此范围内的所有数对都满足这一条件）。由此我们可以很容易得到 $F(k)$ 的具体定义：
+
+ $$
+ F(k) = \left\lfloor \frac{n}{k} \right\rfloor \left\lfloor \frac{m}{k} \right\rfloor
+ $$
+
+ 接下来我们就可以利用莫比乌斯反演直接得到 $f(k)$ 的具体定义了：
+
+ $$
+ \begin{aligned}
+ f(k) = & \sum\limits_{k|d} \mu(\frac{d}{k})F(d) \\
+ = & \sum\limits_{k|d} \mu(\frac{d}{k}) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor \\
+ \end{aligned}
+ $$
+
+不妨令 $t = \frac{d}{k}$，我们便得到了跟之前一样的结果：
+
+$$
+f(k) = \sum\limits_{t = 1}^{\min(\left\lfloor \frac{n}{k} \right\rfloor, \left\lfloor \frac{m}{k} \right\rfloor)} \mu(t) \left\lfloor \frac{n}{tk} \right\rfloor \left\lfloor \frac{m}{tk} \right\rfloor
+$$
 
 至于更多的应用，强烈安利这篇博文： [莫比乌斯反演-让我们从基础开始](https://www.luogu.org/blog/An-Amazing-Blog/mu-bi-wu-si-fan-yan-ji-ge-ji-miao-di-dong-xi)。
 
