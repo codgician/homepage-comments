@@ -4,7 +4,7 @@ title: HDUOJ 5096 - ACM Rank
 date: 2018-07-29 17:01:20
 updated: 2018-07-29 17:01:20
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Data Structure
   - Treap
   - HDUOJ
@@ -13,9 +13,9 @@ category: Solutions
 
 # 题面
 
-让我们来为某场 ACM-ICPC 比赛写一个排名系统吧！
+让我们来为某场 ICPC 比赛写一个排名系统吧！
 
-ACM-ICPC 的规则就不再细讲了吧（逃
+ICPC 的规则就不再细讲了吧（逃
 
 算了还是简单讲讲吧，首先排名按照 AC 题目顺序由大到小排。如果两队 AC 题目数量相同，则罚时较小的队伍在前。若两队 AC 题目和罚时大小都相同，则两队排名相同。一次未通过的提交会使得该队该题上的罚时额外加 $20$ 分钟，但只有在该题 AC 后才会被计入总罚时。若该队在某题上第一次提交就 AC 了，则罚时为 AC 时的时间。
 

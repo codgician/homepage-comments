@@ -4,7 +4,7 @@ title: HDUOJ 4005 - The war
 date: 2018-07-21 16:15:01
 updated: 2018-07-21 16:15:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Graph Theory
   - Tarjan
   - DFS

@@ -4,7 +4,7 @@ title: Codeforces 908F - New Year and Rainbow Roads
 date: 2018-04-11 13:08:00
 updated: 2018-04-11 13:08:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Greedy
   - Codeforces
 category: Solutions

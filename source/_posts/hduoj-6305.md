@@ -4,7 +4,7 @@ title: HDUOJ 6305 - RMQ Similar Sequence
 date: 2018-07-26 16:33:23
 updated: 2018-07-26 16:33:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Data Structure
   - Cartesian Tree
   - Mathematics

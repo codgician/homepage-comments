@@ -4,7 +4,7 @@ title: 浅谈无旋转 Treap
 date: 2018-07-28 15:15:01
 updated: 2018-07-28 15:15:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Data Structure
   - Treap
 category: Notes

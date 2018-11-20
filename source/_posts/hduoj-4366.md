@@ -4,7 +4,7 @@ title: HDUOJ 4366 - Successor
 date: 2018-04-10 12:16:01
 updated: 2018-04-10 12:16:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Data Structure
   - Segment Tree
   - HDUOJ

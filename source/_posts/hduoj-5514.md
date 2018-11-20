@@ -4,7 +4,7 @@ title: HDUOJ 5514 - Frogs
 date: 2018-10-03 22:42:10
 updated: 2018-10-03 22:42:10
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Number Theory
   - Inclusion-Exclusion Principle

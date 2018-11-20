@@ -4,7 +4,7 @@ title: Jisuanke 31453 - Hard to prepare
 date: 2018-09-10 00:12:46
 updated: 2018-09-11 22:29:46
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Dynamic Programming
   - Jisuanke

@@ -4,7 +4,7 @@ title: NOIP 2005 - 过河
 date: 2017-11-07 12:22:00
 updated: 2017-11-07 12:22:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Dynamic Programming
 category: Solutions
 ---

@@ -4,7 +4,7 @@ title: HDUOJ 4349 - Xiao Ming's Hope
 date: 2018-05-28 00:02:01
 updated: 2018-05-28 00:02:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Combinatorics
   - Lucas' Theorem

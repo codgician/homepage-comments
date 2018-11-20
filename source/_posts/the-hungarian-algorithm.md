@@ -4,7 +4,7 @@ title: 浅谈匈牙利算法
 date: 2018-03-09 12:52:01
 updated: 2018-10-17 11:41:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Graph Theory
   - Bipartite Matching
   - The Hungarian Algorithm

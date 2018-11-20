@@ -4,7 +4,7 @@ title: 浅谈莫比乌斯反演
 date: 2018-11-18 13:07:42
 updated: 2018-11-19 16:44:12
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Number Theory
 category: Notes

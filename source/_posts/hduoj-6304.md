@@ -4,7 +4,7 @@ title: HDUOJ 6304 - Chiaki Sequence Revisited
 date: 2018-07-24 14:47:23
 updated: 2018-07-24 14:47:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Observation
   - Mathematics
   - Binary Search

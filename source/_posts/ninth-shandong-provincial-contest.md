@@ -4,7 +4,7 @@ title: 第九届“浪潮杯”山东省程序设计竞赛
 date: 2018-07-19 15:21:00
 updated: 2018-07-19 15:21:00
 tags:
-  - ACM-ICPC
+  - Competitive Programming
   - Contest
   - Greedy
   - Graph Theory

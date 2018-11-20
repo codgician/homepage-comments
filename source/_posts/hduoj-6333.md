@@ -4,7 +4,7 @@ title: HDUOJ 6333 - Harvest of Apples
 date: 2018-08-04 19:57:23
 updated: 2018-08-04 19:57:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Combinatorics
   - Partitioning

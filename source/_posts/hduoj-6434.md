@@ -4,7 +4,7 @@ title: HDUOJ 6434 - Count
 date: 2018-08-23 13:53:46
 updated: 2018-08-23 13:53:46
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Number Theory
   - HDUOJ

@@ -4,7 +4,7 @@ title: HDUOJ 4089 - Activation
 date: 2018-02-17 16:50:00
 updated: 2018-02-17 16:50:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Dynamic Programming
   - Mathematics
   - Probability
@@ -136,5 +136,5 @@ $$
 
 # %%%
 
-- morgan_xww - [Hdu 4089 Activation (概率dp) - 2011 ACM-ICPC Beijing Regional Contest Problem I](http://blog.csdn.net/morgan_xww/article/details/6920236)
+- morgan_xww - [Hdu 4089 Activation (概率dp) - 2011 ICPC Beijing Regional Contest Problem I](http://blog.csdn.net/morgan_xww/article/details/6920236)
 - 将狼踩尽 - [HDU 4089 Activation（概率DP）](http://www.cnblogs.com/jianglangcaijin/archive/2013/05/04/3060411.html)

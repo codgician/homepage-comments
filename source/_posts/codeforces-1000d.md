@@ -4,7 +4,7 @@ title: "Codeforces 1000D - Yet Another Problem on Subsequence"
 date: 2018-07-10 18:17:00
 updated: 2018-07-10 18:17:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Dynamic Programming
   - Codeforces
 category: Solutions

@@ -4,7 +4,7 @@ title: CCPC 2018 湘潭邀请赛游记
 date: 2018-05-16 13:19:35
 updated: 2018-05-16 13:19:35
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Contest
   - Life
 category: Travel

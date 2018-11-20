@@ -4,7 +4,7 @@ title: HDUOJ 6397 - Character Encoding
 date: 2018-08-16 15:05:23
 updated: 2018-08-16 15:05:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Combinatorics
   - Inclusion-Exclusion Principle 

@@ -4,7 +4,7 @@ title: HDUOJ 6240 - Server
 date: 2018-07-22 20:01:23
 updated: 2018-07-22 20:01:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Fractional Programming
   - Binary Search

@@ -4,7 +4,7 @@ title: HDUOJ 6334 - Problem on a Tree
 date: 2018-08-03 17:47:23
 updated: 2018-08-03 17:47:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Disjoint Set
   - HDUOJ
 category: Solutions

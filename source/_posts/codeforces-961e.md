@@ -4,7 +4,7 @@ title: Codeforces 961E - Tufurama
 date: 2018-04-06 13:17:00
 updated: 2018-04-06 13:17:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Data Structure
   - Binary Indexed Tree
   - Codeforces

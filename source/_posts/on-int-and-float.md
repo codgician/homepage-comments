@@ -5,7 +5,7 @@ date: 2017-08-18 22:43:10
 updated: 2017-08-18 22:43:10
 tags: 
   - Computational Thinking
-  - ACM-ICPC
+  - Competitive Programming
 category: Notes
 ---
 

@@ -4,7 +4,7 @@ title: HRBUSTOJ 2372 - 小L的问题
 date: 2018-03-27 11:46:01
 updated: 2018-03-27 11:46:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Dynamic Programming
   - HRBUSTOJ
 category: Solutions

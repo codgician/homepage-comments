@@ -4,7 +4,7 @@ title: Codeforces 713C - Sonya and Problem Wihtout a Legend
 date: 2018-05-08 16:08:00
 updated: 2018-05-08 16:08:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Dynamic Programming
   - Codeforces
 category: Solutions

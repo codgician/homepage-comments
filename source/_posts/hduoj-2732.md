@@ -4,7 +4,7 @@ title: HDUOJ 2732 - Leapin' Lizards
 date: 2018-03-27 23:00:01
 updated: 2018-03-27 23:00:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Graph Theory
   - Maximum Flow Problem
   - HDUOJ

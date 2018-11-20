@@ -4,7 +4,7 @@ title: Codeforces Gym 101630J - Journey from Petersburg to Moscow
 date: 2018-10-09 20:39:12
 updated: 2018-10-09 20:39:12
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Graph Theory
   - Shortest Path
   - Codeforces Gym

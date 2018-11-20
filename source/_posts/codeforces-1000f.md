@@ -4,7 +4,7 @@ title: "Codeforces 1000F - One Occurrence"
 date: 2018-07-11 20:05:00
 updated: 2018-07-11 20:05:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Data Structure
   - Segment Tree
   - Persistent Segment Tree

@@ -4,7 +4,7 @@ title: HDUOJ 6372 - sacul
 date: 2018-08-10 16:02:23
 updated: 2018-08-10 16:02:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Combinatorics
   - Lucas' Theorem

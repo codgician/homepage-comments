@@ -4,7 +4,7 @@ title: Codeforces 913D - Too Easy Problems
 date: 2018-01-09 20:54:00
 updated: 2018-04-06 13:17:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Greedy
   - Binary Search
   - Codeforces

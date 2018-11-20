@@ -4,7 +4,7 @@ title: 浅谈类欧几里德算法
 date: 2018-10-18 22:54:39
 updated: 2018-10-19 09:13:25
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Number Theory
 category: Notes

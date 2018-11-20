@@ -4,7 +4,7 @@ title: Codeforces 909C - Python Indentation
 date: 2018-01-07 23:22:00
 updated: 2018-01-07 23:22:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Dynamic Programming
   - Codeforces
 category: Solutions

@@ -4,7 +4,7 @@ title: 水题中的教训
 date: 2017-10-08 15:53:10
 updated: 2017-10-08 15:53:10
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
 category: Notes
 ---
 

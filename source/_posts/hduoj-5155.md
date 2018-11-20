@@ -4,7 +4,7 @@ title: HDUOJ 5155 - Harry And Magic Box
 date: 2018-05-31 17:05:01
 updated: 2018-05-31 17:05:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Combinatorics
   - Dynamic Programming

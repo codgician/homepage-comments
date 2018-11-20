@@ -4,7 +4,7 @@ title: HDUOJ 3037 - Saving Beans
 date: 2018-05-26 20:00:01
 updated: 2018-05-26 20:00:01
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Mathematics
   - Combinatorics
   - Lucas' Theorem

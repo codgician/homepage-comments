@@ -4,7 +4,7 @@ title: Codeforces 913C - Party Lemonade
 date: 2018-01-09 11:58:00
 updated: 2018-01-09 11:58:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Greedy
   - Bitmasks
   - Codeforces

@@ -4,7 +4,7 @@ title: HDUOJ 6331 - Walking Plan
 date: 2018-08-07 21:27:23
 updated: 2018-08-07 21:27:23
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Graph Theory
   - Shortest Path
   - Partitioning

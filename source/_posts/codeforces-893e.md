@@ -4,7 +4,7 @@ title: Codeforces 893E - Counting Arrays
 date: 2018-07-14 00:30:00
 updated: 2018-07-14 00:30:00
 tags: 
-  - ACM-ICPC
+  - Competitive Programming
   - Combinatorics
   - Codeforces
 category: Solutions
