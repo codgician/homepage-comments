@@ -7,6 +7,7 @@ tags:
   - Competitive Programming
   - Mathematics
   - Number Theory
+  - Luogu
 category: Solutions
 ---
 
