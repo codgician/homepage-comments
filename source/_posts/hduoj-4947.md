@@ -32,8 +32,9 @@ $1 \le x \le l$
 
 # 分析
 
-我们记 $\Delta{a}(x)$ 代表某次进行第一种操作时位置 $x$ 上值的增量（假设 $d | n$），有：
+对于操作1，如果 $d \nmid n$，则显然不可能满足 $\gcd(x, n) = d$。对于这样的情况我们忽略即可。
 
+我们记 $\Delta{a}(x)$ 代表某次进行第一种操作时位置 $x$ 上值的增量，有：
 $$
 \begin{aligned}
 \Delta{a}(x) = & v \cdot [\gcd(x, n) = d] \\
@@ -45,15 +46,15 @@ $$
 
 $$
 \begin{aligned}
-\Delta{a}(x) = & \sum\limits_{k|\gcd(\frac{x}{d}, \frac{n}{d})} \mu(k) \cdot v \\
-= & \sum\limits_{k|\frac{x}{d}, k|\frac{n}{d}} \mu(k) \cdot v \\
-= & \sum\limits_{k|\frac{n}{d}} \sum\limits_{kd|x} \mu(k) \cdot v \\
+\Delta{a}(x) = & \sum\limits_{k \mid \gcd(\frac{x}{d}, \frac{n}{d})} \mu(k) \cdot v \\
+= & \sum\limits_{k \mid \frac{x}{d}, k \mid \frac{n}{d}} \mu(k) \cdot v \\
+= & \sum\limits_{k \mid \frac{n}{d}} \sum\limits_{kd \mid x} \mu(k) \cdot v \\
 \end{aligned}
 $$
 
-我们注意到，$\sum\limits_{kd|x} \mu(k) \cdot v$ 看起来十分类似莫比乌斯反演中的 $F(n)$ 函数。既然如此，我们不妨考虑引入一个辅助数组 $f$，使其满足：
+我们注意到，$\sum\limits_{kd \mid x} \mu(k) \cdot v$ 看起来十分类似莫比乌斯反演中的 $F(n)$ 函数。既然如此，我们不妨考虑引入一个辅助数组 $f$，使其满足：
 $$
-a(x) = \sum\limits_{k|x}f(k)
+a(x) = \sum\limits_{k \mid x}f(k)
 $$
 由此一来，我们可以通过维护 $f(x)$ 并通过莫比乌斯反演从而求得 $a(x)$。
 
@@ -64,7 +65,7 @@ $$
 而对于操作二：
 $$
 \begin{aligned}
-\sum\limits_{i = 1}^{x} a(i) = & \sum\limits_{i = 1}^{x}\sum\limits_{k|i}f(k) \\
+\sum\limits_{i = 1}^{x} a(i) = & \sum\limits_{i = 1}^{x}\sum\limits_{k \mid i}f(k) \\
 = & \sum\limits_{k = 1}^{x} \left\lfloor \frac{x}{k} \right\rfloor f(k)
 \end{aligned}
 $$
@@ -86,4 +87,4 @@ $$
 
 # %%%
 
-- flipped - 【HDU4947】GCD Array (莫比乌斯反演+树状数组)](https://www.cnblogs.com/flipped/p/HDU4947.html)
+- flipped - [【HDU4947】GCD Array (莫比乌斯反演+树状数组)](https://www.cnblogs.com/flipped/p/HDU4947.html)

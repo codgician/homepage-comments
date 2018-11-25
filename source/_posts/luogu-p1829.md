@@ -52,10 +52,10 @@ $$
 
 $$
 \begin{aligned}
-\sum\limits_{i = 1}^{n} \sum\limits_{j = 1}^{m} \operatorname{lcm}(i, j) = & \sum\limits_{k = 1}^{n} \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} ijk \sum\limits_{d|\gcd(i, j)} \mu(d) \\
-= & \sum\limits_{k = 1}^{n} \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} ijk \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \mu(d) [d | \gcd(i, j)] \\
-= & \sum\limits_{k = 1}^{n} k \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\mu(d) \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} ij [d | \gcd(i, j)] \\
-= & \sum\limits_{k = 1}^{n} k \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\mu(d) \sum\limits_{i = 1}^{\left\lfloor \frac{n}{kd} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{kd} \right\rfloor} ijd^2 [1 | \gcd(i, j)] \\
+\sum\limits_{i = 1}^{n} \sum\limits_{j = 1}^{m} \operatorname{lcm}(i, j) = & \sum\limits_{k = 1}^{n} \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} ijk \sum\limits_{d \mid \gcd(i, j)} \mu(d) \\
+= & \sum\limits_{k = 1}^{n} \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} ijk \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \mu(d) [d  \mid  \gcd(i, j)] \\
+= & \sum\limits_{k = 1}^{n} k \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\mu(d) \sum\limits_{i = 1}^{\left\lfloor \frac{n}{k} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{k} \right\rfloor} ij [d  \mid  \gcd(i, j)] \\
+= & \sum\limits_{k = 1}^{n} k \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\mu(d) \sum\limits_{i = 1}^{\left\lfloor \frac{n}{kd} \right\rfloor} \sum\limits_{j = 1}^{\left\lfloor \frac{m}{kd} \right\rfloor} ijd^2 [1  \mid  \gcd(i, j)] \\
 = & \sum\limits_{k = 1}^{n}k \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\mu(d) d^2 \sum\limits_{i = 1}^{\left\lfloor \frac{n}{kd} \right\rfloor}i \sum\limits_{j = 1}^{\left\lfloor \frac{m}{kd} \right\rfloor} j
 \end{aligned}
 $$
@@ -73,29 +73,29 @@ $$
 $$
 \begin{aligned}
 \sum\limits_{i = 1}^{n} \sum\limits_{j = 1}^{m} \operatorname{lcm}(i, j) = & \sum\limits_{k = 1}^{n}k \sum\limits_{d = 1}^{\left\lfloor \frac{n}{k} \right\rfloor}\mu(d) d^2 g\left( \left\lfloor \frac{n}{T} \right\rfloor \right) g\left( \left\lfloor \frac{m}{T} \right\rfloor \right) \\
-= & \sum\limits_{T = 1}^{n} g\left( \left\lfloor \frac{n}{T} \right\rfloor \right) g\left( \left\lfloor \frac{m}{T} \right\rfloor \right) \sum\limits_{d|T}\mu(d)d^2\frac{T}{d} \\
-= & \sum\limits_{T = 1}^{n} g\left( \left\lfloor \frac{n}{T} \right\rfloor \right) g\left( \left\lfloor \frac{m}{T} \right\rfloor \right)T \sum\limits_{d|T}d\mu(d)
+= & \sum\limits_{T = 1}^{n} g\left( \left\lfloor \frac{n}{T} \right\rfloor \right) g\left( \left\lfloor \frac{m}{T} \right\rfloor \right) \sum\limits_{d \mid T}\mu(d)d^2\frac{T}{d} \\
+= & \sum\limits_{T = 1}^{n} g\left( \left\lfloor \frac{n}{T} \right\rfloor \right) g\left( \left\lfloor \frac{m}{T} \right\rfloor \right)T \sum\limits_{d \mid T}d\mu(d)
 \end{aligned}
 $$
 
-不妨令 $F(n) = \sum\limits_{d|n} d\mu(d)$ 并对 $F(n)$ 进行研究。
+不妨令 $F(n) = \sum\limits_{d \mid n} d\mu(d)$ 并对 $F(n)$ 进行研究。
 
 我们发现，当 $a \perp b$ 时（当 $a, b$ 互质时）：
 
 $$
 \begin{aligned}
-F(a) = & \sum\limits_{d|a} d\mu(d) \\
-F(b) = & \sum\limits_{d|b} d\mu(d) \\
+F(a) = & \sum\limits_{d \mid a} d\mu(d) \\
+F(b) = & \sum\limits_{d \mid b} d\mu(d) \\
 \end{aligned}
 $$
 
-我们不难发现，由 $a \perp b$，故 $a$ 和 $b$ 不存在公共因子，因此 $i | a, \ j | b \Leftrightarrow ij|ab$。又由于 $\mu(n)$ 本身又是积性函数，所以有 $\mu(ab) = \mu(a) \cdot \mu(b)$。由此：
+我们不难发现，由 $a \perp b$，故 $a$ 和 $b$ 不存在公共因子，因此 $i  \mid  a, \ j  \mid  b \Leftrightarrow ij \mid ab$。又由于 $\mu(n)$ 本身又是积性函数，所以有 $\mu(ab) = \mu(a) \cdot \mu(b)$。由此：
 
 $$
 \begin{aligned}
-F(a) \cdot F(b) = & \sum\limits_{i|a}i\mu(i)\sum\limits_{j|b}j\mu(j) \\
-= & \sum\limits_{ij|ab}ij \cdot \mu(ij) \\
-= & \sum\limits_{k|ab}k\mu(k) \\
+F(a) \cdot F(b) = & \sum\limits_{i \mid a}i\mu(i)\sum\limits_{j \mid b}j\mu(j) \\
+= & \sum\limits_{ij \mid ab}ij \cdot \mu(ij) \\
+= & \sum\limits_{k \mid ab}k\mu(k) \\
 = & F(ab)
 \end{aligned}
 $$

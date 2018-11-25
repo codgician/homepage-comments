@@ -34,7 +34,7 @@ $$
 ## 性质
 
 $$
-\sum\limits_{d|n} \mu(d) =
+\sum\limits_{d \mid n} \mu(d) =
 \begin{cases}
 1 & n = 1\\
 0 & \text{otherwise} \\
@@ -43,8 +43,8 @@ $$
 
 下面给出简要证明：
 
-1. $n = 1$ 时，显然有 $\sum\limits_{d|n} \mu(d) = 1$；
-2. $n \neq 1$ 时，记 $n = p_1^{c_1}p_2^{c_2} \dots p_k^{c_k} \ (c_i > 0)$。对于 $d | n$，$\mu(d) \neq 0$ 当且仅当 $d$ 中不存在完全平方数因子。显然，具有 $i$ 个质因数的 $d$ 有 $\binom{k}{i}$ 个。因此，$\sum\limits_{d|n} \mu(d) = \sum\limits_{i = 0}^{k} (-1)^k\binom{k}{i} = 0$。至于为什么等于 $0$，可以考虑由组合数递推式 $\binom{n}{m} = \binom{n - 1}{m} + \binom{n - 1}{m - 1}$ 得证，这里不再详述。
+1. $n = 1$ 时，显然有 $\sum\limits_{d \mid n} \mu(d) = 1$；
+2. $n \neq 1$ 时，记 $n = p_1^{c_1}p_2^{c_2} \dots p_k^{c_k} \ (c_i > 0)$。对于 $d  \mid  n$，$\mu(d) \neq 0$ 当且仅当 $d$ 中不存在完全平方数因子。显然，具有 $i$ 个质因数的 $d$ 有 $\binom{k}{i}$ 个。因此，$\sum\limits_{d \mid n} \mu(d) = \sum\limits_{i = 0}^{k} (-1)^k\binom{k}{i} = 0$。至于为什么等于 $0$，可以考虑由组合数递推式 $\binom{n}{m} = \binom{n - 1}{m} + \binom{n - 1}{m - 1}$ 得证，这里不再详述。
 
 # 莫比乌斯反演
 
@@ -55,7 +55,7 @@ $$
 定义 $F(n), f(n)$ 均为非负整数集合上的两个函数，则有：
 
 $$
-F(n) = \sum\limits_{d|n}f(d) \Leftrightarrow f(n) = \sum\limits_{d|n} \mu(d)F(\frac{n}{d})
+F(n) = \sum\limits_{d \mid n}f(d) \Leftrightarrow f(n) = \sum\limits_{d \mid n} \mu(d)F(\frac{n}{d})
 $$
 
 简而言之，利用莫比乌斯反演，只要我们知道 $F(n)$ 或是 $f(n)$ 中一者的定义，就可以推知另一者的具体定义。
@@ -66,16 +66,16 @@ $$
 
 $$
 \begin{aligned}
-\sum\limits_{d|n} \mu(d)F(\frac{n}{d}) = & \sum\limits_{d|n} \mu(d) \sum\limits_{k|\frac{n}{d}} f(k) \\
-= & \sum\limits_{k|n} f(k) \sum\limits_{d|\frac{n}{k}} \mu(d) \\
+\sum\limits_{d \mid n} \mu(d)F(\frac{n}{d}) = & \sum\limits_{d \mid n} \mu(d) \sum\limits_{k \mid \frac{n}{d}} f(k) \\
+= & \sum\limits_{k \mid n} f(k) \sum\limits_{d \mid \frac{n}{k}} \mu(d) \\
 \end{aligned}
 $$
 
-由前文提到的性质，当且仅当 $\frac{n}{k} = 1$ 时 $\sum\limits_{d|\frac{n}{k}} \mu(d) = 1$；否则该式值为 $0$。所以：
+由前文提到的性质，当且仅当 $\frac{n}{k} = 1$ 时 $\sum\limits_{d \mid \frac{n}{k}} \mu(d) = 1$；否则该式值为 $0$。所以：
 
 $$
 \begin{aligned}
-\sum\limits_{d|n} \mu(d)F(\frac{n}{d}) = f(k)
+\sum\limits_{d \mid n} \mu(d)F(\frac{n}{d}) = f(k)
 \end{aligned}
 $$
 
@@ -88,10 +88,10 @@ $$
 定义 $F(n), f(n)$ 均为非负整数集合上的两个函数，则有：
 
 $$
-F(n) = \sum\limits_{n|d}f(d) \Leftrightarrow f(n) = \sum\limits_{n|d} \mu(\frac{d}{n})F(d)
+F(n) = \sum\limits_{n \mid d}f(d) \Leftrightarrow f(n) = \sum\limits_{n \mid d} \mu(\frac{d}{n})F(d)
 $$
 
-注意这一形式与上一形式最大的不同点，即求和条件由 $d|n$ 变为 $n|d$。
+注意这一形式与上一形式最大的不同点，即求和条件由 $d \mid n$ 变为 $n \mid d$。
 
 ### 证明
 
@@ -99,16 +99,16 @@ $$
 
 $$
 \begin{aligned}
-\sum\limits_{n|d} \mu(\frac{d}{n})F(d) = & \sum\limits_{t = 1}^{+\infty}\mu(t)F(nt) \\
-= & \sum\limits_{t = 1}^{+\infty}\mu(t)\sum\limits_{nt|k}f(k) \\
-= & \sum\limits_{n|k}f(k)\sum\limits_{t|\frac{k}{n}}\mu(t)
+\sum\limits_{n \mid d} \mu(\frac{d}{n})F(d) = & \sum\limits_{t = 1}^{+\infty}\mu(t)F(nt) \\
+= & \sum\limits_{t = 1}^{+\infty}\mu(t)\sum\limits_{nt \mid k}f(k) \\
+= & \sum\limits_{n \mid k}f(k)\sum\limits_{t \mid \frac{k}{n}}\mu(t)
 \end{aligned}
 $$
 
-由前文提到的性质，当且仅当 $\frac{k}{n} = 1$ 时 $\sum\limits_{t|\frac{k}{n}}\mu(t) = 1$，否则该式值为 $0$。所以：
+由前文提到的性质，当且仅当 $\frac{k}{n} = 1$ 时 $\sum\limits_{t \mid \frac{k}{n}}\mu(t) = 1$，否则该式值为 $0$。所以：
 
 $$
-\sum\limits_{n|d} \mu(\frac{d}{n})F(d) = f(n)
+\sum\limits_{n \mid d} \mu(\frac{d}{n})F(d) = f(n)
 $$
 
 # 应用
@@ -120,22 +120,22 @@ $$
 首先欧拉函数有一个性质：
 
 $$
-\sum\limits_{d|n} \varphi(d) = n
+\sum\limits_{d \mid n} \varphi(d) = n
 $$
 
-那么我们不妨令 $F(n) = \sum\limits_{d | n} \varphi(d) = n$，运用莫比乌斯反演可得：
+那么我们不妨令 $F(n) = \sum\limits_{d  \mid  n} \varphi(d) = n$，运用莫比乌斯反演可得：
 
 $$
 \begin{aligned}
-\varphi(n) = & \sum\limits_{d|n} \mu(d)F(\frac{n}{d}) \\
-= & \sum\limits_{d|n} \mu(d) \cdot \frac{n}{d}
+\varphi(n) = & \sum\limits_{d \mid n} \mu(d)F(\frac{n}{d}) \\
+= & \sum\limits_{d \mid n} \mu(d) \cdot \frac{n}{d}
 \end{aligned}
 $$
 
 整理后可得：
 
 $$
-\sum\limits_{d|n} \frac{\mu(d)}{d} = \frac{\varphi(n)}{n}
+\sum\limits_{d \mid n} \frac{\mu(d)}{d} = \frac{\varphi(n)}{n}
 $$
 
 ## 与最大公约数联系
@@ -154,8 +154,8 @@ $$
 
 $$
 \begin{aligned}
-\sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = 1] = & \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m}\sum\limits_{d|\gcd(i, j)}\mu(d) \\
-= & \sum\limits_{d = 1}^{\min(n, m)}\mu(d) \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [d | \gcd(i, j)] \\
+\sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [\gcd(i, j) = 1] = & \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m}\sum\limits_{d \mid \gcd(i, j)}\mu(d) \\
+= & \sum\limits_{d = 1}^{\min(n, m)}\mu(d) \sum\limits_{i = 1}^{n}\sum\limits_{j = 1}^{m} [d  \mid  \gcd(i, j)] \\
 = & \sum\limits_{d = 1}^{\min(n, m)} \mu(d)\left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor
 \end{aligned}
 $$
@@ -180,8 +180,8 @@ $$
 
 当然，我们也可以向莫比乌斯反演的的方向进行考虑。
 
-我们不妨记 $f(k)$ 代表满足 $\gcd(i, j) = k$ 的 $\langle i, j \rangle$ 对个数。那么 $F(k) = \sum\limits_{k|d}f(d)$ 的意义即为满足
- $k|\gcd(i, j)$ 的 $\langle i, j \rangle$ 对数。而求满足 $1 \le i \le n, \ 1 \le j \le m$ 范围内 $k|\gcd(i, j)$ 这一条件的对数显然等价于 $1 \le i \le \left\lfloor \frac{n}{k} \right\rfloor, \ 1 \le j \le \left\lfloor \frac{m}{k} \right\rfloor$ 范围内 $1|\gcd(i, j)$ 的对数（显然在此范围内的所有数对都满足这一条件）。由此我们可以很容易得到 $F(k)$ 的具体定义：
+我们不妨记 $f(k)$ 代表满足 $\gcd(i, j) = k$ 的 $\langle i, j \rangle$ 对个数。那么 $F(k) = \sum\limits_{k \mid d}f(d)$ 的意义即为满足
+ $k \mid \gcd(i, j)$ 的 $\langle i, j \rangle$ 对数。而求满足 $1 \le i \le n, \ 1 \le j \le m$ 范围内 $k \mid \gcd(i, j)$ 这一条件的对数显然等价于 $1 \le i \le \left\lfloor \frac{n}{k} \right\rfloor, \ 1 \le j \le \left\lfloor \frac{m}{k} \right\rfloor$ 范围内 $1 \mid \gcd(i, j)$ 的对数（显然在此范围内的所有数对都满足这一条件）。由此我们可以很容易得到 $F(k)$ 的具体定义：
 
  $$
  F(k) = \left\lfloor \frac{n}{k} \right\rfloor \left\lfloor \frac{m}{k} \right\rfloor
@@ -191,8 +191,8 @@ $$
 
  $$
  \begin{aligned}
- f(k) = & \sum\limits_{k|d} \mu(\frac{d}{k})F(d) \\
- = & \sum\limits_{k|d} \mu(\frac{d}{k}) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor \\
+ f(k) = & \sum\limits_{k \mid d} \mu(\frac{d}{k})F(d) \\
+ = & \sum\limits_{k \mid d} \mu(\frac{d}{k}) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor \\
  \end{aligned}
  $$
 
