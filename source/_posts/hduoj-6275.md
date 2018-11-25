@@ -6,6 +6,7 @@ updated: 2018-10-25 18:10:23
 tags: 
   - Competitive Programming
   - Mathematics
+  - Number Theory
   - Quasi-Euclidean Algorithm
   - HDUOJ
 category: Solutions

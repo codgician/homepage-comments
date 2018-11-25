@@ -7,6 +7,7 @@ tags:
   - ACM-ICPC
   - Mathematics
   - Number Theory
+  - Mobius Inversion
   - Data Structure
   - Binary Indexed Tree
   - HDUOJ
