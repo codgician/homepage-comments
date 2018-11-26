@@ -55,13 +55,13 @@ Hanano 的 A 题还在超时，我一看数据不大就建议 Hanano 本地打�
 
 最后抱着两个气球回宾馆了。任凭一只绿油油的气球独自在天花板上开心玩耍：
 
-![天花板上的气球](C:/Users/codgi/GitHub/codgician.github.io/source/_posts/icpc-2018-asia-beijing-regional-travel-notes/the_balloon_flies.jpg)
+![天花板上的气球](icpc-2018-asia-beijing-regional-travel-notes/the_balloon_flies.jpg)
 
 # Day 2
 
 一大早起来发现昨天还好好待在天花板上的气球失去了梦想……
 
-![失去梦想的气球](C:/Users/codgi/GitHub/codgician.github.io/source/_posts/icpc-2018-asia-beijing-regional-travel-notes/the_balloon_loses_hope.jpg)
+![失去梦想的气球](icpc-2018-asia-beijing-regional-travel-notes/the_balloon_loses_hope.jpg)
 
 看起来今天多半是要自闭……
 
@@ -71,7 +71,7 @@ Hanano 的 A 题还在超时，我一看数据不大就建议 Hanano 本地打�
 
 此时竟然离封榜就已经只剩不到半小时了。看榜的时候发现我们竟然在银牌区！于是我们决定最后一小时合力攻 H 题。我们很快确定了这是一道 DP，但是很遗憾的是我们直到最后也没有能够搞出来 QAQ。
 
-![四只气球](C:/Users/codgi/GitHub/codgician.github.io/source/_posts/icpc-2018-asia-beijing-regional-travel-notes/four_balloons.jpg)
+![四只气球](icpc-2018-asia-beijing-regional-travel-notes/four_balloons.jpg)
 
 比赛结束后立马就是游戏对抗赛（Botzone 上的坦克大战）。前期多场平局让我们意识到不仅人是复读机，坦克也是。
 
