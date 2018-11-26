@@ -23,17 +23,17 @@ thumbnail: /2018/10/16/icpc-2018-asia-nanjing-regional-travel-notes/cover.jpg
 
 一出地铁就看到南航方向飞来一架直升机…… 然后又来一架…… 然后又是一架…… 果然南航，好强啊。进学校看横幅才知道貌似刚好赶上了一个 “南航 · 昌飞” 直升机主题招聘日，并且打出了 “您的专机已就位！AC311 乘机体验，让我们带你一起飞” 的标语。虽然很想坐直升机，但转念一想身边两位队友就已经可以带我飞了，所以也没什么关系了。照片不出意外地拍残了：
 
-![您的专机已就位! AC311 乘机体验，让我们带你一起飞](icpc-2018-asia-nanjing-regional-travel-notes/helicopter-event.jpg)
+![您的专机已就位! AC311 乘机体验，让我们带你一起飞](icpc-2018-asia-nanjing-regional-travel-notes/helicopter_event.jpg)
 
 一群人迷路若干次绕了一大圈才找到体育馆。报道时发现南航慷慨地给了三张 20 元的餐券。去南航的网红食堂 “航空餐厅” 吃了午饭…… 拿了一堆菜以为要超额度结果离额度差不少（后悔 QAQ）。反正南航的伙食我吹爆，又便宜又好吃，有这食堂还订什么外卖……
 
-![航空餐厅我吹爆](icpc-2018-asia-nanjing-regional-travel-notes/nuaa-cafeteria.jpg)
+![航空餐厅我吹爆](icpc-2018-asia-nanjing-regional-travel-notes/nuaa_cafeteria.jpg)
 
 ---
 
 吃完饭后去体育馆就可以碰到电脑了。南航的体育馆好气派啊……
 
-![体育馆](icpc-2018-asia-nanjing-regional-travel-notes/nuaa-gymnasium.jpg)
+![体育馆](icpc-2018-asia-nanjing-regional-travel-notes/nuaa_gymnasium.jpg)
 
 到现场发现高中大佬学长就坐在对面的位置 orzzzzz。看比赛手册以为是带 Unity 桌面环境的 Ubuntu 16.04 LTS，结果到手发现是 xfce 桌面环境的 Xubuntu，连 gedit 都没有。另外我们发现电脑巨卡 QAQ。Hanano 尝试在 Code::Blocks 里瞎写一些东西，然后发现有一定几率写一半电脑突然卡住，过几秒才好 QAQ。接着我们又发现，Code::Blocks 执行编译好程序的默认终端是 xterm，而 xterm 连复制粘贴都不行。我们尝试把其改成 xfce-terminal, 结果发现一改在 Code::Blocks 里保存代码的时候就会跳 Exception，然后一点 stop 就闪退…… 心态崩了 QAQ。
 
@@ -47,7 +47,7 @@ thumbnail: /2018/10/16/icpc-2018-asia-nanjing-regional-travel-notes/cover.jpg
 
 赛后群里 Claris 表示我只看了 A 和 D 不都是 BZOJ 原题吗…… 瑟瑟发抖（分别是 BZOJ 2345 和 BZOJ 1938）。A 题面出锅了…… 原题是 V 船可以随意乱走但是热身赛题面说的是 V 船必须与 Y 船按照同样的方式走…… 醉了啊。要是是前者题意的话就是一道大水题。听说主办方为 A 题准备了 $300$ 多个气球最后只发出了不到 $10$ 个，哈哈哈。而至于 D​ 题，大致是先要用一些数学变换把修改操作转化为可以用树状数组或是线段树维护的修改操作，再像我那样离散化区间端点…… 嘤嘤嘤我开了什么神仙题啊，不过有空还是想补补这道题……
 
-![热身赛现场](icpc-2018-asia-nanjing-regional-travel-notes/warm-up.jpg)
+![热身赛现场](icpc-2018-asia-nanjing-regional-travel-notes/warm_up.jpg)
 
 ---
 
@@ -81,11 +81,11 @@ Hanano 表示 NUAA 的餐券好好看啊想留一张。我觉得大佬说的很�
 
 于是我们终于打开了午餐盒，开始边吃边等待评测结果。这个时候我打开了手机看到 Changer-qyz 发了句祝贺，然后我懵逼地表示我们还等着看自己的滚榜哈哈哈。然后大约十分钟后屏幕上突然跳出一行绿色的 Accepted，我们沸腾了，然后进入疯狂膜 Hanano 绝杀大佬的模式。奇怪的是后提交的反而被先评测了，我们立即打开手机进行拍照留念。
 
-![Hanano 大佬的最后绝杀](icpc-2018-asia-nanjing-regional-travel-notes/the-last-minute-kill.jpg)
+![Hanano 大佬的最后绝杀](icpc-2018-asia-nanjing-regional-travel-notes/the_last_minute_kill.jpg)
 
 这感觉有点像今年 WF 上 PKU 队最后四分钟绝杀那道计算几何一样…… 只不过他们比赛中就知道结果了，而我们比赛后才知道。接下来屏幕上又弹了三次绿色的 Accepted，每弹一次我们就膜一次 Hanano。然而当我们稍微冷静下来分析一波时，才意识到这大概就是从铜尾翻到铜首的区别，拿比例算一算拿银还是凉凉。于是我们开始焦急地等待滚榜环节。在此期间我们不要脸地从隔壁队伍偷偷借来了一只 D 题的黄色气球插在自己队伍的牌子上并拍了一张照片。
 
-![五只气球](icpc-2018-asia-nanjing-regional-travel-notes/five-balloons.jpg)
+![五只气球](icpc-2018-asia-nanjing-regional-travel-notes/five_balloons.jpg)
 
 听说由于 PC^2 炸了工作人员需要手动核榜，所以咕了我们一会儿（工作人员辛苦了 QAQ）。滚榜时屏幕上直接出现了最终榜单，并直接以滚动的形式播放（这可还行，重新定义了滚榜）。眼尖的 nbfynbfy 突然表示看到我们在银尾区，等到终榜再一次滚动到银牌区时我们才确认了这一事实，然后我们又进入了疯狂膜 Hanano 绝杀大佬的模式。简直两位大佬带我飞啊 QAQ。前一段时间的疲倦怠意仿佛在此刻一扫而尽，心中只剩下一种纯净的幸运感与快乐。
 
