@@ -3,7 +3,8 @@ uuid: 2d265782-d851-11e8-b8ca-87f10c7e1cc6
 title: 碎思杂念
 date: 2018-04-01 10:15:10
 updated: 2018-04-01 10:15:10
-tags: 
+tags:
+  - Ideas
   - Competitive Programming
 category: Life
 thumbnail: /2018/04/01/few-thoughts-april-2018/cover.jpg
