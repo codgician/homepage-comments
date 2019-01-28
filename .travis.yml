@@ -3,8 +3,8 @@ node_js:
   - "lts/*"
 dist: trusty
 addons:
-    apt:
-      update: true
+  apt:
+    update: true
 
 install:
   # Install pandoc.
@@ -15,12 +15,12 @@ install:
 
 before_script:
   # Install hexo & dependencies.
-  - yarn install
+  - npm install
 
 script:
   # Generate static files.
-  - hexo clean --debug
-  - hexo generate --debug
+  - hexo clean
+  - hexo generate
 
   # Configure git for deploying.
   - git config --global user.name 'codgician'
