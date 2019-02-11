@@ -1,6 +1,6 @@
 ---
 uuid: 5e9a30d2-d855-11e8-8bc3-275248d52839
-title: Jisuanke 31453 - Hard to prepare
+title: Jisuanke A2000 - Hard to prepare
 date: 2018-09-10 00:12:46
 updated: 2018-09-11 22:29:46
 tags: 
@@ -21,7 +21,7 @@ category: Solutions
 
 $0 < n, k \le 10^6$。
 
-[题目链接](https://nanti.jisuanke.com/t/31453)
+[题目链接](https://nanti.jisuanke.com/t/A2000)
 
 # 分析
 
@@ -52,7 +52,7 @@ $$
 
 ## 实现
 
-[完整参考代码 - 简单](https://github.com/codgician/ICPC/blob/master/Jisuanke/31453/dp_alt.cpp)
+[完整参考代码 - 简单](https://github.com/codgician/ICPC/blob/master/Jisuanke/A2000/dp_alt.cpp)
 
 # 麻烦的方法
 
@@ -141,7 +141,7 @@ dp[1][0] = 2^k \\
 \end{cases}
 $$
 
-[完整参考代码 - 麻烦](https://github.com/codgician/ICPC/blob/master/Jisuanke/31453/dp.cpp)
+[完整参考代码 - 麻烦](https://github.com/codgician/ICPC/blob/master/Jisuanke/A2000/dp.cpp)
 
 # %%%
 
