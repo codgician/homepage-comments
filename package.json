@@ -8,6 +8,7 @@
   "license": "LGPL-3.0",
   "dependencies": {
     "hexo": "^3.8.0",
+    "hexo-all-minifier": "^0.5.3",
     "hexo-asset-image": "^0.0.3",
     "hexo-deployer-git": "^1.0.0",
     "hexo-generator-archive": "^0.1.5",
@@ -25,7 +26,6 @@
     "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
-    "hexo-uglify": "^0.0.5",
     "hexo-uuid": "^1.0.2"
   }
 }

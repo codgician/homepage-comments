@@ -93,16 +93,41 @@ markdown:
     permalink: false
     permalinkClass: header-anchor
     permalinkSymbol: ¶
-uglify:
-  mangle: true
-  output:
-  compress:
-  exclude: 
-    - "*.min.js"
 sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+js_concator:
+  enable: false
+  bundle_path: '/js/bundle.js'
+  front: false
+  silent: true
+html_minifier:
+  enable: true
+  ignore_error: false
+  silent: true
+  exclude:
+css_minifier:
+  enable: true
+  silent: true
+  exclude: 
+    - '*.min.css'
+js_minifier:
+  enable: true
+  mangle: true
+  silent: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  silent: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
