@@ -2515,10 +2515,10 @@ hexo-i18n@^0.2.1:
   dependencies:
     sprintf-js "^1.0.2"
 
-hexo-katexify@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/hexo-katexify/-/hexo-katexify-1.0.4.tgz#2916e50260076cab13c7e6a39b5fa35abd1d9c32"
-  integrity sha512-AmxoV3bVZscdQ43cYLbEbs6ES6SQMhpwQ3R+eMzhu5613KwZkpgv6p5Vshx3hjCGmM6kMG5TfI5FshKytGeovg==
+hexo-katexify@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/hexo-katexify/-/hexo-katexify-1.0.5.tgz#49173fd7287aba2ecfaea71905de76fd5bbce588"
+  integrity sha512-9oaSvlee5CF/w76Ian9OZpvFGv/jiGJf06tdTRKHVWSzd08UNG+GJZTTJwT7geDUMTGwS9D49j5ls9ev50Wh2w==
   dependencies:
     he "^1.2.0"
     katex "^0.10.1"
