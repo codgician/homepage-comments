@@ -35,4 +35,4 @@ $2 \le m \le 50000$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/4366/segment_tree.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/4366/segment_tree.cpp)

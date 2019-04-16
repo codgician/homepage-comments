@@ -127,7 +127,7 @@ $$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6304/observation_math.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/6304/observation_math.cpp)
 
 # %%%
 

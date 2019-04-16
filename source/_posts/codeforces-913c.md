@@ -35,4 +35,4 @@ category: Solutions
 
 [Submission #34039523](http://codeforces.com/contest/913/submission/34039523)
 
-[GitHub - Backup Link](https://github.com/codgician/ICPC/blob/master/Codeforces/913C/greedy.cpp)
+[GitHub - Backup Link](https://github.com/codgician/Competitive-Programming/blob/master/Codeforces/913C/greedy.cpp)

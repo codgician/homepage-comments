@@ -69,7 +69,7 @@ $$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6305/cartesian_tree.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/6305/cartesian_tree.cpp)
 
 # %%%
 

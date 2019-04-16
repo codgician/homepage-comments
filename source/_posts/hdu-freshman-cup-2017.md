@@ -70,7 +70,7 @@ C
 
 签到题中的签到题，做不出来还参加什么竞赛（逃
 
-[参考代码 - 1001](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1001.cpp)
+[参考代码 - 1001](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1001.cpp)
 
 # 1002 - 身份证
 
@@ -134,7 +134,7 @@ Sorry
 
 **以后我再也不输入格式都不看清楚就直接跑去看样例了，呜呜呜呜呜**……
 
-[参考代码 - 1002](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1002.cpp)
+[参考代码 - 1002](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1002.cpp)
 
 # 1003 - 下起楼来我最快
 
@@ -207,7 +207,7 @@ $1 \le t_1,t_2,t_3,t_4 \le 100000$
 
 把上述所有情况所花的时间都算出来，取最小值就是最终的答案啦。
 
-[参考代码 - 1003](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1003.cpp)
+[参考代码 - 1003](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1003.cpp)
 
 # 1004 - 正品的概率
 
@@ -289,7 +289,7 @@ $$
 - $1 \le m, n, k \le 50$，所以运算过程中可能出现 $2^{50}$，要用 `long long int`；
 - 别忘了最后要化为最简分数（对分子分母求最大公约数除上即可）。
 
-[参考代码 - 1004](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1004.cpp)
+[参考代码 - 1004](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1004.cpp)
 
 # 1005 - 整数的 Alvin 值
 
@@ -378,7 +378,7 @@ $$
 
 然后就可以愉快地写程序了，只是一定要注意随时取模（%）防止运算时溢出（即向对待神犇一样对待运算过程，逃……
 
-[参考代码 - 1005](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1005.cpp)
+[参考代码 - 1005](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1005.cpp)
 
 # 1006 - 稿件整理
 
@@ -439,7 +439,7 @@ $$
 
 *%%% mlj 大佬，我竟然归并排序都没想到，呜呜呜呜呜……*
 
-[参考代码 - 1006](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1006.cpp)
+[参考代码 - 1006](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1006.cpp)
 
 # 1007 - 找方块
 
@@ -493,9 +493,9 @@ $$
 
 *%%% lry 大佬，感谢大佬的点拨啊…… 本蒟蒻一开始只想到了用 dfs 填充所有 0-1 矩阵来转换， 呜呜呜呜呜*……
 
-[参考代码 - 1007 - 单调栈](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1007-monotonic_stack.cpp)
+[参考代码 - 1007 - 单调栈](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1007-monotonic_stack.cpp)
 
-[参考代码 - 1007 - DP](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1007-dp.cpp)
+[参考代码 - 1007 - DP](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1007-dp.cpp)
 
 # 1008 - 友好整数
 
@@ -572,7 +572,7 @@ $$
 
 *%%% dyf 大佬，二进制表示状态加以位运算的思路真是太精妙了！ orz*
 
-[参考代码 - 1008](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1008.cpp)
+[参考代码 - 1008](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1008.cpp)
 
 # 1009 - 最大收益
 
@@ -622,7 +622,7 @@ $1 \le Ai, Bj \le 100000$
 
 不过这道题真是戏精一只啊，做了那么多多组测试数据的题，这道题突然画风一转变成了 NOIP 风格：输入数据**共**三行。比赛的时候刚开始我也是连续 WA 到怀疑人生，还好在意识到 1002 输入格式看错后赶紧回来仔细审 1009 的题面才发现，一句 `fuck` 之后终于 A 掉了此题。
 
-[参考代码 - 1009](https://github.com/codgician/ICPC/blob/master/Contests/HDU/Freshman%20Cup%202017/1009.cpp)
+[参考代码 - 1009](https://github.com/codgician/Competitive-Programming/blob/master/Contests/HDU/Freshman%20Cup%202017/1009.cpp)
 
 # 蒟蒻的自我检讨
 

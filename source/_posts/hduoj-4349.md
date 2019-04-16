@@ -48,4 +48,4 @@ $$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/4349/combinatorics_lucas.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/4349/combinatorics_lucas.cpp)

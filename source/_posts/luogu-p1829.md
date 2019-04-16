@@ -111,7 +111,7 @@ $$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/Luogu/P1829/mobius_inversion.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/Luogu/P1829/mobius_inversion.cpp)
 
 # %%%
 

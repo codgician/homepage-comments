@@ -67,4 +67,4 @@ $1 \le M \le 10$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/5096/treap_without_rotations.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/5096/treap_without_rotations.cpp)

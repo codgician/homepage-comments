@@ -50,4 +50,4 @@ Roy 和 Biv 想用一些边把这些点连起来。任意两点间都可以连�
 
 [Submission #33805058](http://codeforces.com/contest/908/submission/33805058)
 
-[GitHub Backup Link](https://github.com/codgician/ICPC/blob/master/Codeforces/908F/greedy.cpp)
+[GitHub Backup Link](https://github.com/codgician/Competitive-Programming/blob/master/Codeforces/908F/greedy.cpp)

@@ -81,7 +81,7 @@ $$
 
 对于 $\text{les}(i)$ 的计算，我们知道不大于 $a_i$ 的数有 $a_i$ 个，而已出现的且小于 $a_i$ 的数就是树状数组 $a_i$ 位的前缀和，即 $\text{query}(a_i)$。那么很显然 $les(i) = a_i - \text{query}(a_i)$，而 $\text{gtr}(i)$ 可以由 $u - les(i)$ 得到。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/Codeforces/1096F/probability_binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/Codeforces/1096F/probability_binary_indexed_tree.cpp)
 
 # %%%
 

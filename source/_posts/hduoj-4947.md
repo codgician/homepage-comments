@@ -84,7 +84,7 @@ $$
 
 # 实现
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/4947/mobius_inversion_binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/4947/mobius_inversion_binary_indexed_tree.cpp)
 
 # %%%
 

@@ -164,7 +164,7 @@ int findValByRank(int cntPt, int rnk)
 
 ### 参考代码
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/LOJ/104/treap_without_rotations.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/LOJ/104/treap_without_rotations.cpp)
 
 # 参考文献
 

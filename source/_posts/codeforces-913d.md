@@ -49,7 +49,7 @@ category: Solutions
 
 [Submission #34048622](http://codeforces.com/contest/913/submission/34048622)
 
-[GitHub - Backup Link](https://github.com/codgician/ICPC/blob/master/Codeforces/913D/greedy%2Bbinary_search.cpp)
+[GitHub - Backup Link](https://github.com/codgician/Competitive-Programming/blob/master/Codeforces/913D/greedy%2Bbinary_search.cpp)
 
 # %%%
 

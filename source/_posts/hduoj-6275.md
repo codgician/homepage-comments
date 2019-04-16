@@ -99,7 +99,7 @@ $$
 
 在 $n$ 比较小的时候，$\mathcal{O}(n)$ 暴力是比类欧 $\mathcal{O}(\sqrt{n}\log{n})$ 跑得还要快的…… 故考虑设定一个阈值 $lim$，当 $i$ 不大于 $lim$ 的时候跑暴力，大于 $lim$ 的时候跑类欧。对于本弱写的代码，实测得到 $lim$ 大致取值在 $2 \times 10^7 \sim 4 \times 10^7$ 范围内时可以在 HDUOJ 上卡进时限。而在 LibreOJ 上这个范围就要宽很多了。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/6275/quasi_euclidean.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/6275/quasi_euclidean.cpp)
 
 # %%%
 

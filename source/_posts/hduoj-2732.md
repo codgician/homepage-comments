@@ -53,4 +53,4 @@ $1 \le d, w_i \le 3$
 
 参考代码采用了 Dinic 算法来求解最大流。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/2732/dinic.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/2732/dinic.cpp)

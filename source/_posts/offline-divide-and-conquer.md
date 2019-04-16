@@ -60,7 +60,7 @@ $1 \le Q \le 5 \times 10^3$
 
 具体实现时，我们可以在记录数列中每个数的原始下标后对数列按数值从小到大排序。我们可以通过二分搜索快速查找到 $l$ 的位置，接下来我们便可以轻松地对于 $[l, mid]$ 中的每个值更新树状数组中的信息。再求得 $cnt$ 后我们再逐一撤销我们方才对树状数组进行的更改以为接下来递归中求 $cnt$ 做准备。需要注意的是，撤销更改时不可以直接用 `memset`，若是如此每一次预处理就与原数组长度有关而并非与当前二分区间有关了，而这会导致复杂度的变化（下面会给出详细说明）。显然，这一过程复杂度是 $\mathcal{O}(m\log{n})$ 的，其中 $m$ 是当前二分区间的长度。总的复杂度是 $\mathcal{O}(n\log^2{n})$ 级别的（下面也会给出详细说明）。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/POJ/2104/overall_binary_search_binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/POJ/2104/overall_binary_search_binary_indexed_tree.cpp)
 
 ### 复杂度分析
 
@@ -119,7 +119,7 @@ $1 \le Q \le 10^4$
 
 故我们依然采用与上例类似的思路对所有操作进行二分。不同之处在于，由于修改这一操作的引入，我们不能随意改变操作的顺序。因此，区别仅仅在于求 $cnt$ 这一过程的实现。我们不能再像之前一样先对值排序然后二分，因为那样会改变操作的顺序。对于 $Q$ 内的操作，我们必须按照原顺序进行遍历，查询和修改同时进行（若操作为修改，只应用值在 $[l, mid]$ 区间之内的）。另外在将 $Q$ 分类为 $Q_1$ 和 $Q_2$ 时也要单独开两个单独的空间来进行分类以防止改变操作之间的顺序。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/ZOJ/2112/overall_binary_search_edit_binary_indexed_tree.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/ZOJ/2112/overall_binary_search_edit_binary_indexed_tree.cpp)
 
 ## 小结
 
@@ -192,7 +192,7 @@ $1 \le a_i, b_i, c_i \le 2 \times 10^5$
 
 另外需要注意的是，题目所要求的是小于等于而非严格小于，且不保证三元组互不相同。**因此需要事先去重**！时间复杂度为 $\mathcal{O}(n\log^2{n})$ 级别。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/Luogu/P3810/cdq_divide_and_conquer.cpp) 
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/Luogu/P3810/cdq_divide_and_conquer.cpp) 
 
 ---
 
@@ -218,7 +218,7 @@ $1 \le n \le 5 \times 10^4$
 
 需要注意的是，在第二层 CDQ 分治中我们按照 $b$ 这一维排序后 $id$ 这一维度的顺序会乱掉。因此在第一层 CDQ 分治中，在我们按照 $a$ 这一维排序后，趁着还满足第 $l \sim mid$ 中的 $id$ 一定小于 $(mid + 1) \sim r$ 中的 $id$ 之时，我们需要对每个元素所在的部分（左部或者右部）进行标记。由此一来，在第二层 CDQ 分治中，我们在处理修改时只处理 $l \sim mid$ 内有左部标记的元素；在处理询问时只处理有右部标记的元素，就可以同时满足两个维度上的限制条件。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/COGS/2479/cdq_divide_and_conquer.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/COGS/2479/cdq_divide_and_conquer.cpp)
 
 # %%%
 

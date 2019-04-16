@@ -66,4 +66,4 @@ $$
 
 这里是用完全背包+状压DP实现的，~~或许等我学会带花树算法后还会来诈尸~~。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/Luogu/P3943/dp_state_compression.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/Luogu/P3943/dp_state_compression.cpp)

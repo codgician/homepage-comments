@@ -117,7 +117,7 @@ $$
 
 欧拉函数貌似预处理的话存不下…… 那就 $\mathcal{O}(\sqrt{N})$ 暴力算吧。
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/5514/euler's_totient_function.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/5514/euler's_totient_function.cpp)
 
 # 容斥做法
 
@@ -155,7 +155,7 @@ $$
 
 对于 $10^9$ 级别的数因数个数大致是 $\sqrt{10^9}$ 级别的，所以放心搞吧（逃
 
-[完整参考代码](https://github.com/codgician/ICPC/blob/master/HDUOJ/5514/inclusion_exclusion_principle.cpp)
+[完整参考代码](https://github.com/codgician/Competitive-Programming/blob/master/HDUOJ/5514/inclusion_exclusion_principle.cpp)
 
 # %%%
 
