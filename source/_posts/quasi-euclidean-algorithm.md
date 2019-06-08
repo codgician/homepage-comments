@@ -199,6 +199,7 @@ $$
 ## 结论
 
 令 $m = \left\lfloor \frac{an + b}{c} \right\rfloor$，有：
+
 $$
 g(a, b, c, n) =
 \begin{cases}

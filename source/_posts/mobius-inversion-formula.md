@@ -45,7 +45,7 @@ $$
 下面给出简要证明：
 
 1. $n = 1$ 时，显然有 $\sum\limits_{d \mid n} \mu(d) = 1$；
-2. $n \neq 1$ 时，记 $n = p_1^{c_1}p_2^{c_2} \dots p_k^{c_k} \ (c_i > 0)$。对于 $d  \mid  n$，$\mu(d) \neq 0$ 当且仅当 $d$ 中不存在完全平方数因子。显然，具有 $i$ 个质因数的 $d$ 有 $\binom{k}{i}$ 个。因此，$\sum\limits_{d \mid n} \mu(d) = \sum\limits_{i = 0}^{k} (-1)^k\binom{k}{i} $。我们不难观察发现，这个式子就是一个二项式展开，即 $(1 - 1)^k$，故其值为 $0$。
+2. $n \neq 1$ 时，有 $k > 0$。记 $n = p_1^{c_1}p_2^{c_2} \dots p_k^{c_k} \ (c_i > 0)$。对于 $d  \mid  n$，$\mu(d) \neq 0$ 当且仅当 $d$ 中不存在完全平方数因子。显然，具有 $i$ 个质因数的 $d$ 有 $\binom{k}{i}$ 个。因此，$\sum\limits_{d \mid n} \mu(d) = \sum\limits_{i = 0}^{k} (-1)^k\binom{k}{i}$。我们不难观察发现，这个式子就是一个二项式展开，即 $(1 - 1)^k$，故其值为 $0$。
 
 # 莫比乌斯反演
 
@@ -114,6 +114,8 @@ $$
 
 # 应用
 
+当 $F(n)$ 和 $f(n)$ 中一者容易求得，而另一着不易求得时，我们可以借助莫比乌斯反演来求得不易求得的函数。
+
 ## 与欧拉函数联系
 
 这里我们尝试应用一下莫比乌斯反演来推导莫比乌斯函数 $\mu(n)$ 与欧拉函数 $\varphi(n)$ 间的关系。
@@ -139,7 +141,7 @@ $$
 \sum\limits_{d \mid n} \frac{\mu(d)}{d} = \frac{\varphi(n)}{n}
 $$
 
-注：其实这个结论不需要莫比乌斯反演可以利用 $\varphi(n)$ 的计算公式加上容斥原理得出。在此过程中，$\mu(d)$ 实际上充当容斥系数。
+注：其实这个结论也可以利用 $\varphi(n)$ 的计算公式加上容斥原理得出，而在其过程中，实际上容斥系数就是 $\mu(d)$。
 
 ## 与最大公约数联系
 
@@ -163,7 +165,7 @@ $$
 \end{aligned}
 $$
 
-我们可以用 $\mathcal{O}(N)$ 的复杂度预处理出 $\mu(n)$ 的前缀和，面对询问时我们可以用 $\mathcal{O}(\sqrt{N})$ 的复杂度进行整除分块并进行求解。
+我们可以用线性筛以 $\mathcal{O}(N)$ 的复杂度预处理出 $\mu(n)$ 的前缀和从而能够 $\mathcal{O}(1)$ 回答 $\mu(n)$ 的区间和。而面对询问时，我们可以用 $\mathcal{O}(\sqrt{N})$ 的复杂度进行整除分块并进行求解。
 
 ---
 
@@ -187,16 +189,16 @@ $$
  $k \mid \gcd(i, j)$ 的 $\langle i, j \rangle$ 对数。而求满足 $1 \le i \le n, \ 1 \le j \le m$ 范围内 $k \mid \gcd(i, j)$ 这一条件的对数显然等价于 $1 \le i \le \left\lfloor \frac{n}{k} \right\rfloor, \ 1 \le j \le \left\lfloor \frac{m}{k} \right\rfloor$ 范围内 $1 \mid \gcd(i, j)$ 的对数（显然在此范围内的所有数对都满足这一条件）。由此我们可以很容易得到 $F(k)$ 的具体定义：
 
 $$
- F(k) = \left\lfloor \frac{n}{k} \right\rfloor \left\lfloor \frac{m}{k} \right\rfloor
+F(k) = \left\lfloor \frac{n}{k} \right\rfloor \left\lfloor \frac{m}{k} \right\rfloor
 $$
 
- 接下来我们就可以利用莫比乌斯反演直接得到 $f(k)$ 的具体定义了：
+接下来我们就可以利用莫比乌斯反演直接得到 $f(k)$ 的具体定义了：
 
 $$
- \begin{aligned}
- f(k) = & \sum\limits_{k \mid d} \mu(\frac{d}{k})F(d) \\
- = & \sum\limits_{k \mid d} \mu(\frac{d}{k}) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor \\
- \end{aligned}
+\begin{aligned}
+f(k) = & \sum\limits_{k \mid d} \mu(\frac{d}{k})F(d) \\
+= & \sum\limits_{k \mid d} \mu(\frac{d}{k}) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor \\
+\end{aligned}
 $$
 
 不妨令 $t = \frac{d}{k}$，我们便得到了跟之前一样的结果：
