@@ -7,7 +7,7 @@
   },
   "license": "LGPL-3.0",
   "dependencies": {
-    "hexo": "^3.8.0",
+    "hexo": "^3.9.0",
     "hexo-all-minifier": "^0.5.3",
     "hexo-asset-image": "^1.0.0",
     "hexo-deployer-git": "^1.0.0",
@@ -21,7 +21,7 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-helper-post-top": "^0.0.2",
     "hexo-helper-qrcode": "^1.0.2",
-    "hexo-katexify": "^1.0.5",
+    "hexo-katexify": "^1.0.6",
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.3",
