@@ -277,7 +277,7 @@ comment:
     valine_lang: en-us # i18n
     valine_placeholder: "What are your thoughts?" # valine comment input placeholder(like: Please leave your footprints )
     valine_guest_info: nick,mail,link #valine comment header info
-    gitalk_repo: codgician.github.io # git repo of the hexo
+    gitalk_repo: blog-legacy # git repo of the hexo
     gitalk_owner: codgician # git repo's owner
     gitalk_client_id: f91be9f9d92518c62fbe # github app client id 
     gitalk_client_secret: 5f797c217c992e5a375c9e08c07af671b50b2321 # github app client secret
