@@ -25,7 +25,7 @@ script:
   # Configure git for deploying.
   - git config --global user.name 'codgician'
   - git config --global user.email 'codgician@users.noreply.github.com'
-  - sed -i'' "s~https://github.com/codgician/codgician.github.io.git~https://${GITHUB_TOKEN}@github.com/codgician/codgician.github.io.git~" _config.yml
+  - sed -i'' "s~https://github.com/codgician/blog-legacy.git~https://${GITHUB_TOKEN}@github.com/codgician/blog-legacy.git~" _config.yml
 
   # Deploy blog.
   - hexo deploy --debug
