@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Codgician</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.codgician.me/"/>
+  <updated>2019-04-17T07:30:21.000Z</updated>
+  <id>https://blog.codgician.me/</id>
+  
+  <author>
+    <name>Shijia Zhang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ZOJ 4097 - Rescue the Princess</title>
+    <link href="https://blog.codgician.me/2019/04/16/zoj-4097/"/>
+    <id>https://blog.codgician.me/2019/04/16/zoj-4097/</id>
+    <published>2019-04-16T07:00:10.000Z</published>
+    <updated>2019-04-17T07:30:21.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;给定一张有 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Graph Theory" scheme="https://blog.codgician.me/tags/Graph-Theory/"/>
+    
+      <category term="Tarjan" scheme="https://blog.codgician.me/tags/Tarjan/"/>
+    
+      <category term="Disjoint Set" scheme="https://blog.codgician.me/tags/Disjoint-Set/"/>
+    
+      <category term="ZOJ" scheme="https://blog.codgician.me/tags/ZOJ/"/>
+    
+      <category term="Edge Double Connected Component (e-DCC)" scheme="https://blog.codgician.me/tags/Edge-Double-Connected-Component-e-DCC/"/>
+    
+      <category term="Tree" scheme="https://blog.codgician.me/tags/Tree/"/>
+    
+      <category term="Lowest Common Ancestor (LCA)" scheme="https://blog.codgician.me/tags/Lowest-Common-Ancestor-LCA/"/>
+    
+      <category term="Doubling" scheme="https://blog.codgician.me/tags/Doubling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Luogu P3943 - 星空</title>
+    <link href="https://blog.codgician.me/2019/02/05/luogu-p3943/"/>
+    <id>https://blog.codgician.me/2019/02/05/luogu-p3943/</id>
+    <published>2019-02-05T03:20:57.000Z</published>
+    <updated>2019-10-12T08:41:16.793Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;现有一个长度为 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mr
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈离线分治算法</title>
+    <link href="https://blog.codgician.me/2019/01/28/offline-divide-and-conquer/"/>
+    <id>https://blog.codgician.me/2019/01/28/offline-divide-and-conquer/</id>
+    <published>2019-01-28T14:25:56.000Z</published>
+    <updated>2019-06-08T04:24:12.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;前言&lt;/h1&gt;&lt;p&gt;分治算法，即“分而治之”，每次将当前的问题化成两个或更多相同或相似的子问题，再对每个分出的问题进行同样的操作…… 直到子问题足够地小，让我们能够方便地直接求解。归并排序便是分治算法的经典应用之一。&lt;/p&gt;&lt;p&gt;不过，在过去我们遇到的题目
+      
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="https://blog.codgician.me/categories/Notes/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Offline Divide and Conquer" scheme="https://blog.codgician.me/tags/Offline-Divide-and-Conquer/"/>
+    
+      <category term="Overall Binary Search" scheme="https://blog.codgician.me/tags/Overall-Binary-Search/"/>
+    
+      <category term="CDQ Divide And Conquer" scheme="https://blog.codgician.me/tags/CDQ-Divide-And-Conquer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Codeforces 1096F - Inversion Expectation</title>
+    <link href="https://blog.codgician.me/2019/01/23/codeforces-1096f/"/>
+    <id>https://blog.codgician.me/2019/01/23/codeforces-1096f/</id>
+    <published>2019-01-23T02:13:38.000Z</published>
+    <updated>2019-01-23T02:13:38.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;给定一个长为 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mro
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Codeforces" scheme="https://blog.codgician.me/tags/Codeforces/"/>
+    
+      <category term="Data Structure" scheme="https://blog.codgician.me/tags/Data-Structure/"/>
+    
+      <category term="Probability" scheme="https://blog.codgician.me/tags/Probability/"/>
+    
+      <category term="Binary Indexed Tree" scheme="https://blog.codgician.me/tags/Binary-Indexed-Tree/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Few thoughts (December 2018)</title>
+    <link href="https://blog.codgician.me/2018/12/07/few-thoughts-december-2018/"/>
+    <id>https://blog.codgician.me/2018/12/07/few-thoughts-december-2018/</id>
+    <published>2018-12-07T12:23:06.000Z</published>
+    <updated>2018-12-07T12:23:06.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;i&quot;&gt;i&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Dive from the highest layer of Abstraction into the deepest level of Implementation&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;I have alway
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://blog.codgician.me/categories/Life/"/>
+    
+    
+      <category term="Ideas" scheme="https://blog.codgician.me/tags/Ideas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ICPC 2018 亚洲区域赛北京站游记</title>
+    <link href="https://blog.codgician.me/2018/11/26/icpc-2018-asia-beijing-regional-travel-notes/"/>
+    <id>https://blog.codgician.me/2018/11/26/icpc-2018-asia-beijing-regional-travel-notes/</id>
+    <published>2018-11-26T14:58:00.000Z</published>
+    <updated>2018-11-26T14:58:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;day-0&quot;&gt;Day 0&lt;/h1&gt;&lt;p&gt;早早地到达了高铁站…… 北京之行时长竟然有 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/Ma
+      
+    
+    </summary>
+    
+    
+      <category term="Travel" scheme="https://blog.codgician.me/categories/Travel/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Contest" scheme="https://blog.codgician.me/tags/Contest/"/>
+    
+      <category term="Life" scheme="https://blog.codgician.me/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HDUOJ 4947 - GCD Array</title>
+    <link href="https://blog.codgician.me/2018/11/24/hduoj-4947/"/>
+    <id>https://blog.codgician.me/2018/11/24/hduoj-4947/</id>
+    <published>2018-11-24T15:52:32.000Z</published>
+    <updated>2018-11-24T15:52:32.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;对于长度为 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Data Structure" scheme="https://blog.codgician.me/tags/Data-Structure/"/>
+    
+      <category term="Binary Indexed Tree" scheme="https://blog.codgician.me/tags/Binary-Indexed-Tree/"/>
+    
+      <category term="HDUOJ" scheme="https://blog.codgician.me/tags/HDUOJ/"/>
+    
+      <category term="ACM-ICPC" scheme="https://blog.codgician.me/tags/ACM-ICPC/"/>
+    
+      <category term="Mobius Inversion" scheme="https://blog.codgician.me/tags/Mobius-Inversion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Luogu P1829 - Crash 的数字表格</title>
+    <link href="https://blog.codgician.me/2018/11/21/luogu-p1829/"/>
+    <id>https://blog.codgician.me/2018/11/21/luogu-p1829/</id>
+    <published>2018-11-21T11:15:10.000Z</published>
+    <updated>2018-11-21T11:15:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;给定 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;m
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Mobius Inversion" scheme="https://blog.codgician.me/tags/Mobius-Inversion/"/>
+    
+      <category term="Luogu" scheme="https://blog.codgician.me/tags/Luogu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈莫比乌斯反演</title>
+    <link href="https://blog.codgician.me/2018/11/18/mobius-inversion-formula/"/>
+    <id>https://blog.codgician.me/2018/11/18/mobius-inversion-formula/</id>
+    <published>2018-11-18T05:07:42.000Z</published>
+    <updated>2018-11-26T13:37:13.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;简介&quot;&gt;简介&lt;/h1&gt;&lt;p&gt;&lt;s&gt;最近经常演人/被人演，所以是时候学一学反演了。&lt;/s&gt;&lt;/p&gt;&lt;h1 id=&quot;莫比乌斯函数&quot;&gt;莫比乌斯函数&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;定义&lt;/h2&gt;&lt;p&gt;对于正整数 &lt;span class=&quot;katex&quot;&gt;&lt;span cla
+      
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="https://blog.codgician.me/categories/Notes/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Mobius Inversion" scheme="https://blog.codgician.me/tags/Mobius-Inversion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BZOJ 2187 - fraction</title>
+    <link href="https://blog.codgician.me/2018/10/28/bzoj-2187/"/>
+    <id>https://blog.codgician.me/2018/10/28/bzoj-2187/</id>
+    <published>2018-10-28T14:30:27.000Z</published>
+    <updated>2018-10-28T14:30:27.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;给定四个正整数 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mr
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Quasi-Euclidean Algorithm" scheme="https://blog.codgician.me/tags/Quasi-Euclidean-Algorithm/"/>
+    
+      <category term="BZOJ" scheme="https://blog.codgician.me/tags/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BZOJ 3817 - Sum</title>
+    <link href="https://blog.codgician.me/2018/10/28/bzoj-3817/"/>
+    <id>https://blog.codgician.me/2018/10/28/bzoj-3817/</id>
+    <published>2018-10-28T05:27:56.000Z</published>
+    <updated>2018-10-28T05:27:56.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;给定正整数 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Quasi-Euclidean Algorithm" scheme="https://blog.codgician.me/tags/Quasi-Euclidean-Algorithm/"/>
+    
+      <category term="BZOJ" scheme="https://blog.codgician.me/tags/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HDUOJ 6275 - Mod, Xor and Everything</title>
+    <link href="https://blog.codgician.me/2018/10/25/hduoj-6275/"/>
+    <id>https://blog.codgician.me/2018/10/25/hduoj-6275/</id>
+    <published>2018-10-25T10:10:23.000Z</published>
+    <updated>2018-10-25T10:10:23.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;对于给定的 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Quasi-Euclidean Algorithm" scheme="https://blog.codgician.me/tags/Quasi-Euclidean-Algorithm/"/>
+    
+      <category term="HDUOJ" scheme="https://blog.codgician.me/tags/HDUOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈类欧几里德算法</title>
+    <link href="https://blog.codgician.me/2018/10/18/quasi-euclidean-algorithm/"/>
+    <id>https://blog.codgician.me/2018/10/18/quasi-euclidean-algorithm/</id>
+    <published>2018-10-18T14:54:39.000Z</published>
+    <updated>2018-10-19T01:13:25.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;本文数学公式较长，建议在屏幕较大的设备上阅读。&lt;/p&gt;&lt;/blockquote&gt;&lt;h1 id=&quot;简介&quot;&gt;简介&lt;/h1&gt;&lt;p&gt;类欧几里德算法即使用与欧几里德算法类似的思想解决一类求和式的计算问题。可用类欧几里德算法解决的求和式主要有以下三种：&lt;/p&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Notes" scheme="https://blog.codgician.me/categories/Notes/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="Quasi-Euclidean Algorithm" scheme="https://blog.codgician.me/tags/Quasi-Euclidean-Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ICPC 2018 亚洲区域赛南京站游记</title>
+    <link href="https://blog.codgician.me/2018/10/16/icpc-2018-asia-nanjing-regional-travel-notes/"/>
+    <id>https://blog.codgician.me/2018/10/16/icpc-2018-asia-nanjing-regional-travel-notes/</id>
+    <published>2018-10-16T14:50:35.000Z</published>
+    <updated>2018-11-05T14:18:13.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;day-0&quot;&gt;Day 0&lt;/h1&gt;&lt;p&gt;国庆六场模拟赛场场自闭，导致比赛前一周状态不佳。抱着打铁的心态随便整理了一下模板。本来打算当天就整理好并打出来的结果转念一想去南航找复印店应该很容易（好一个 FLAG）所以就咕咕咕了。晚上听 BinGoo0o0o 巨佬讲了一
+      
+    
+    </summary>
+    
+    
+      <category term="Travel" scheme="https://blog.codgician.me/categories/Travel/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Contest" scheme="https://blog.codgician.me/tags/Contest/"/>
+    
+      <category term="Life" scheme="https://blog.codgician.me/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Codeforces Gym 101630J - Journey from Petersburg to Moscow</title>
+    <link href="https://blog.codgician.me/2018/10/09/codeforces-gym-101630j/"/>
+    <id>https://blog.codgician.me/2018/10/09/codeforces-gym-101630j/</id>
+    <published>2018-10-09T12:39:12.000Z</published>
+    <updated>2018-10-09T12:39:12.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;高速公路网连接着 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;m
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Graph Theory" scheme="https://blog.codgician.me/tags/Graph-Theory/"/>
+    
+      <category term="Shortest Path" scheme="https://blog.codgician.me/tags/Shortest-Path/"/>
+    
+      <category term="Codeforces Gym" scheme="https://blog.codgician.me/tags/Codeforces-Gym/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AOJ 1383 - Pizza Delivery</title>
+    <link href="https://blog.codgician.me/2018/10/06/aoj-1383/"/>
+    <id>https://blog.codgician.me/2018/10/06/aoj-1383/</id>
+    <published>2018-10-06T13:00:20.000Z</published>
+    <updated>2018-10-07T15:08:14.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;某座城市里有 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mro
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Graph Theory" scheme="https://blog.codgician.me/tags/Graph-Theory/"/>
+    
+      <category term="Shortest Path" scheme="https://blog.codgician.me/tags/Shortest-Path/"/>
+    
+      <category term="AOJ" scheme="https://blog.codgician.me/tags/AOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HDUOJ 5514 - Frogs</title>
+    <link href="https://blog.codgician.me/2018/10/03/hduoj-5514/"/>
+    <id>https://blog.codgician.me/2018/10/03/hduoj-5514/</id>
+    <published>2018-10-03T14:42:10.000Z</published>
+    <updated>2018-10-03T14:42:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;现有 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;m
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="HDUOJ" scheme="https://blog.codgician.me/tags/HDUOJ/"/>
+    
+      <category term="Inclusion-Exclusion Principle" scheme="https://blog.codgician.me/tags/Inclusion-Exclusion-Principle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jisuanke A2000 - Hard to prepare</title>
+    <link href="https://blog.codgician.me/2018/09/09/jisuanke-a2000/"/>
+    <id>https://blog.codgician.me/2018/09/09/jisuanke-a2000/</id>
+    <published>2018-09-09T16:12:46.000Z</published>
+    <updated>2018-09-11T14:29:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;现有 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;m
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Dynamic Programming" scheme="https://blog.codgician.me/tags/Dynamic-Programming/"/>
+    
+      <category term="Jisuanke" scheme="https://blog.codgician.me/tags/Jisuanke/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HDUOJ 6434 - Count</title>
+    <link href="https://blog.codgician.me/2018/08/23/hduoj-6434/"/>
+    <id>https://blog.codgician.me/2018/08/23/hduoj-6434/</id>
+    <published>2018-08-23T05:53:46.000Z</published>
+    <updated>2018-08-23T05:53:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;本题有 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Number Theory" scheme="https://blog.codgician.me/tags/Number-Theory/"/>
+    
+      <category term="HDUOJ" scheme="https://blog.codgician.me/tags/HDUOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HDUOJ 6397 - Character Encoding</title>
+    <link href="https://blog.codgician.me/2018/08/16/hduoj-6397/"/>
+    <id>https://blog.codgician.me/2018/08/16/hduoj-6397/</id>
+    <published>2018-08-16T07:05:23.000Z</published>
+    <updated>2018-08-16T07:05:23.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题面&quot;&gt;题面&lt;/h1&gt;&lt;p&gt;给定 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;m
+      
+    
+    </summary>
+    
+    
+      <category term="Solutions" scheme="https://blog.codgician.me/categories/Solutions/"/>
+    
+    
+      <category term="Competitive Programming" scheme="https://blog.codgician.me/tags/Competitive-Programming/"/>
+    
+      <category term="Mathematics" scheme="https://blog.codgician.me/tags/Mathematics/"/>
+    
+      <category term="Combinatorics" scheme="https://blog.codgician.me/tags/Combinatorics/"/>
+    
+      <category term="HDUOJ" scheme="https://blog.codgician.me/tags/HDUOJ/"/>
+    
+      <category term="Inclusion-Exclusion Principle" scheme="https://blog.codgician.me/tags/Inclusion-Exclusion-Principle/"/>
+    
+  </entry>
+  
+</feed>
