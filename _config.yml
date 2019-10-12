@@ -6,7 +6,7 @@
 title: Codgician
 subtitle: 
 description: Code and mogic.
-author: Jimmy Zhang
+author: Shijia Zhang
 language: en
 timezone: Asia/Shanghai
 
@@ -133,5 +133,5 @@ image_minifier:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/codgician/codgician.github.io.git
+  repository: https://github.com/codgician/blog-legacy.git
   branch: master
